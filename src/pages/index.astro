@@ -1,253 +1,528 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Plans from '../components/Plans.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Plans from "../components/Plans.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<title></title>
-	</head>
-	<body>
-		<Header />
-		<section class="bg-white dark:bg-gray-900">
-			<div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-				<div class="mr-auto place-self-center lg:col-span-6">
-					<h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-						The better way to run <span class="text-blue-700">cron jobs</span>
-					</h1>
-					<p class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-						You can create and manage cronjobs for multiple websites, with your team.
-						Know when your cron jobs are executed, get failure notifications via email, Slack, and webhooks.
-					</p>
-					<p class="mb-2">
-						<a href="https://app.fastcron.com/signup" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-							Sign up free
-							<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-						</a>
-						<span class="text-gray-400 text-sm">No credit card required.</span>
-					</p>
-					<p class="flex">
-						<span class="mt-1 flex">
-							<svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-								<path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-							</svg>
-							<svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-								<path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-							</svg>
-							<svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-								<path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-							</svg>
-							<svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-								<path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-							</svg>
-							<svg class="w-4 h-4 ms-1 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-								<path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-							</svg>
-						</span>
-						<span class="ml-2 text-gray-500">
-							<strong>7,000+</strong> customers since 2009
-						</span>
-					</p>
-				</div>
-				<div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
-					<img src="/screenshots/dashboard.png" alt="mockup" class="shadow-sm">
-				</div>
-			</div>
-		</section>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <section class="bg-white dark:bg-gray-900">
+      <div
+        class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      >
+        <div class="mr-auto place-self-center lg:col-span-6">
+          <h1
+            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+          >
+            The better way to run <span class="text-blue-700">cron jobs</span>
+          </h1>
+          <p
+            class="max-w-2xl mb-6 text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+          >
+            You can create and manage cronjobs for multiple websites, with your
+            team. Know when your cron jobs are executed, get failure
+            notifications via email, Slack, and webhooks.
+          </p>
+          <p class="mb-2">
+            <a
+              href="https://app.fastcron.com/signup"
+              class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Sign up free
+              <svg
+                class="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </a>
+            <span class="text-gray-400 text-sm">No credit card required.</span>
+          </p>
+          <p class="flex">
+            <span class="mt-1 flex">
+              <svg
+                class="w-4 h-4 ms-1 text-yellow-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 20"
+              >
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                ></path>
+              </svg>
+              <svg
+                class="w-4 h-4 ms-1 text-yellow-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 20"
+              >
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                ></path>
+              </svg>
+              <svg
+                class="w-4 h-4 ms-1 text-yellow-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 20"
+              >
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                ></path>
+              </svg>
+              <svg
+                class="w-4 h-4 ms-1 text-yellow-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 20"
+              >
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                ></path>
+              </svg>
+              <svg
+                class="w-4 h-4 ms-1 text-yellow-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 20"
+              >
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                ></path>
+              </svg>
+            </span>
+            <span class="ml-2 text-gray-500">
+              <strong>7,000+</strong> customers since 2009
+            </span>
+          </p>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-6 lg:flex">
+          <img
+            src="/screenshots/dashboard.png"
+            alt="mockup"
+            class="shadow-sm"
+          />
+        </div>
+      </div>
+    </section>
 
-		<section class="bg-white dark:bg-gray-900">
-			<div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-				<h2 class="mb-4 lg:mb-8 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl text-center">
-					Teams of website developers love us!
-				</h2>
-				
-				<div class="flex flex-wrap justify-center mb-8 max-w-100">
-					<img src="/customers/sistemaveri.png" alt="sistemaveri.com" height="80" class="p-2 h-20">
-					<img src="/customers/hugo-hotelsoftware.svg" alt="hugo-hotelsoftware" height="75" class="p-5 h-20">
-					<img src="/customers/razorpay.svg" alt="razorpay" height="80" class="p-5 h-20">
-					<img src="/customers/asknicely.png" alt="asknicely" height="80" class="py-5 h-20">
-				</div>
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2
+          class="mb-4 lg:mb-8 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl text-center"
+        >
+          Teams of website developers love us!
+        </h2>
 
-				<blockquote class="lg:max-w-xl mx-auto text-xl italic text-gray-800 dark:text-white flex">
-					<svg class="w-8 h-8 mr-4 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
-						<path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
-					</svg>
-					<p>FastCron is versatile, easy to setup, with a great UI, and most of all, reliable.</p>
-				</blockquote>
+        <div class="flex flex-wrap justify-center mb-8 max-w-100">
+          <img
+            src="/customers/sistemaveri.png"
+            alt="sistemaveri.com"
+            height="80"
+            class="p-2 h-20"
+          />
+          <img
+            src="/customers/hugo-hotelsoftware.svg"
+            alt="hugo-hotelsoftware"
+            height="75"
+            class="p-5 h-20"
+          />
+          <img
+            src="/customers/razorpay.svg"
+            alt="razorpay"
+            height="80"
+            class="p-5 h-20"
+          />
+          <img
+            src="/customers/asknicely.png"
+            alt="asknicely"
+            height="80"
+            class="py-5 h-20"
+          />
+        </div>
 
-			</div>
+        <blockquote
+          class="lg:max-w-xl mx-auto text-xl italic text-gray-800 dark:text-white flex"
+        >
+          <svg
+            class="w-8 h-8 mr-4 text-gray-400 dark:text-gray-600 mb-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 18 14"
+          >
+            <path
+              d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+            ></path>
+          </svg>
+          <p>
+            FastCron is versatile, easy to setup, with a great UI, and most of
+            all, reliable.
+          </p>
+        </blockquote>
+      </div>
+    </section>
 
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="max-w-screen-lg mb-8 lg:mb-16">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            Versatile, reliable cron job service
+          </h2>
+          <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+            The online cronjob service you can trust. Features built to run your
+            cronjob on time.
+          </p>
+        </div>
+        <div
+          class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+        >
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Set cron job, fast!
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              3 steps to create cronjob: Enter the script URL, select time
+              interval, and Done!
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+                ></path></svg
+              >
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              With custom timezone
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Each cronjob runs in its own timezone. Daylight saving time (DST)
+              is supported.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"></path></svg
+              >
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Fully customizable
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Change HTTP authentication, method, post data, HTTP headers, add
+              API token, set cookie and user agent.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">Automation</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Auto retry failed execution. Repeat cronjob execution when matches
+              text.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Team access with roles
+            </h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Let your team members view, create, and run cronjobs in their own
+              groups.
+            </p>
+          </div>
+          <div>
+            <div
+              class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
+            >
+              <svg
+                class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"></path>
+              </svg>
+            </div>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">API for dev</h3>
+            <p class="text-gray-500 dark:text-gray-400">
+              Automate your cronjob creation with the simple yet powerful API.
+              <a
+                href="https://app.fastcron.com/documentation/api"
+                target="_blank"
+                class="text-blue-600 hover:text-blue-500 hover:underline"
+                >Read docs</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		</section>
+    <Plans />
 
-		<section class="bg-white dark:bg-gray-900">
-			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-				<div class="max-w-screen-lg mb-8 lg:mb-16">
-					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-						Versatile, reliable cron job service
-					</h2>
-					<p class="text-gray-500 sm:text-xl dark:text-gray-400">
-						The online cronjob service you can trust.
-						Features built to run your cronjob on time.
-					</p>
-				</div>
-				<div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">Set cron job, fast!</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							3 steps to create cronjob:
-							Enter the script URL, select time interval, and Done!
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">With custom timezone</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							Each cronjob runs in its own timezone. Daylight saving time (DST) is supported.
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>              
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">Fully customizable</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							Change HTTP authentication, method, post data, HTTP headers, add API token, set cookie and user agent.
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">							
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3"/>
-							  </svg>
-							  
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">Automation</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							Auto retry failed execution. Repeat cronjob execution when matches text.
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-								<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
-							  </svg>
-							  
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">
-							Team access with roles
-						</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							Let your team members view, create, and run cronjobs in their own groups.
-						</p>
-					</div>
-					<div>
-						<div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-							<svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"/>
-							  </svg>
-							
-						</div>
-						<h3 class="mb-2 text-xl font-bold dark:text-white">API for dev</h3>
-						<p class="text-gray-500 dark:text-gray-400">
-							Automate your cronjob creation with the simple yet powerful API.
-							<a href="https://app.fastcron.com/documentation/api" target="_blank" class="text-blue-600 hover:text-blue-500 hover:underline">Read docs</a>.
-						</p>
-					</div>
-				</div>
-			</div>
-		  </section>
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <h2
+          class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          Frequently asked questions
+        </h2>
+        <div
+          class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
+        >
+          <div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                What is FastCron?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                FastCron is an online cron job service. It'll run your script at
+                the scheduled time by sending a HTTP request to its URL. For
+                example, you can run your script <code>backup.php</code> daily by
+                setting up cronjob with the URL <code
+                  >https://example.com/path/backup.php</code
+                >
+              </p>
+            </div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                What is the daily execution number?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                It's the number of execution per day. For example, an hourly
+                cronjob runs 24 times a day, and a cronjob every 5 minutes will
+                run 288 times a day.
+              </p>
+            </div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                What is a recurring cron jobs?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                It's a cron job that runs repeatedly, e.g. every day, every
+                minute, etc. Disabled and one-time cron jobs won't count against
+                the recurring cronjob limit.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                What payment method do you support?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Paddle will handle our payments, invoices, tax and email
+                notifications. They support <strong>PayPal</strong> and credit/debit
+                <strong>cards</strong>.
+              </p>
 
-		<Plans />
+              <p class="text-gray-500 dark:text-gray-400">
+                <a
+                  href="mailto:support@fastcron.com?subject=Binance Pay ID&body=Please send me your Binance pay ID."
+                  class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+                  >Email me</a
+                >
+                if you want to pay with USDT or Binance.
+              </p>
+            </div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                Do you have a free plan?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Yes, FastCron has a free plan with limited features. When your
+                trial or premium account expires, it will be downgraded to the
+                free plan automatically.
+              </p>
+            </div>
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                I have other questions!
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                If you have a question, please
+                <a
+                  href="mailto:support@fastcron.com?subject=FastCron&body=I have a question!"
+                  class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+                  >email me</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<section class="bg-white dark:bg-gray-900">
-			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-				<h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
-				<div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
-					<div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								What is FastCron?
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								FastCron is an online cron job service. It'll run your script at the scheduled time by sending a HTTP request to its URL.
-								For example, you can run your script <code>backup.php</code> daily by setting up cronjob with the URL <code>https://example.com/path/backup.php</code>
-							</p>
-						</div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								What is the daily execution number?
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								It's the number of execution per day.
-								For example, an hourly cronjob runs 24 times a day, and a cronjob every 5 minutes will run 288 times a day.
-							</p>
-						</div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								What is a recurring cron jobs?
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								It's a cron job that runs repeatedly, e.g. every day, every minute, etc.
-								Disabled and one-time cron jobs won't count against the recurring cronjob limit.
-							</p>
-						</div>
-					</div>
-					<div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								What payment method do you support?
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								Paddle will handle our payments, invoices, tax and email notifications.
-								They support <strong>PayPal</strong> and credit/debit <strong>cards</strong>.
-							</p>
-
-							<p class="text-gray-500 dark:text-gray-400">
-								<a href="mailto:support@fastcron.com?subject=Binance Pay ID&body=Please send me your Binance pay ID." class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">Email me</a>
-								 if you want to pay with USDT or Binance.
-							</p>
-						</div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								Do you have a free plan?
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								Yes, FastCron has a free plan with limited features.
-								When your trial or premium account expires, it will be downgraded to the free plan automatically.
-							</p>
-						</div>
-						<div class="mb-10">
-							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
-								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
-								I have other questions!
-							</h3>
-							<p class="text-gray-500 dark:text-gray-400">
-								If you have a question, please
-								<a href="mailto:support@fastcron.com?subject=FastCron&body=I have a question!" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">email me</a>.
-								
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<Footer />
-	</body>
+    <Footer />
+  </body>
 </html>
