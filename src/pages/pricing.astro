@@ -1,0 +1,99 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Plans from '../components/Plans.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Plans and pricing - FastCron" description="Free cronjob service, premium plans start at $7/month." />
+		<title></title>
+	</head>
+	<body>
+		<Header />
+
+		<Plans />
+
+		<section class="bg-white dark:bg-gray-900">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
+				<div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
+					<div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								What is FastCron?
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								FastCron is an online cron job service. It'll run your script at the scheduled time by sending a HTTP request to its URL.
+								For example, you can run your script <code>backup.php</code> daily by setting up cronjob with the URL <code>https://example.com/path/backup.php</code>
+							</p>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								What is the daily execution number?
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								It's the number of execution per day.
+								For example, an hourly cronjob runs 24 times a day, and a cronjob every 5 minutes will run 288 times a day.
+							</p>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								What is a recurring cron jobs?
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								It's a cron job that runs repeatedly, e.g. every day, every minute, etc.
+								Disabled and one-time cron jobs won't count against the recurring cronjob limit.
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								What payment method do you support?
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								Paddle will handle our payments, invoices, tax and email notifications.
+								They support <strong>PayPal</strong> and credit/debit <strong>cards</strong>.
+							</p>
+
+							<p class="text-gray-500 dark:text-gray-400">
+								<a href="mailto:support@fastcron.com?subject=Binance Pay ID&body=Please send me your Binance pay ID." class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">Email me</a>
+								 if you want to pay with USDT or Binance.
+							</p>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								Do you have a free plan?
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								Yes, FastCron has a free plan with limited features.
+								When your trial or premium account expires, it will be downgraded to the free plan automatically.
+							</p>
+						</div>
+						<div class="mb-10">
+							<h3 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
+								<svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+								I have other questions!
+							</h3>
+							<p class="text-gray-500 dark:text-gray-400">
+								If you have a question, please
+								<a href="mailto:support@fastcron.com?subject=FastCron&body=I have a question!" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">email me</a>.
+								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
