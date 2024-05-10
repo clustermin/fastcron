@@ -8,7 +8,6 @@ export default {
 		require('flowbite/plugin'),
 		require('flowbite-typography'),
 	],
-	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {
