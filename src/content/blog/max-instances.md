@@ -30,4 +30,4 @@ Time  | Running executions | Events
 
 Please note that removing a running execution just deletes it from our database. The execution will continue to run until it's complete or timed out.
 
-> ii API function `cron_add` and `cron_edit` update: `single` is deprecated, please use `instances` instead.
+> API function `cron_add` and `cron_edit` update: `single` is deprecated, please use `instances` instead.
