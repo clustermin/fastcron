@@ -1,46 +1,76 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<"blog">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+  <body>
+    <Header />
+
+    <main
+      class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+    >
+      <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+        <article
+          class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
+        >
+          <header class="mb-4 lg:mb-6 not-format">
+            <h1
+              class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+            >
+              {title}
+            </h1>
+            <address class="flex items-center mb-6 not-italic">
+              <div
+                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+              >
+                <img
+                  class="mr-4 w-16 h-16 rounded-full"
+                  src="/images/thuan.jpg"
+                  alt="Thuan Nguyen"
+                />
+                <div>
+                  <a
+                    href="https://www.fastcron.com/"
+                    rel="author"
+                    class="text-xl font-bold text-gray-900 dark:text-white"
+                    >Thuan Nguyen</a
+                  >
+                  <p class="text-base text-gray-500 dark:text-gray-400">
+                    FastCron founder
+                  </p>
+                  <p class="text-base text-gray-500 dark:text-gray-400">
+                    <FormattedDate date={pubDate} />
+                    {
+                      updatedDate && (
+                        <div class="last-updated-on">
+                          Last updated on <FormattedDate date={updatedDate} />
+                        </div>
+                      )
+                    }
+                  </p>
+                </div>
+              </div>
+            </address>
+          </header>
+          <p class="lead">
+            {description}
+          </p>
+          <slot />
+        </article>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>
