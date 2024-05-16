@@ -1,6 +1,6 @@
 ---
 title: 'Repeat cronjob execution'
-description: "Rerun cronjob when its output matches a word or not"
+description: "Rerun cronjob when/until its output matches a word."
 pubDate: 'Apr 22, 2024'
 ---
 
