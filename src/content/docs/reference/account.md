@@ -9,7 +9,7 @@ The following functions are for retrieving, and updating your account settings.
 All parameters are listed in the table. Required parameters are in **bold** with no default values.
 
 All `account_*` functions return [account data](data#account) like this:
-```
+```json
 {
   "status": "success",
   "code": 0,
@@ -20,7 +20,7 @@ All `account_*` functions return [account data](data#account) like this:
     "plan": "Business",
     "dailyExec": 50000,
     "memberLimit": 5,
-    "expiryDate": "2023-10-14"
+    "expiryDate": "2030-12-24"
   }
 }    
 ```

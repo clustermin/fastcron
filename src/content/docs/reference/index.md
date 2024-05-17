@@ -40,7 +40,7 @@ The POST body must be either query string or JSON format:
 token=******&id=1&name=weekly
 ```
 
-```
+```json
 {"token":"******","id":1,"name":"weekly"}
 ```
 
@@ -79,13 +79,13 @@ https://app.fastcron.com/api/v1/cron_list?token=******
 
 ### Success response
 
-```
+```json
 {"data":[{"id":123456,...}],"status":"success","code":0}
 ```
 
 ### Error response
 
-```
+```json
 {"message":"Invalid API token, user not found.","status":"error","code":11}
 ```
 

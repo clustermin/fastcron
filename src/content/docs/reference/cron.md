@@ -30,7 +30,7 @@ Get a cronjob data.
 
 Returns the cronjob data like this:
 
-```
+```json
 {"data":{"id":132,"group":null,"expression":"41 3 * * 2","timezone":"Europe\/London","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"weekly","notify":true,"points":1},"status":"success","code":0}
 ```
 
@@ -66,7 +66,7 @@ Returns the newly created cronjob.
 https://app.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *&url=example.com/cron_php
 ```
 
-```
+```json
 {"data":{"id":132,"group":null,"expression":"*/3 1,2,3 * * *","timezone":"UTC","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"","notify":true,"points":9},"status":"success","code":0}
 ```
 
@@ -175,7 +175,7 @@ Add multiple cronjobs at once/
 
 This works only with requests in JSON format like this:
 
-```
+```sh
 curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
 -H 'Content-Type: application/json' \
 -d '{"token":"***", "data":[{"url":"https://example.com", "expression":"1 hour"},{"url":"https://example.com", "expression":"1 day"}]}'

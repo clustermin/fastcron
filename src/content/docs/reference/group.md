@@ -17,7 +17,7 @@ List all groups under your account.
 
 Return an array of [groups](data#group) like this:
 
-```
+```json
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
 ```
 
@@ -32,7 +32,7 @@ Get a group data
 
 Return the [group data](data#group) like this
 
-```
+```json
 {"data":{"id":1,"name":"example"},"status":"success","code":0}
 ```
 
@@ -47,7 +47,7 @@ Search groups by exact name.
 
 Return an array of [groups](data#group) like this:
 
-```
+```json
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
 ```
 
@@ -61,7 +61,7 @@ Add a new group
 | name  | string | Name           |
 
 You'll get the data structure of newly created group like this:
-```
+```json
 {"data":{"id":2,"name":"example"},"status":"success","code":0}
 ```
 
