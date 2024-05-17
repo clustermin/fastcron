@@ -5,7 +5,7 @@ export default {
 		'./node_modules/flowbite/**/*.js'
 	],
 	plugins: [
-		require('flowbite/plugin'),
+		// require('flowbite/plugin'), // incompatible with astro startlight theme selector caret 
 		require('flowbite-typography'),
 	],
 	theme: {
