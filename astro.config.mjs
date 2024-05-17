@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [sitemap(), tailwind(), starlight({
     title: 'Docs',
     disable404Route: true,
-    favicon: '/public/images/logo.png',
+    favicon: '/images/logo.png',
     logo: {
       src: "./public/images/logo.png",
       alt: "FastCron",
