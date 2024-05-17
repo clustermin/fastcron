@@ -13,7 +13,8 @@ export default defineConfig({
     disable404Route: true,
     logo: {
       src: "./public/images/logo.png",
-      alt: "FastCron"
+      alt: "FastCron",
+      replacesTitle: false
     },
     sidebar: [
       // A group of links labelled "Constellations".
