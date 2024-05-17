@@ -7,7 +7,7 @@ The following functions are for listing, retrieving, creating, updating, and del
 
 All parameters are listed in the table. Required parameters are in **bold** with no default values.
 
-## group_list
+## `group_list`
 
 List all groups under your account.
 
@@ -21,7 +21,7 @@ Return an array of [groups](data#group) like this:
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
 ```
 
-## group_get
+## `group_get`
 
 Get a group data
 
@@ -36,7 +36,7 @@ Return the [group data](data#group) like this
 {"data":{"id":1,"name":"example"},"status":"success","code":0}
 ```
 
-## group_lookup
+## `group_lookup`
 
 Search groups by exact name.
 
@@ -51,7 +51,7 @@ Return an array of [groups](data#group) like this:
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
 ```
 
-## group_add
+## `group_add`
 
 Add a new group
 
@@ -65,7 +65,7 @@ You'll get the data structure of newly created group like this:
 {"data":{"id":2,"name":"example"},"status":"success","code":0}
 ```
 
-## group_edit
+## `group_edit`
 
 Update an existing group.
 
@@ -78,7 +78,7 @@ Update an existing group.
 
 Return the updated group data.
 
-## group_delete
+## `group_delete`
 
 Delete a group.
 
@@ -89,7 +89,7 @@ Delete a group.
 
 Return the deleted group data with ID set to `null`.
 
-## group_vanish
+## `group_vanish`
 
 Delete a group and all cronjobs under that group.
 
@@ -100,7 +100,7 @@ Delete a group and all cronjobs under that group.
 
 Return the deleted group data with ID set to `null`.
 
-## group_empty
+## `group_empty`
 
 Keep the group and delete all cronjobs under that group.
 
@@ -111,7 +111,7 @@ Keep the group and delete all cronjobs under that group.
 
 Return the group data.
 
-## group_items
+## `group_items`
 
 List all cronjobs under a group.
 

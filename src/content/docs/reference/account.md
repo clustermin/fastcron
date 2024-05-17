@@ -25,7 +25,7 @@ All `account_*` functions return [account data](data#account) like this:
 }    
 ```
 
-## account_get
+## `account_get`
 
 Get your account information.
 
@@ -34,7 +34,7 @@ Get your account information.
 | token | string | Your API token |
 
 
-## account_edit
+## `account_edit`
 
 Update your account settings, currently we only support changing account's timezone.
 
@@ -44,7 +44,7 @@ Update your account settings, currently we only support changing account's timez
 | timezone | string | New account timezone |
 
 
-## account_secret
+## `account_secret`
 
 Set a secret parameter to your account. When your cronjob runs, the keyword `__secret__` in URL, POST data, HTTP headers will be replaced with this.
 

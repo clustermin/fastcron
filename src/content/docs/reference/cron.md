@@ -7,7 +7,7 @@ The following functions are for listing, retrieving, creating, updating, and del
 
 All parameters are listed in the table. Required parameters are in **bold** with no default values.
 
-## cron_list
+## `cron_list`
 
 List cronjobs under your account, up to 1000 items per page.
 
@@ -19,7 +19,7 @@ List cronjobs under your account, up to 1000 items per page.
 
 Returns an array of cronjob data structures.
 
-## cron_get
+## `cron_get`
 
 Get a cronjob data.
 
@@ -34,7 +34,7 @@ Returns the cronjob data like this:
 {"data":{"id":132,"group":null,"expression":"41 3 * * 2","timezone":"Europe\/London","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"weekly","notify":true,"points":1},"status":"success","code":0}
 ```
 
-## cron_add
+## `cron_add`
 
 Add a new cronjob.
 
@@ -70,7 +70,7 @@ https://app.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *
 {"data":{"id":132,"group":null,"expression":"*/3 1,2,3 * * *","timezone":"UTC","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"","notify":true,"points":9},"status":"success","code":0}
 ```
 
-## cron_edit
+## `cron_edit`
 
 Update an existing cronjob
 
@@ -84,7 +84,7 @@ Similar to `cron_add`, except that it'll update a specific cronjob with provided
 
 Returns the structure of the updated cronjob.
 
-## cron_enable
+## `cron_enable`
 
 Enable a cronjob
 
@@ -95,7 +95,7 @@ Enable a cronjob
 
 Returns the structure of the updated cronjob.
 
-## cron_disable
+## `cron_disable`
 
 Disable a cronjob
 
@@ -106,7 +106,7 @@ Disable a cronjob
 
 Returns the structure of the updated cronjob.
 
-## cron_pause
+## `cron_pause`
 
 Pause a cronjob for a specific duration
 
@@ -118,7 +118,7 @@ Pause a cronjob for a specific duration
 
 Returns the structure of the paused cronjob.
 
-## cron_delete
+## `cron_delete`
 
 Delete a cronjob
 
@@ -129,7 +129,7 @@ Delete a cronjob
 
 Returns the structure of the deleted cronjob, with ID set to null.
 
-## cron_run
+## `cron_run`
 
 Schedule the cronjob to run within next minute. This doesn't change the cronjob time settings.
 
@@ -140,7 +140,7 @@ Schedule the cronjob to run within next minute. This doesn't change the cronjob 
 
 Returns the timestamp which cronjob will run at.
 
-## cron_logs
+## `cron_logs`
 
 Get your cronjob execution logs.
 
@@ -151,7 +151,7 @@ Get your cronjob execution logs.
 
 Returns an array of [cron execution results](data#cron-execution-result).
 
-## cron_failures
+## `cron_failures`
 
 Get your cronjobs failed execution logs.
 
@@ -164,7 +164,7 @@ Returns an array of cron execution results data structures.
 
 If no `id` is provided, it will return an array of all cronjobs failure logs.
 
-## cron_batch_add
+## `cron_batch_add`
 
 Add multiple cronjobs at once/
 
@@ -183,7 +183,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
 
 Returns an array of cronjob data structures.
 
-## cron_batch_edit
+## `cron_batch_edit`
 
 Update multiple cronjobs at once.
 
@@ -195,7 +195,7 @@ Update multiple cronjobs at once.
 
 Returns an array of updated cronjob data structures.
 
-## cron_batch_delete
+## `cron_batch_delete`
 
 Delete multiple cronjobs at once.
 
@@ -206,7 +206,7 @@ Delete multiple cronjobs at once.
 
 Returns an array of deleted cronjobs.
 
-## cron_group_edit
+## `cron_group_edit`
 
 Update multiple cronjobs in a group at once.
 
