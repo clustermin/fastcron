@@ -11,7 +11,7 @@ It's enabled by default for new cronjobs.
 
 To enable it, edit (or batch edit) your cronjobs, at the section Notifications, check the box **Notify me: when cronjob fails**, and **when cronjob succeeds after failed**.
 
-![notify](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/FastCron/notify-6600f396b585b9.67961961.png)
+![notify](/images/notify-6600f396b585b9.67961961.png)
 
 After that, when your cronjob fails, you'll receive an email/Slack notification. When your cronjob is okay again, you'll receive another message.
 

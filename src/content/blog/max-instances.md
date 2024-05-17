@@ -9,7 +9,7 @@ FastCron runs cronjobs at the scheduled times by default, regardless of ongoing 
 Before, you could prevent cronjob executions from overlapping by enabling the Single instance feature.
 
 Now, you can allow up to 5 overlapping executions by adjusting the Max instances:
-![instances](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/FastCron/instances-656951686630c8.22472183.png)
+![instances](/images/instances-656951686630c8.22472183.png)
 
 The table below shows running executions when you allow up to 3 overlaps:
 Time  | Running executions | Events

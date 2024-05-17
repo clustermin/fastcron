@@ -8,7 +8,7 @@ By default, the crontab uses OR when the day of the week and day of the month ar
 
 For, example, `7 0 12 * Fri` will run your cronjob at 00:07 on Friday OR on day 12 of each month.
 
-![dow-or-dom](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/FastCron/dow-or-dom-652a0cc3b0aa72.58415039.png)
+![dow-or-dom](/images/dow-or-dom-652a0cc3b0aa72.58415039.png)
 
 It would be impossible to require matching of both the day of the week and the day of the month using either crontab syntax or time expression.
 
@@ -16,7 +16,7 @@ For example, run cronjobs on Friday the 12th, or run on Tuesday and Wednesday fr
 
 To solve this, FastCron now supports the Time filter.
 
-![filter](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/FastCron/filter-652d4716276cc6.72055909.png)
+![filter](/images/filter-652d4716276cc6.72055909.png)
 To show the Time filter, click on the Filter button.
 
 It supports simple expressions with 5 variables:

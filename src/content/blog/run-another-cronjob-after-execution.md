@@ -8,4 +8,4 @@ You should also disable the target cronjob if you want it to completely depend o
 
 This will double the daily execution count in the source cronjob. The feature is available in the premium plans.
 
-![run-cronjob](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/fastcron/run-cronjob-648804aedbf4f9.81440396.png)
+![run-cronjob](/images/run-cronjob-648804aedbf4f9.81440396.png)

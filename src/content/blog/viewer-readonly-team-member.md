@@ -6,4 +6,4 @@ pubDate: 'Jul 26 2023'
 
 Viewers have **read-only** access. They can view cronjobs, but can NOT edit/delete/disable/run them.
 
-![viewer](https://updote.nyc3.cdn.digitaloceanspaces.com/attachment/fastcron/viewer-6488042f5d4a74.28747544.png)
+![viewer](/images/viewer-6488042f5d4a74.28747544.png)

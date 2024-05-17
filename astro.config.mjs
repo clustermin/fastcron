@@ -18,7 +18,6 @@ export default defineConfig({
       replacesTitle: false
     },
     sidebar: [
-      // A group of links labelled "Constellations".
       {
         label: 'FastCron API',
         items: [
@@ -28,7 +27,7 @@ export default defineConfig({
           { label: 'group_*', link: '/reference/group' },
           { label: 'account_*', link: '/reference/account' }
         ]
-      },
+      }
     ],
   }, mdx())]
 });
