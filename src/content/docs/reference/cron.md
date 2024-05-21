@@ -31,7 +31,23 @@ Get a cronjob data.
 Returns the cronjob data like this:
 
 ```json
-{"data":{"id":132,"group":null,"expression":"41 3 * * 2","timezone":"Europe\/London","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"weekly","notify":true,"points":1},"status":"success","code":0}
+{
+  "data": {
+    "id": 132,
+    "group": null,
+    "expression": "41 3 * * 2",
+    "timezone": "Europe/London",
+    "url": "http://example.com/cron_php",
+    "postData": "",
+    "fail": 0,
+    "status": 0,
+    "name": "weekly",
+    "notify": true,
+    "points": 1
+  },
+  "status": "success",
+  "code": 0
+}
 ```
 
 ## `cron_add`
@@ -67,7 +83,23 @@ https://app.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *
 ```
 
 ```json
-{"data":{"id":132,"group":null,"expression":"*/3 1,2,3 * * *","timezone":"UTC","url":"http:\/\/example.com\/cron_php","postData":"","fail":0,"status":0,"name":"","notify":true,"points":9},"status":"success","code":0}
+{
+  "data": {
+    "id": 132,
+    "group": null,
+    "expression": "*/3 1,2,3 * * *",
+    "timezone": "UTC",
+    "url": "http://example.com/cron_php",
+    "postData": "",
+    "fail": 0,
+    "status": 0,
+    "name": "",
+    "notify": true,
+    "points": 9
+  },
+  "status": "success",
+  "code": 0
+}
 ```
 
 ## `cron_edit`
@@ -155,10 +187,11 @@ Returns an array of [cron execution results](data#cron-execution-result).
 
 Get your cronjobs failed execution logs.
 
-| Name      | Type    | Default | Description    |
-| --------- | ------- | ------- | -------------- |
-| **token** | string  |         | Your API token |
-| id        | integer | null    | Cronjob ID     |
+| Name      | Type    | Default | Description      |
+| --------- | ------- | ------- | ---------------- |
+| **token** | string  |         | Your API token   |
+| id        | integer | null    | Cronjob ID       |
+| limit     | integer | 50      | Max result limit |
 
 Returns an array of cron execution results data structures.
 
