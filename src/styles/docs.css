@@ -1,0 +1,3 @@
+.sl-markdown-content ul {
+    @apply list-disc list-inside;
+}

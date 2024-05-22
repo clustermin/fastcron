@@ -5,7 +5,9 @@ description: "FastCron is the best online cronjob service."
 
 import { Steps, LinkCard } from '@astrojs/starlight/components';
 
-FastCron is a simple online tool to help you schedule and run tasks automatically. It's great for things like checking your website, sending emails, cleaning up database, or backing up data. FastCron makes your life easier by doing these jobs for you on time, every time.
+FastCron is a simple [online cronjob service](/) to help you schedule and run tasks automatically. 
+
+It's great for things like checking your website, sending emails, cleaning up database, or backing up data. FastCron makes your life easier by triggering these jobs for you on time, every time.
 
 ## How it works
 FastCron works by letting you set up and manage scheduled tasks, called **cron jobs**, through an easy-to-use online interface. Here's how it works:
@@ -20,6 +22,18 @@ FastCron works by letting you set up and manage scheduled tasks, called **cron j
 
 FastCron will then automatically execute the tasks at the times you specified, ensuring your jobs are done on time without any manual intervention.
 
+## Why choose FastCron over hosting's cronjobs?
+By using FastCron, you have access to these features:
+
+- **Cron expression**: FastCron supports both standard cron expression like `*/5 * * * *` and simple pattern like `5 minutes`. Also check out [Time filter](/blog/time-filter) to match both the day of the week and the day of the month.
+- **Custom timezone** for each cronjob.
+- **Queued executions**: know when your cronjob will execute.
+- **Cron logs**: see full history of cronjob executions, including starting time, total execution time, HTTP status, header, and output.
+- Email/Slack/webhook **notifications** when cronjob fails and succeeds.
+- **Team access**: allows your team member to create, run, and manage their own cronjobs.
+- **Auto retry** failed cronjob executions.
+- **Auto repeat** cronjob executions until/when its output matches a word.
+- **API access**: create, run, and delete your cronjob programmatically.
 
 ## Quick links
 <LinkCard

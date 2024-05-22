@@ -12,6 +12,7 @@ export default defineConfig({
     title: 'Docs',
     disable404Route: true,
     favicon: '/images/logo.png',
+    customCss: ['./src/styles/docs.css'],
     logo: {
       light: "./public/images/logo.png",
       dark: "./public/images/rush-dark.png",
