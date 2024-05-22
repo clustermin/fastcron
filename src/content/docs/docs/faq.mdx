@@ -6,11 +6,6 @@ description: "Check out frequently asked questions and answers at FastCron."
 We will try to answers most of the frequently asked questions below.
 
 ## Account
-### How to create an account?
-To create an account, head to the [Sign up](https://app.fastcron.com/signup) page to register. It requires just your name, email, and a secure password.
-
-You can also sign up / log in using your [Google account](https://app.fastcron.com/connect/google).
-
 ### I didn't get my activation mail?
 Please double-check your inbox, spam/junk/trash/archive/all mailboxes, and see if our welcome email is there.
 
@@ -18,10 +13,16 @@ You can request another activation mail after 5 minutes.
 
 If you have a Google account with the same email, you can log in and activate your account.
 
-### How to delete my account?
-You can delete your account at any time at Account, Danger zone.
+### Can I delete my account?
+Yes, you can delete your account at any time at Account, Danger zone.
 
-Please note that this is not reversible. Your account and all related data will be deleted permanently. You can also create a new account using the old email address.
+This is not reversible. Your account and all related data will be deleted permanently.
+Later, you can create a new account using the old email address.
+
+### What happens when my account expires?
+Premium accounts will be downgraded to the free plan. If you have more cronjobs than the free plan limit, some cronjobs will be disabled.
+
+Free accounts don't expire.
 
 ### How to transfer my account?
 To move all cronjobs to another owner, you have 2 options:
@@ -38,6 +39,9 @@ Yes, FastCron has a free plan with limited features. Please check the [Pricing](
 
 Upon registration, you'll get a free trial. When the trial period ends, your account will be downgraded to the free plan automatically. You don't need to do anything.
 
+### Do I need to renew my free plan?
+No, you don't need to renew the free plan. Enjoy!
+
 ### How to add company VAT number?
 When making a payment via Paddle, select the **Country** and click **Continue**,
 then click **Add VAT number** at the **order summary**.
@@ -45,8 +49,65 @@ then click **Add VAT number** at the **order summary**.
 You can also add your company name and VAT number after the payment.
 Please visit the **Billing** page, click **View Invoice**, and then add your billing address there.
 
-You can NOT change the country and company VAT number after it's added.
-Please cancel your current subscription first, then renew your account with new company info.
+### Can I change my company VAT number?
+No, you can't change the country and company VAT number once it's added.
+Please cancel your current subscription first, then renew your account with the new company info.
 
 ### Can I pay with USDT via Binance?
-Yes, FastCron accepts payments via Binance. Please contact me at support@fastcron.com for the Binance pay ID. The payment will be processed manually.
+Yes, FastCron accepts payments via Binance.
+Please contact me at support@fastcron.com for the Binance pay ID.
+The payment will be processed manually.
+
+## Cron jobs
+### Do you support HTTP and HTTPS?
+Yes, FastCron support both HTTP and HTTPS protocol.
+It's recommended to use HTTPS for your cronjob URL, like this:
+```
+https://example.com/backup.php
+```
+
+### Do you support self-signed SSL certificates?
+Yes, we don't check your SSL certificates.
+
+### Can I run cronjobs for password-protected websites?
+Yes, if your website accepts HTTP Basic Authentication, just add username and password at the section **Send HTTP request**.
+
+You can also add username and password directly to your cronjob URL like this:
+```
+https://username:password@example.com/backup.php
+```
+
+We also support adding a token in the HTTP headers.
+
+### Does FastCron follows redirections?
+Yes, FastCron will follows redirections (301, 302, 307, 308).
+
+This feature helps in these cases:
+- You changed the script URL with redirections.
+- The cron script needs to split to several steps (e.g. Akeeba backup).
+
+### What HTTP methods are supported?
+We support GET, POST, PUT, PATCH, HEAD, OPTIONS, DELETE, TRACE, and CONNECT.
+
+For POST and PUT, you can add the payload (post data).
+The payload can be in query format like this:
+```
+name=value&name2=value2
+```
+or in JSON format like this:
+```json
+{
+  "token": "API_TOKEN",
+  "id": 123,
+}
+```
+For JSON payload, FastCron automatically add HTTP header
+`Content-Type: application/json`
+to the HTTP request, so you don't need to.
+
+### Will my cronjobs overlap?
+Yes, similar to your hosting's cron jobs, your script will overlap.
+
+If you set cron job to run every minute, and your script take more than 1 minute to complete, it'll overlap. There will be 2 instances running at the same time.
+
+To prevent overlapping, FastCron supports [Max instances](/blog/max-instances).
