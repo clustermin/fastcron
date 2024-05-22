@@ -23,7 +23,8 @@ export default defineConfig({
       {
         label: 'Getting started',
         items: [
-          { label: 'Welcome', link: '/docs' }
+          { label: 'Welcome', link: '/docs' },
+          { label: 'FAQ', link: '/docs/faq' }
         ]
       },
       {
