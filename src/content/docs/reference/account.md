@@ -1,6 +1,8 @@
 ---
-title: account_*
+title: account_* API functions
 description: Update your account using FastCron API functions
+sidebar:
+  label: account_*
 ---
 
 
