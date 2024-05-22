@@ -1,0 +1,50 @@
+---
+title: How to set up one-time cronjob
+sidebar:
+  label: One-time cronjob
+---
+
+
+## Create one-time cronjobs
+If you would like to set up a one-time cronjob, i.e. a cronjob that runs at a specific time, you can follow these instructions:
+
+- Click create cron job
+- Enter the URL to your cron script.
+- Enter the time into the **Time Pattern** field, e.g. **Feb 14, 2030, 7:30**
+- Make sure you select the correct **Timezone**
+- Click *Save* changes.
+
+And that's it. 
+You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the example above, and it'll show the next execution time so you can confirm the time settings are correct.
+
+## Auto delete stopped one-time cronjobs
+To automatically delete one-time cronjobs after their executions, you can visit your account settings page and update **Delete stopped cronjobs after**.
+
+![Auto delete](https://fastcron.zendesk.com/hc/article_attachments/32276446236185)
+
+## Create one-time cronjobs using our API
+Create a one-time cronjob using `cron_add`
+```bash
+curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "token":"YOUR_API_TOKEN",
+        "url":"https://example.com",
+        "expression":"May 20, 2030, 8:00"
+    }'
+ ```
+
+ 
+Create multiple one-time cronjobs using `cron_batch_add`
+
+```bash
+curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "token":"YOUR_API_TOKEN",
+        "data": [
+            {"url":"https://example.com", "expression":"May 20, 2030, 8:00"},
+            {"url":"https://example.com", "expression":"May 20, 2030, 19:00"}
+        ]
+    }'
+```
