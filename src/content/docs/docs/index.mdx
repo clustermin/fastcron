@@ -22,11 +22,13 @@ FastCron works by letting you set up and manage scheduled tasks, called **cron j
 
 FastCron will then automatically execute the tasks at the times you specified, ensuring your jobs are done on time without any manual intervention.
 
-## Why choose FastCron over hosting's cronjobs?
+## Why choose FastCron?
+Most hosting providers have Cron Jobs feautres. However, they're very limited.
+
 By using FastCron, you have access to these features:
 
 - **Cron expression**: FastCron supports both standard cron expression like `*/5 * * * *` and simple pattern like `5 minutes`. Also check out [Time filter](/blog/time-filter) to match both the day of the week and the day of the month.
-- **Custom timezone** for each cronjob.
+- **Custom timezone** for each cronjob. FastCron also calculates **daylight saving time** (DST) to ensure that your cronjob execute on time. 
 - **Queued executions**: know when your cronjob will execute.
 - **Cron logs**: see full history of cronjob executions, including starting time, total execution time, HTTP status, header, and output.
 - Email/Slack/webhook **notifications** when cronjob fails and succeeds.
