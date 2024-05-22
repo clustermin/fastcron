@@ -1,0 +1,30 @@
+---
+title: Whitelist FastCron at Cloudflare
+---
+
+If your website uses Cloudflare service, please make sure that Cloudflare does not block FastCron.
+
+To add FastCron's IP addresses to the Cloudflare whitelist, follow this step-by-step:
+
+- Create a list of FastCron IPs in your Cloudflare account
+
+Visit **Manage Account** > **Configurations** > **Lists**, and create a new list.
+
+![Lists](https://fastcron.zendesk.com/hc/article_attachments/14592357410713)
+
+- Add [all IP addresses](/ip-address) to your new list
+
+![IP address](https://fastcron.zendesk.com/hc/article_attachments/14592489937945)
+
+- Create a firewall rule (WAF)
+
+Visit **Security** > **WAF**, create a new firewall rule
+
+![Firewall rule](https://fastcron.zendesk.com/hc/article_attachments/14592492087833)
+
+Create a new rule to **bypass** all features from all **IP source addresses**
+in the previous **list**.
+
+![Bypass rule](https://fastcron.zendesk.com/hc/article_attachments/14592516476185)
+
+After deploying the firewall rule, FastCron will no longer be blocked by Cloudflare.

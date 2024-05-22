@@ -28,6 +28,14 @@ export default defineConfig({
         ]
       },
       {
+        label: 'Guides',
+        autogenerate: { directory: 'guides' }
+      },
+      {
+        label: 'Tutorials',
+        autogenerate: { directory: 'tutorials' }
+      },
+      {
         label: 'FastCron API',
         items: [
           { label: 'Introduction', link: '/reference' },
