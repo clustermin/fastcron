@@ -79,12 +79,15 @@ https://username:password@example.com/backup.php
 
 We also support adding a token in the HTTP headers.
 
-### Does FastCron follows redirections?
-Yes, FastCron will follows redirections (301, 302, 307, 308).
-
-This feature helps in these cases:
-- You changed the script URL with redirections.
-- The cron script needs to split to several steps (e.g. Akeeba backup).
+### Can I send cookies along with my HTTP request?
+Yes, just edit your cronjob and add your cookie to the **HTTP headers** like this:
+```
+Cookie: name=value
+```
+Add multiple cookies like this:
+```
+Cookie: yummy_cookie=choco; tasty_cookie=strawberry
+```
 
 ### What HTTP methods are supported?
 We support GET, POST, PUT, PATCH, HEAD, OPTIONS, DELETE, TRACE, and CONNECT.
@@ -111,3 +114,11 @@ Yes, similar to your hosting's cron jobs, your script will overlap.
 If you set cron job to run every minute, and your script take more than 1 minute to complete, it'll overlap. There will be 2 instances running at the same time.
 
 To prevent overlapping, FastCron supports [Max instances](/blog/max-instances).
+
+
+### Does FastCron follows redirections?
+Yes, FastCron will follows redirections (301, 302, 307, 308).
+
+This feature helps in these cases:
+- You changed the script URL with redirections.
+- The cron script needs to split to several steps (e.g. Akeeba backup).
