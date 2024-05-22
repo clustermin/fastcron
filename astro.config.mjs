@@ -19,12 +19,12 @@ export default defineConfig({
       replacesTitle: false
     },
     sidebar: [
-      // {
-      //   label: 'Getting started',
-      //   items: [
-      //     { label: 'Welcome', link: '/docs' }
-      //   ]
-      // },
+      {
+        label: 'Getting started',
+        items: [
+          { label: 'Welcome', link: '/docs' }
+        ]
+      },
       {
         label: 'FastCron API',
         items: [
