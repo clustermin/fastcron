@@ -12,21 +12,21 @@ To add FastCron's IP addresses to the Cloudflare whitelist, follow this step-by-
 
 Visit **Manage Account** > **Configurations** > **Lists**, and create a new list.
 
-![Lists](https://fastcron.zendesk.com/hc/article_attachments/14592357410713)
+![Lists](/screenshots/cf-list.png)
 
 - Add [all IP addresses](/ip-address) to your new list
 
-![IP address](https://fastcron.zendesk.com/hc/article_attachments/14592489937945)
+![IP address](/screenshots/cf-ip.png)
 
 - Create a firewall rule (WAF)
 
 Visit **Security** > **WAF**, create a new firewall rule
 
-![Firewall rule](https://fastcron.zendesk.com/hc/article_attachments/14592492087833)
+![Firewall rule](/screenshots/cf-firewall-rule.png)
 
 Create a new rule to **bypass** all features from all **IP source addresses**
 in the previous **list**.
 
-![Bypass rule](https://fastcron.zendesk.com/hc/article_attachments/14592516476185)
+![Bypass rule](/screenshots/cf-bypass.png)
 
 After deploying the firewall rule, FastCron will no longer be blocked by Cloudflare.
