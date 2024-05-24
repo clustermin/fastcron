@@ -1,11 +1,11 @@
 ---
-title: Bypass website cache by adding random string
+title: Bypass your website cache by adding a random string
 sidebar:
   label: Random keywords
 ---
 
-To prevent your web server from caching your script execution results, 
-you should add a random string to your cronjob URL using the keyword `__random__`.
+Your web server may cache your script output, rendering online cronjob ineffective.
+You should add a random string to your cronjob URL using the keyword `__random__`.
 
 For example, you set up a cronjob with the URL to call
 
@@ -17,7 +17,7 @@ or
 https://example.com/cron.php?name=value&__random__
 ```
 
-Every time your cronjob is executed, the `__random__` keyword will be replaced with a random string:
+Every time your cronjob runs, the `__random__` keyword will be replaced with a random string:
 ```txt "oHJXpSbyDMZDEnBJ"
 https://example.com/cron.php?oHJXpSbyDMZDEnBJ
 ```
@@ -35,7 +35,7 @@ FastCron supports 4 keywords:
 
 You can also add those keywords to your POST data (only available with HTTP method POST or PUT).
 
-## Auto add random string to URL
+## Auto add random strings to URLs
 You can let us automatically add the `__random__` keyword to your cronjob URLs on the Account settings page.
 
 ![Account settings](/screenshots/account-settings.png)
