@@ -6,13 +6,13 @@ sidebar:
 
 
 ## Create one-time cronjobs
-If you would like to set up a one-time cronjob, i.e. a cronjob that runs at a specific time, you can follow these instructions:
+If you would like to set up a one-time cronjob, i.e. a cronjob that runs once at a specific time, you can follow these instructions:
 
-- Click create cron job
+- Click new Cron Job
 - Enter the URL to your cron script.
 - Enter the time into the **Time Pattern** field, e.g. **Feb 14, 2030, 7:30**
 - Make sure you select the correct **Timezone**
-- Click *Save* changes.
+- Click **Save** changes.
 
 And that's it. 
 You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the example above, and it'll show the next execution time so you can confirm the time settings are correct.
@@ -20,7 +20,7 @@ You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the
 ## Auto delete stopped one-time cronjobs
 To automatically delete one-time cronjobs after their executions, you can visit your account settings page and update **Delete stopped cronjobs after**.
 
-![Auto delete](https://fastcron.zendesk.com/hc/article_attachments/32276446236185)
+![Auto delete](/screenshots/account-settings.png)
 
 ## Create one-time cronjobs using our API
 Create a one-time cronjob using `cron_add`
@@ -34,7 +34,6 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
     }'
  ```
 
- 
 Create multiple one-time cronjobs using `cron_batch_add`
 
 ```bash
@@ -48,3 +47,5 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
         ]
     }'
 ```
+
+You can also use `@timestamp` for `expression`, e.g. `@1905821065` for **Friday, May 24, 2030 2:44:25**. This is easier to program, but harder to read on your cronjobs dashboard.
