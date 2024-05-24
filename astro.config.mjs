@@ -36,6 +36,10 @@ export default defineConfig({
         autogenerate: { directory: 'tutorials' }
       },
       {
+        label: 'Troubleshooting',
+        autogenerate: { directory: 'troubleshooting' }
+      },
+      {
         label: 'FastCron API',
         items: [
           { label: 'Introduction', link: '/reference' },
