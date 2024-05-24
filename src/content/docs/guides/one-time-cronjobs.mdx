@@ -24,7 +24,7 @@ To automatically delete one-time cronjobs after their executions, you can visit 
 
 ## Create one-time cronjobs using our API
 Create a one-time cronjob using `cron_add`
-```bash
+```bash "YOUR_API_TOKEN"
 curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
     -H 'Content-Type: application/json' \
     -d '{
@@ -36,7 +36,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
 
 Create multiple one-time cronjobs using `cron_batch_add`
 
-```bash
+```bash "YOUR_API_TOKEN"
 curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
     -H 'Content-Type: application/json' \
     -d '{
@@ -47,5 +47,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
         ]
     }'
 ```
+
+Please replace `YOUR_API_TOKEN` with your real API token.
 
 You can also use `@timestamp` for `expression`, e.g. `@1905821065` for **Friday, May 24, 2030 2:44:25**. This is easier to program, but harder to read on your cronjobs dashboard.
