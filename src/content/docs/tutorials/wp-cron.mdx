@@ -28,19 +28,17 @@ Open your `wp-config.php` file with a file manager (e.g. cPanel file manager)
 Go to the bottom of the database settings in `wp-config.php`, usually around line #37.
 
 Add the code below:
-
 ```php
 define('DISABLE_WP_CRON', true);
 ```
-
-Click Save
+then save the file.
 
 ## Set up cronjob at FastCron
 - Log in to your FastCron account
 - Click Add a cronjob 
 - Enter the URL to call
  ```
- https://example.com/wp-cron.php?doing_wp_cron&__random__
+ https://example.com/wp-cron.php?doing_wp_cron=1&__random__
  ```
  (replace `https://example.com/` with your actual WordPress homepage URL)
 - Select **When to call**: Every 5 minutes
@@ -50,4 +48,10 @@ And you're done!
 
 If you have some plugins that needs to update frequently, just change the time interval to **Every minute**.
 
-You may notice that I add `?__random__` to the cronjob URL. It'll add a **random string** every time your cronjob is executed, preventing your web server from caching the HTTP request. 
+You may notice that I add `?__random__` to the cronjob URL. It'll add a **random string** every time your cronjob is executed, preventing your web server from caching the HTTP request.
+
+## Popular WP plugins rely on WP Cron
+Some WordPress plugins rely on WP Cron to run their scheduled tasks.
+If you're using one of these, set up a cronjob to run your website WP cron.
+
+- WP Offload S3 https://wordpress.org/plugins/amazon-s3-and-cloudfront/

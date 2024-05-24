@@ -9,10 +9,10 @@ import { Aside } from '@astrojs/starlight/components';
 There are many customers trusting FastCron to run their WordPress plugin WP All Import.
 
 The official documentation for setting up cronjob can be found at
-https://www.wpallimport.com/documentation/recurring/cron/
+https://www.wpallimport.com/documentation/cron/
 
 <Aside type='tip'>
-Please follow the instruction at https://www.wpallimport.com/documentation/advanced/import-processing/, select the option **Iterative**, **Piece-By-Piece Processing**, and set it to process about 5 - 10 records at a time. It'll lower your ***processing*** cronjob execution time, and minimize problems.
+Please follow the instruction at https://www.wpallimport.com/documentation/import-processing/, select the option **Iterative**, **Piece-By-Piece Processing**, and set it to process about 5 - 10 records at a time. It'll lower your ***processing*** cronjob execution time, and minimize problems.
 </Aside>
 
 You need to set up 2 cronjobs: ***trigger*** and ***processing*** for each import.
@@ -21,10 +21,9 @@ You need to set up 2 cronjobs: ***trigger*** and ***processing*** for each impor
 To set up the ***trigger*** cronjob:
 
 - Click **+ Cron Job**
-- Enter the *trigger* URL into the **URL to call** field
-The *trigger* URL looks like this:
+- At **URL to call** field, enter the *trigger* URL:
 ```txt "YOUR_SECRET_KEY" "YOUR_IMPORT_ID"
-https://example.com/wp-cron.php?import_key=YOUR_SECRET_KEY&import_id=YOUR_IMPORT_ID&action=trigger
+https://example.com/wp-cron.php?import_key=YOUR_SECRET_KEY&import_id=YOUR_IMPORT_ID&action=trigger&rand=__random__
 ```
 - Select **When to call**: **Every hour**
 - Click **Save** cronjob
@@ -38,10 +37,9 @@ Expected script output:
 To set up the ***processing*** cronjob:
 
 - Click **+ Cron Job**
-- Enter the *trigger* URL into the **URL to call** field
-The *trigger* URL looks like this:
+- At **URL to call** field, enter the *processing* URL:
 ```txt "YOUR_SECRET_KEY" "YOUR_IMPORT_ID"
-https://example.com/wp-cron.php?import_key=YOUR_SECRET_KEY&import_id=YOUR_IMPORT_ID&action=processing
+https://example.com/wp-cron.php?import_key=YOUR_SECRET_KEY&import_id=YOUR_IMPORT_ID&action=processing&rand=__random__
 ```
 - Select **When to call**: **Every 2 minutes**
 - Click **Save** cronjob
