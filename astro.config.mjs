@@ -24,6 +24,7 @@ export default defineConfig({
         label: 'Getting started',
         items: [
           { label: 'Welcome', link: '/docs' },
+          { label: 'IP addresses', link: '/ip-addresses' },
           { label: 'FAQ', link: '/docs/faq' }
         ]
       },
