@@ -5,16 +5,17 @@ sidebar:
   order: 2
 ---
 
-import { Aside } from '@astrojs/starlight/components';
-
 There are many customers trusting FastCron to run their WordPress plugin WP All Import.
 
 The official documentation for setting up cronjob can be found at
 https://www.wpallimport.com/documentation/cron/
 
-<Aside type='tip'>
-Please follow the instruction at https://www.wpallimport.com/documentation/import-processing/, select the option **Iterative**, **Piece-By-Piece Processing**, and set it to process about 5 - 10 records at a time. It'll lower your ***processing*** cronjob execution time, and minimize problems.
-</Aside>
+:::note[Configure your plugin]
+Please follow the instruction at\
+https://www.wpallimport.com/documentation/import-processing/
+
+Select the option **Iterative**, **Piece-By-Piece Processing**, and set it to process about 5 - 10 records at a time. It'll lower your ***processing*** cronjob execution time, and minimize problems.
+:::
 
 You need to set up 2 cronjobs: ***trigger*** and ***processing*** for each import.
 
