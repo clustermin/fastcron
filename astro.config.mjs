@@ -19,6 +19,9 @@ export default defineConfig({
       alt: "FastCron",
       replacesTitle: false
     },
+    components: {
+      SocialIcons: './src/components/DocsHeader.astro'
+    },
     sidebar: [
       {
         label: 'Getting started',
