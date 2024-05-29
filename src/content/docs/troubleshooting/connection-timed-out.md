@@ -9,7 +9,7 @@ The cause may be a network glitch, your server is down/unreachable, etc.
 
 FastCron automatically retries this connection error once.
 
-If the problem is persistent, please double check your website and see if it's still online or not.
+If the problem is persistent, please double-check your website and see if it's still online or not.
 If it's down, please contact your hosting provider ASAP and ask them to check and fix it for you.
 
-If the problem vanishes, hopefully it's just a network glitch, and it solves itself.
+If the problem vanishes, it's probably just a network glitch, and it solves itself.

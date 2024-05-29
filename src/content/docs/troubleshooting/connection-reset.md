@@ -6,7 +6,8 @@ sidebar:
 
 As [asked and answered at StackOverflow](https://stackoverflow.com/questions/1434451/what-does-connection-reset-by-peer-mean),
 `Connection reset by peer` means your web server forcefully closes/interrupts the connection.
-It may be caused by a network interrupt, or a fatal error of your web server.
+
+It may be caused by a network interrupt or a fatal error of your web server.
 
 Web server restarts may also cause this error.
 
