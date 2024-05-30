@@ -28,7 +28,8 @@ export default defineConfig({
         items: [
           { label: 'Welcome', link: '/docs' },
           { label: 'IP addresses', link: '/ip-addresses' },
-          { label: 'FAQ', link: '/docs/faq' }
+          { label: 'FAQ', link: '/docs/faq' },
+          { label: 'Changelog', link: '/changelog' }
         ]
       },
       {
