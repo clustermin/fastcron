@@ -42,6 +42,7 @@ export default defineConfig({
       },
       {
         label: 'Troubleshooting',
+        collapsed: true,
         autogenerate: { directory: 'troubleshooting' }
       },
       {
@@ -52,6 +53,13 @@ export default defineConfig({
           { label: 'cron_*', link: '/reference/cron' },
           { label: 'group_*', link: '/reference/group' },
           { label: 'account_*', link: '/reference/account' }
+        ]
+      },
+      {
+        label: 'Compare to',
+        items: [
+          { label: 'cron-job.org', link: '/cron-job-org-alternative' },
+          { label: 'EasyCron', link: '/easycron-alternative' }
         ]
       }
     ],
