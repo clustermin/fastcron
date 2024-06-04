@@ -1,6 +1,6 @@
 ---
 title: "Max instances / overlapping executions"
-description: "You can allow up to 5 overlapping executions by adjusting the Max instances."
+description: "You can prevent overlapping or allow up to 5 overlapping executions by adjusting the Max instances."
 pubDate: "Dec 01, 2023"
 ---
 
