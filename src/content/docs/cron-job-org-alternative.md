@@ -35,7 +35,7 @@ Cron-job.org sustenances with donations.
 |                                                                    | Cron-job.org     | **FastCron**  |
 | ------------------------------------------------------------------ | ---------------- | ------------- |
 | Starting price                                                     | $12 / year       | $8 / month    |
-| Number of cronjobs                                                 | unlimited        | 20            |
+| Number of cronjobs                                                 | unlimited        | 15            |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **18,000**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
 | Max cron history logs                                              | 25               | **500**       |
