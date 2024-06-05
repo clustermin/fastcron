@@ -38,7 +38,7 @@ Cron-job.org sustenances with donations.
 | Number of cronjobs                                                 | unlimited        | 20            |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **18,000**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
-| Max cron history logs                                              | 25               | **120**       |
+| Max cron history logs                                              | 25               | **500**       |
 | Max cron timeout                                                   | 5 minutes        | **12 hours**   |
 | Max response size                                                  | 64 KB            | **100 MB**    |
 | Max failure threshold                                              | 150              | **1440**      |
