@@ -38,8 +38,8 @@ Cron-job.org sustenances with donations.
 | Number of cronjobs                                                 | unlimited        | 15            |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **18,000**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
-| Max cron history logs                                              | 25               | **500**       |
-| Max cron timeout                                                   | 5 minutes        | **12 hours**   |
+| Max cron history logs                                              | 25               | **150**       |
+| Max cron timeout                                                   | 5 minutes        | **12 hours**  |
 | Max response size                                                  | 64 KB            | **100 MB**    |
 | Max failure threshold                                              | 150              | **1440**      |
 | Max API calls per day                                              | 5,000            | **unlimited** |
@@ -47,7 +47,7 @@ Cron-job.org sustenances with donations.
 | Runs cronjobs on time                                              | no (4-40s delay) | **yes**       |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**       |
 | Runs cronjobs manually                                             | no               | **yes**       |
-| Track running cronjobs                                             | no               | **yes**        |
+| Track running cronjobs                                             | no               | **yes**       |
 
 To keep the table short, these premium features are available only at FastCron:
 
