@@ -51,7 +51,7 @@ Each cron execution results contains these members:
 | Name          | Type    | Description                                            |
 | ------------- | ------- | ------------------------------------------------------ |
 | url           | string  | The actual URL that our servers sent HTTP requests to. |
-| output        | string  | Your cronjob output, including HTTP headers and body.  |
+| output        | string  | Your script output                                     |
 | downloaded    | integer | Total output size (in bytes).                          |
 | httpStatus    | integer | HTTP status code e.g. 200                              |
 | error         | string  | Error message, if any.                                 |
