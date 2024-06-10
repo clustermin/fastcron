@@ -3,6 +3,14 @@ title: FastCron Changelog
 description: "We are releasing several updates a month. Read the latest updates here."
 ---
 
+## June 2024
+- 3 old servers are scheduled to removed
+    - **scj-app01** (64.225.48.218) removed on June 11, 2024, replaced with app1  (159.223.144.10)
+    - **scj-app02** (134.209.39.102) removed on June 18, 2024, replaced with app2 (143.244.166.206)
+    - **scj-app03** (143.198.114.177) removed on June 25, 2024, replaced with app3 (147.182.184.93)
+    - **scj-app04** (138.197.75.231) removed on July 2, 2024, replaced with app3 (147.182.184.93)
+- [On-demand servers](/ip-addresses#on-demand-servers) added.
+
 ## May 2024
 - You can now change your referral code.
 - Help center have been moved to [Docs](/docs).

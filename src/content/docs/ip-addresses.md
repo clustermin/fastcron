@@ -34,8 +34,18 @@ You can fetch our IP list at:
 
 Please ensure that we can reach your cronjob URLs from these IP addresses.
 
+
+## On-demand servers
+Sometimes, for testing and debugging purposes, we can add on-demand servers. 
+They will not be used to process your cronjobs unless you specifically select them in the server list.
+
+They may be added or removed based on our requirements.
+
 ## Subscribe to IP changes
 If you want to receive email notifications when we update our IP addresses,
 please log in to FastCron, visit Account > [Profile](https://app.fastcron.com/user), 
 check the box **Receive email notifications about FastCron IP change**.
 
+
+## Whitelist FastCron IP addresses
+See [How to whitelist FastCron IP addresses at Cloudflare](/guides/cloudflare-whitelist).
