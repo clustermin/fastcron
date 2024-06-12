@@ -17,7 +17,7 @@ Both FastCron and Cron-job.org have a free plan.
 | Max cron history logs                                              | 25               | 25             |
 | Max cron timeout                                                   | 30 seconds       | **60 seconds** |
 | Max response size                                                  | 8 KB             | **100 MB**     |
-| Max failure threshold                                              | 15               | **50**         |
+| Max failure threshold                                              | 15               | **20**         |
 | Max API calls per day                                              | 100              | **unlimited**  |
 | Custom timezone for cronjobs                                       | no               | **yes**        |
 | Runs cronjobs on time                                              | no (4-40s delay) | **yes**        |
@@ -38,10 +38,10 @@ Cron-job.org sustenances with donations.
 | Number of cronjobs                                                 | unlimited        | 15            |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **18,000**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
-| Max cron history logs                                              | 25               | **150**       |
+| Max cron history logs                                              | 25               | **200**       |
 | Max cron timeout                                                   | 5 minutes        | **12 hours**  |
 | Max response size                                                  | 64 KB            | **100 MB**    |
-| Max failure threshold                                              | 150              | **1440**      |
+| Max failure threshold                                              | 150              | **1000**      |
 | Max API calls per day                                              | 5,000            | **unlimited** |
 | Custom timezone for cronjobs                                       | no               | **yes**       |
 | Runs cronjobs on time                                              | no (4-40s delay) | **yes**       |
