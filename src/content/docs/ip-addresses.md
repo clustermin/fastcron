@@ -7,7 +7,6 @@ We are using several servers to process your cronjobs.
 
 Here are our IP addresses:
 ```
-64.225.48.218
 134.209.39.102
 143.198.114.177
 138.197.75.231
@@ -18,7 +17,6 @@ Here are our IP addresses:
 
 Our IPv6 addresses:
 ```
-2604:a880:800:10::7cf:5001
 2604:a880:800:10::80b:e001
 2604:a880:400:d0::98:3001
 2604:a880:800:10::a78:c001
