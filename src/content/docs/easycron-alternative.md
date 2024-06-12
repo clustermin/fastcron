@@ -12,7 +12,7 @@ Both FastCron and EasyCron have a free plan.
 |                                                          | EasyCron        | **FastCron**   |
 | -------------------------------------------------------- | --------------- | -------------- |
 | Requires monthly login                                   | yes             | **no**         |
-| Number of cronjobs                                       | 200             | 5              |
+| Number of cronjobs                                       | 200             | 3              |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs) | 200             | **300**        |
 | Minimum cron interval                                    | 20 minutes      | **5 minutes**  |
 | Max cron history logs                                    | 10              | **25**         |

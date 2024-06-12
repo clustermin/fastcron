@@ -11,7 +11,7 @@ Both FastCron and Cron-job.org have a free plan.
 
 |                                                                    | Cron-job.org     | **FastCron**   |
 | ------------------------------------------------------------------ | ---------------- | -------------- |
-| Number of cronjobs                                                 | unlimited        | 5              |
+| Number of cronjobs                                                 | unlimited        | 3              |
 | Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **300**        |
 | Minimum cron interval                                              | 1 minute         | 5 minutes      |
 | Max cron history logs                                              | 25               | 25             |
