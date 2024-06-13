@@ -163,12 +163,14 @@ Returns the structure of the deleted cronjob, with ID set to null.
 
 ## `cron_run`
 
-Schedule the cronjob to run within next minute. This doesn't change the cronjob time settings.
+Schedule the cronjob to run within next minute or at a specific time.
+This doesn't change the cronjob time settings.
 
-| Name      | Type    | Description    |
-| --------- | ------- | -------------- |
-| **token** | string  | Your API token |
-| **id**    | integer | Cronjob ID     |
+| Name      | Type    | Description              |
+| --------- | ------- | ------------------------ |
+| **token** | string  | Your API token           |
+| **id**    | integer | Cronjob ID               |
+| time      | integer | Timestamp to run cronjob |
 
 Returns the timestamp which cronjob will run at.
 

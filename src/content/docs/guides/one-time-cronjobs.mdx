@@ -1,9 +1,8 @@
 ---
-title: How to set up one-time cronjob
+title: How to set up one-time cronjobs
 sidebar:
-  label: One-time cronjob
+  label: One-time cronjobs
 ---
-
 
 ## Create one-time cronjobs
 If you would like to set up a one-time cronjob, i.e. a cronjob that runs once at a specific time, you can follow these instructions:
@@ -22,7 +21,23 @@ To automatically delete one-time cronjobs after their executions, you can visit 
 
 ![Auto delete](/screenshots/account-settings.png)
 
-## Create one-time cronjobs using our API
+## Run a cronjob at a specific time
+Alternatively, you can create a cronjob, then schedule to run it at a specific time
+using [`cron_run`](/reference/cron#cron_run).
+
+```bash "YOUR_API_TOKEN" "CRONJOB_ID"
+curl -X POST "https://app.fastcron.com/api/v1/cron_run" \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "token": "YOUR_API_TOKEN",
+        "id": CRONJOB_ID,
+        "time": 1905821065
+    }'
+ ```
+ The command above will run your cronjob at **Friday, May 24, 2030 2:44:25**.
+
+
+## Create one-time cronjobs using `cron_add`
 Create a one-time cronjob using `cron_add`
 ```bash "YOUR_API_TOKEN"
 curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
