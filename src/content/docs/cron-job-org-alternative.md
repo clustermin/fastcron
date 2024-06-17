@@ -12,7 +12,7 @@ Both FastCron and Cron-job.org have a free plan.
 |                                                                    | Cron-job.org     | **FastCron**   |
 | ------------------------------------------------------------------ | ---------------- | -------------- |
 | Number of cronjobs                                                 | unlimited        | 3              |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **300**        |
+| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **864**        |
 | Minimum cron interval                                              | 1 minute         | 5 minutes      |
 | Max cron history logs                                              | 25               | 25             |
 | Max cron timeout                                                   | 30 seconds       | **60 seconds** |
@@ -36,7 +36,7 @@ Cron-job.org sustenances with donations.
 | ------------------------------------------------------------------ | ---------------- | ------------- |
 | Starting price                                                     | $12 / year       | $8 / month    |
 | Number of cronjobs                                                 | unlimited        | 15            |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **18,000**    |
+| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **21,600**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
 | Max cron history logs                                              | 25               | **200**       |
 | Max cron timeout                                                   | 5 minutes        | **12 hours**  |

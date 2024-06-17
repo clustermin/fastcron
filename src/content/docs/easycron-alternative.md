@@ -13,7 +13,7 @@ Both FastCron and EasyCron have a free plan.
 | -------------------------------------------------------- | --------------- | -------------- |
 | Requires monthly login                                   | yes             | **no**         |
 | Number of cronjobs                                       | 200             | 3              |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs) | 200             | **300**        |
+| Number of [one-time cronjobs](/guides/one-time-cronjobs) | 200             | **864**        |
 | Minimum cron interval                                    | 20 minutes      | **5 minutes**  |
 | Max cron history logs                                    | 10              | **25**         |
 | Max cron timeout                                         | 5 seconds       | **60 seconds** |
@@ -33,7 +33,7 @@ EasyCron is a **free and cheap** cronjob service.
 | -------------------------------------------------------- | --------------- | ------------- |
 | Starting price                                           | $24 / year      | $80 / year    |
 | Number of cronjobs                                       | 8,000           | 15            |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs) | 8,000           | **18,000**    |
+| Number of [one-time cronjobs](/guides/one-time-cronjobs) | 8,000           | **21,600**    |
 | Minimum cron interval                                    | 1 minute        | **5 seconds** |
 | Max cron history logs                                    | 200             | 200           |
 | Max cron timeout                                         | 12 hours        | 12 hours      |
