@@ -35,8 +35,6 @@ Here's the list of cronjob status codes:
 | 0     | STATUS_ACTIVE   | Cronjob is active and running                     |
 | 1     | STATUS_DISABLED | Disabled by user                                  |
 | 2     | STATUS_EXPIRED  | Disabled due to account expired                   |
-| 3     | STATUS_INACTIVE | Disabled because of account daily execution limit |
-| 4     | STATUS_FAILED   | Disabled due to many consecutive failures         |
 
 ## Cron execution result
 

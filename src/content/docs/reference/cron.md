@@ -70,8 +70,7 @@ Add a new cronjob.
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
 | notifyEvery      | int     | 1                | When notify is true, send notification every notifyEvery fails.                                  |
 | ignoreHttpStatus | bool    | true             | True to not check your cron execution's HTTP result.                                             |
-| retryFailed      | bool    | true             | True to allow to keep trying failed cronjob.                                                     |
-| failureThreshold | integer | 10               | Number of failures allowed before we disable your failed cronjob.                                |
+| failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
