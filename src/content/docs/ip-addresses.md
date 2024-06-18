@@ -7,6 +7,7 @@ We are using several servers to process your cronjobs.
 
 Here are our IP addresses:
 ```
+138.197.75.231
 159.223.144.10
 143.244.166.206
 147.182.184.93
@@ -14,6 +15,7 @@ Here are our IP addresses:
 
 Our IPv6 addresses:
 ```
+2604:a880:800:10::a78:c001
 2604:a880:400:d0::33:f001
 2604:a880:400:d0::25cb:b001
 2604:a880:400:d0::18f1:f001
@@ -21,6 +23,7 @@ Our IPv6 addresses:
 
 Our /64 CIDR (for adding to Cloudflare List):
 ```
+2604:a880:800:10::/64
 2604:a880:400:d0::/64
 ```
 
