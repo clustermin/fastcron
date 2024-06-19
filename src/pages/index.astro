@@ -382,9 +382,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         >
           Frequently asked questions
         </h2>
-        <div
-          class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
-        >
+        <div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
           <div>
             <div class="mb-10">
               <h3
@@ -402,38 +400,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 >
                 What is FastCron?
               </h3>
+              <p class="text-gray-500 dark:text-gray-400 mb-3">
+                FastCron is an online cron job service. It'll run your task at
+                the scheduled time by sending an HTTP request to its URL.
+              </p>
               <p class="text-gray-500 dark:text-gray-400">
-                FastCron is an online cron job service. It'll run your script at
-                the scheduled time by sending a HTTP request to its URL. For
-                example, you can run your script <code>backup.php</code> daily by
-                setting up cronjob with the URL <code
-                  >https://example.com/path/backup.php</code
-                >
+                Website developers are using FastCron to run
+                <a href="/tutorials/wp-cron" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">WordPress Cron</a>, 
+                <a href="/guides/one-time-cronjobs" class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline">one-time cronjobs</a>, 
+                and mission-critical recurring tasks.
               </p>
             </div>
-            <div class="mb-10">
-              <h3
-                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
-              >
-                <svg
-                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  ><path
-                    fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path></svg
-                >
-                What is the daily execution number?
-              </h3>
-              <p class="text-gray-500 dark:text-gray-400">
-                It's the number of execution per day. For example, an hourly
-                cronjob runs 24 times a day, and a cronjob every 5 minutes will
-                run 288 times a day.
-              </p>
-            </div>
-            <div class="mb-10">
+            
+            <!-- <div class="mb-10">
               <h3
                 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
               >
@@ -453,6 +432,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 It's a cron job that runs repeatedly, e.g. every day, every
                 minute, etc. Disabled and one-time cron jobs won't count against
                 the recurring cronjob limit.
+              </p>
+            </div> -->
+            <div class="mb-10">
+              <h3
+                class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+              >
+                <svg
+                  class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"></path></svg
+                >
+                Can I update or cancel my plan?
+              </h3>
+              <p class="text-gray-500 dark:text-gray-400">
+                Yes, you can upgrade, downgrade, or cancel your account plan at any time.
               </p>
             </div>
           </div>
@@ -474,9 +473,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 What payment method do you support?
               </h3>
               <p class="text-gray-500 dark:text-gray-400">
-                Paddle will handle our payments, invoices, tax and email
-                notifications. They support <strong>PayPal</strong>, credit/debit
-                <strong>cards</strong>, Google Pay, Apple Pay.
+                Paddle will handle our payments, invoices, tax and email notifications. 
+                They support <strong>PayPal</strong>, credit/debit <strong>cards</strong>,
+                Google Pay, and Apple Pay.
               </p>
             </div>
             <div class="mb-10">
@@ -501,7 +500,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                 free plan automatically.
               </p>
             </div>
-            <div class="mb-10">
+            <!-- <div class="mb-10">
               <h3
                 class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
               >
@@ -525,9 +524,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
                   >email me</a
                 >.
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
+        <p class="text-gray-500 dark:text-gray-400 text-center">
+          If you have a question, please
+          <a
+            href="mailto:support@fastcron.com?subject=FastCron&body=I have a question!"
+            class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+            >email me</a
+          >.
+        </p>
       </div>
     </section>
 
