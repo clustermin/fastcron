@@ -37,7 +37,7 @@
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
                         <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span>Run <strong>every 5 minute</strong></span>
+                        <span><strong>5 minute</strong> interval</span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
@@ -85,7 +85,10 @@
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
                         <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span>Run <strong>every minute</strong></span>
+                        <span>
+                            <strong data-tooltip-target="starter-interval-tooltip" class="underline decoration-dotted">30 second</strong> 
+                            interval
+                        </span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
@@ -132,7 +135,10 @@
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
                         <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span>Run <strong>every minute</strong></span>
+                        <span>
+                            <strong data-tooltip-target="pro-interval-tooltip" class="underline decoration-dotted">10 second</strong> 
+                            interval
+                        </span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
@@ -177,7 +183,10 @@
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
                         <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span>Run <strong>every minute</strong></span>
+                        <span>
+                            <strong data-tooltip-target="biz-interval-tooltip" class="underline decoration-dotted">5 second</strong> 
+                            interval
+                        </span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
@@ -205,5 +214,25 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div id="starter-interval-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 max-w-80">
+        Base cronjob interval is 1 minute.
+        You can run cronjobs up to every 30 seconds, but it will count as 2 cronjobs.
+        <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+
+
+    <div id="pro-interval-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 max-w-80">
+        Base cronjob interval is 1 minute.
+        You can run cronjobs up to every 10 seconds, but it will count as 6 cronjobs.
+        <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+
+
+    <div id="biz-interval-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 max-w-80">
+        Base cronjob interval is 1 minute.
+        You can run cronjobs up to every 5 seconds, but it will count as 12 cronjobs.
+        <div class="tooltip-arrow" data-popper-arrow></div>
     </div>
 </section>

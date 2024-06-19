@@ -14,7 +14,7 @@ Failed then disabled cronjobs will no longer be retried and enabled.
   - 1 day if your cronjob runs 4 times a day or less
   - 3 hours if your cronjob runs 24 times a day or less
   - 1 hour otherwise
-- When the cronjob exceeds the failure threshold, it will be disabled forever.
+- When the cronjob exceeds the failure threshold, it will be disabled.
 - You will receive a cron notification (via email, Slack, or webhook) when that happened.
 
 #### Remove old servers
@@ -22,12 +22,13 @@ Failed then disabled cronjobs will no longer be retried and enabled.
 3 old servers are scheduled to removed:
 - **scj-app01** removed on June 11, 2024, replaced with app1 (159.223.144.10)
 - **scj-app02** removed on June 18, 2024, replaced with app2 (143.244.166.206)
-- **scj-app03** (143.198.114.177) removed on June 25, 2024, replaced with app3 (147.182.184.93)
+- **scj-app03** removed on June 25, 2024, replaced with app3 (147.182.184.93)
 - **scj-app04** (138.197.75.231) removed on July 2, 2024, replaced with app3 (147.182.184.93)
 
 #### Update `cron_run`
 
 You can now run your cronjob at a specific time using [`cron_run`](/reference/cron#cron_run) with `time` parameter.
+
 
 ## May 2024
 
