@@ -30,11 +30,11 @@ Each cronjob contains these members:
 
 Here's the list of cronjob status codes:
 
-| Value | Name            | Description                                       |
-| ----- | --------------- | ------------------------------------------------- |
-| 0     | STATUS_ACTIVE   | Cronjob is active and running                     |
-| 1     | STATUS_DISABLED | Disabled by user                                  |
-| 2     | STATUS_EXPIRED  | Disabled due to account expired                   |
+| Value | Name            | Description                     |
+| ----- | --------------- | ------------------------------- |
+| 0     | STATUS_ACTIVE   | Cronjob is active and running   |
+| 1     | STATUS_DISABLED | Disabled by user                |
+| 2     | STATUS_EXPIRED  | Disabled due to account expired |
 
 ## Cron execution result
 
@@ -80,6 +80,6 @@ Your account contains these members:
 | name        | string  | Account name                        |
 | timezone    | string  | Default timezone                    |
 | plan        | string  | Plan name e.g. Pro                  |
-| dailyExec   | integer | Daily execution limit e.g. 20000    |
+| cron        | integer | Max cronjobs e.g. 40                |
 | memberLimit | integer | Team member limit e.g. 5            |
 | expiryDate  | string  | Account expiry date e.g. 2023-12-31 |

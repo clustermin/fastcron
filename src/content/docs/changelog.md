@@ -5,6 +5,23 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 ## June 2024
 
+#### Add Zenduty integration and Notification channels
+
+You can add Zenduty API integration at the Notification channels tab.
+The Zenduty API URL looks like this
+```
+https://www.zenduty.com/api/events/INTEGRATION_KEY/
+```
+FastCron will send a test `info` message to your Zenduty.
+This channel is on the account level.
+All cronjobs' failure notifications will be sent to your Zenduty account.
+
+#### Clean up daily execution limits
+
+The base cronjob interval is 1 minute.
+You can create cronjobs to run up to every 5 seconds, but they will count as 12 cronjobs.
+You can create up to 1,440x one-time cronjobs.
+
 #### Change retrying failed cronjobs
 
 Failed then disabled cronjobs will no longer be retried and enabled.
