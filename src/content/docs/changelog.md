@@ -7,7 +7,7 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 #### Notification channels
 
-You can now add account-level notification channels including Slack, **Zenduty** (new!), and webhook.
+You can now add account-level notification channels including Slack, **Zenduty**, **Discord**, **Teams**, and webhook (JSON payload).
 Once added, all failure/success notifications will be sent to your channel(s).
 
 You can disable or delete a channel in case you don't want to receive further notifications.
@@ -36,10 +36,12 @@ Failed then disabled cronjobs will no longer be retried and enabled.
 #### Removed old servers
 
 3 old servers are scheduled to removed:
-- **scj-app01** removed on June 11, 2024, replaced with app1 (159.223.144.10)
-- **scj-app02** removed on June 18, 2024, replaced with app2 (143.244.166.206)
-- **scj-app03** removed on June 25, 2024, replaced with app3 (147.182.184.93)
-- **scj-app04** (138.197.75.231) removed on July 2, 2024, replaced with app3 (147.182.184.93)
+- **scj-app01** removed on June 11, 2024
+- **scj-app02** removed on June 18, 2024
+- **scj-app03** removed on June 25, 2024
+- **scj-app04** (138.197.75.231) removed on July 2, 2024
+
+Please ensure that we can reach your cronjob URLs with the new IP addresses by whitelisting our IP addresses.
 
 #### Updated `cron_run`
 
