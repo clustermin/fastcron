@@ -5,24 +5,23 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 ## June 2024
 
-#### Add Zenduty integration and Notification channels
+#### Notification channels
 
-You can add Zenduty API integration at the Notification channels tab.
-The Zenduty API URL looks like this
-```
-https://www.zenduty.com/api/events/INTEGRATION_KEY/
-```
-FastCron will send a test `info` message to your Zenduty.
-This channel is on the account level.
-All cronjobs' failure notifications will be sent to your Zenduty account.
+You can now add account-level notification channels including Slack, **Zenduty** (new!), and webhook.
+Once added, all failure/success notifications will be sent to your channel(s).
 
-#### Clean up daily execution limits
+You can disable or delete a channel in case you don't want to receive further notifications.
+
+FastCron will show the last error message when failing to send notifications to your channel.
+We will automatically disable your channel after 5 consecutive failures.
+
+#### Removed daily execution limits
 
 The base cronjob interval is 1 minute.
 You can create cronjobs to run up to every 5 seconds, but they will count as 12 cronjobs.
 You can create up to 1,440x one-time cronjobs.
 
-#### Change retrying failed cronjobs
+#### Changed retrying failed cronjobs
 
 Failed then disabled cronjobs will no longer be retried and enabled.
 - The default failure threshold is 20 consecutive failures.
@@ -34,7 +33,7 @@ Failed then disabled cronjobs will no longer be retried and enabled.
 - When the cronjob exceeds the failure threshold, it will be disabled.
 - You will receive a cron notification (via email, Slack, or webhook) when that happened.
 
-#### Remove old servers
+#### Removed old servers
 
 3 old servers are scheduled to removed:
 - **scj-app01** removed on June 11, 2024, replaced with app1 (159.223.144.10)
@@ -42,7 +41,7 @@ Failed then disabled cronjobs will no longer be retried and enabled.
 - **scj-app03** removed on June 25, 2024, replaced with app3 (147.182.184.93)
 - **scj-app04** (138.197.75.231) removed on July 2, 2024, replaced with app3 (147.182.184.93)
 
-#### Update `cron_run`
+#### Updated `cron_run`
 
 You can now run your cronjob at a specific time using [`cron_run`](/reference/cron#cron_run) with `time` parameter.
 
@@ -53,7 +52,7 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 - Help center have been moved to [Docs](/docs).
 - Blog have been moved to [/blog](/blog)
 - Account dashboard has been moved to https://app.fastcron.com
-- API endpoint is now `https://app.fastcron.com/app/v1`
+- API endpoint is now `https://app.fastcron.com/app/v1/`
 - 3 new [IP addresses](/ip-addresses) have been added.
 - Custom HTTP headers are now available in the free plan.
 - Show last **25 execution results** for the free plan (from 10 results).
