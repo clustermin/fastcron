@@ -41,6 +41,10 @@ export default defineConfig({
         autogenerate: { directory: 'tutorials' }
       },
       {
+        label: 'Channels',
+        autogenerate: { directory: 'integrations' }
+      },
+      {
         label: 'Troubleshooting',
         collapsed: true,
         autogenerate: { directory: 'troubleshooting' }
