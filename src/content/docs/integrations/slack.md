@@ -29,4 +29,6 @@ https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
 FastCron enables notifications for your cronjobs by default.
 
 To check it, edit cronjobs, at the section **Notifications**,
-ensure the **Notify ne: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
+ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
+
+FastCron will send you a message when a cronjob in your account fails, and when it succeeds again.
