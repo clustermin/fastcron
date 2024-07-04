@@ -39,7 +39,7 @@ Failed then disabled cronjobs will no longer be retried and enabled.
 - **scj-app01** removed on June 11, 2024
 - **scj-app02** removed on June 18, 2024
 - **scj-app03** removed on June 25, 2024
-- **scj-app04** (138.197.75.231) removed on July 2, 2024
+- **scj-app04** removed on July 2, 2024
 
 Please ensure that we can reach your cronjob URLs with the new IP addresses by whitelisting our IP addresses.
 
