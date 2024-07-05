@@ -18,11 +18,10 @@ Both FastCron and EasyCron have a free plan.
 | Max cron history logs                                    | 10              | **25**         |
 | Max cron timeout                                         | 5 seconds       | **60 seconds** |
 | Keep failure logs                                        | no              | **3**          |
-| Runs cronjobs on time                                    | no (2-3s delay) | **yes**        |
 | Email notifications                                      | no              | **yes**        |
 | Change HTTP method and headers                           | no              | **yes**        |
 
-FastCron runs cron jobs reliably, on time, with more features and better limits, even in the free plan.
+FastCron runs cron jobs reliably with more features and better limits, even in the free plan.
 
 ## Premium cronjobs service
 

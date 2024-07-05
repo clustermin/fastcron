@@ -20,12 +20,11 @@ Both FastCron and Cron-job.org have a free plan.
 | Max failure threshold                                              | 15               | **20**         |
 | Max API calls per day                                              | 100              | **unlimited**  |
 | Custom timezone for cronjobs                                       | no               | **yes**        |
-| Runs cronjobs on time                                              | no (4-40s delay) | **yes**        |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**        |
 | Runs cronjobs manually                                             | no               | **yes**        |
 | Track running cronjobs                                             | no               | **yes**        |
 
-FastCron runs cron jobs reliably, on time, with more features even in the free plan.
+FastCron runs cron jobs reliably with more features even in the free plan.
 
 ## Premium cronjobs service
 
@@ -44,7 +43,6 @@ Cron-job.org sustenances with donations.
 | Max failure threshold                                              | 150              | **1000**      |
 | Max API calls per day                                              | 5,000            | **unlimited** |
 | Custom timezone for cronjobs                                       | no               | **yes**       |
-| Runs cronjobs on time                                              | no (4-40s delay) | **yes**       |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**       |
 | Runs cronjobs manually                                             | no               | **yes**       |
 | Track running cronjobs                                             | no               | **yes**       |
