@@ -1,6 +1,8 @@
 ---
-title: Slack
+title: Slack integration
 description: "Receive cron notifications on your Slack channel when your cronjobs fail or succeed."
+sidebar:
+    label: Slack
 ---
 
 You can receive a message in your Slack channel when your cronjobs fail or succeed.
@@ -25,7 +27,7 @@ https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
 - Click the **Slack** button.
 - Paste the webhook URL, then **Save**.
 
-## Enable notification for your cronjobs
+## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
 To check it, edit cronjobs, at the section **Notifications**,

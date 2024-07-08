@@ -1,6 +1,8 @@
 ---
-title: Zenduty
+title: Zenduty integration
 description: "Receive cron notifications to your Zenduty account when your cronjobs fail or succeed."
+sidebar:
+    label: Zenduty
 ---
 
 You can get Zenduty incident notifications when your cronjobs fail.
@@ -30,10 +32,10 @@ The webhook URL must contain the integration key above like this:
 https://www.zenduty.com/api/events/INTEGRATION_KEY/
 ```
 
-## Enable notification for your cronjobs
+## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
 To check it, edit cronjobs, at the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
-FastCron will send you a message when a cronjob in your account fails, and when it succeeds again.
+FastCron will create an incident when a cronjob in your account fails, and resolves when it succeeds again.
