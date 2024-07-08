@@ -46,10 +46,10 @@ This may not be good for you:</p>
 <p>It eats up your <strong>server resources</strong> e.g. CPU cycles, memory, etc, as it needs to check the scheduled task list every time it’s triggered.</p>
 </li>
 <li>
-<p>It’s not <strong>stable</strong>, as it depends on website visits. If there are no visits for some time, the backend tasks will not be executed.</p>
+<p>It’s not <strong>stable</strong>, because it depends on website visits. If there are no visits for some time, the backend tasks will not run.</p>
 </li>
 <li>
-<p>It’s not <strong>on time</strong>. If you want some functions to execute at an exact time, you’d better use a reliable cronjob service like FastCron.</p>
+<p>It’s not <strong>on time</strong>. If you want some functions to execute at an exact time, you’d better use a reliable cronjob service like <strong>FastCron</strong>.</p>
 </li>
 </ul>
 <p>To set up cronjobs for WP Cron, follow these instructions:</p>
@@ -69,11 +69,13 @@ Go to the bottom of the database settings in <code dir="auto">wp-config.php</cod
 <p>(replace <code dir="auto">https://example.com/</code> with your actual WordPress homepage URL)</p>
 <ul>
 <li>Select <strong>When to call</strong>: Every 5 minutes</li>
-<li>Click Save changes.</li>
+<li>Click Save.</li>
 </ul>
 <p>And you’re done!</p>
-<p>If you have some plugins that needs to update frequently, just change the time interval to <strong>Every minute</strong>.</p>
-<p>You may notice that I add <code dir="auto">?__random__</code> to the cronjob URL. It’ll add a <strong>random string</strong> every time your cronjob is executed, preventing your web server from caching the HTTP request.</p>
+<p>If you have some plugins that need to update frequently, just change the time interval to <strong>Every minute</strong>.</p>
+<p>You may notice that I added <code dir="auto">?__random__</code> to the cronjob URL.
+It’ll add a <strong>random string</strong> every time your cronjob is executed,
+preventing your web server from caching the HTTP request.</p>
 <h2 id="popular-wp-plugins-rely-on-wp-cron">Popular WP plugins rely on WP Cron</h2>
 <p>Some WordPress plugins rely on WP Cron to run their scheduled tasks.
 If you’re using one of these, set up a cronjob to run your website WP cron.</p>

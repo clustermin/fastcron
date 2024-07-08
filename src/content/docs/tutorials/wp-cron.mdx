@@ -6,20 +6,15 @@ sidebar:
 ---
 
 ## About WP Cron
-**WordPress Cron** (WP Cron, `wp-cron.php`) is the internal task scheduler in the **WordPress** website.
-It is used to run WordPress scheduled tasks.
-Many WP plugins rely on WP Cron to run their backend functions.
 
-By default WP Cron is triggered by website visits: every time a visitor loads your website, there is a small chance that your WP Cron is triggered, and it'll execute on schedule. 
-This may not be good for you:
+**WordPress Cron** (wp-cron.php) is the built-in task scheduler in WordPress, used to run scheduled tasks. Many plugins depend on WP Cron for their backend functions.
 
-- The **website speed** will be decreased, as it must execute backend functions.
+By default, WP Cron is triggered by website visits. Every time a visitor loads your site, there's a small chance WP Cron will run and execute scheduled tasks. This approach has some downsides:
 
-- It eats up your **server resources** e.g. CPU cycles, memory, etc, as it needs to check the scheduled task list every time it's triggered.
-
-- It's not **stable**, as it depends on website visits. If there are no visits for some time, the backend tasks will not be executed.
-
-- It's not **on time**. If you want some functions to execute at an exact time, you'd better use a reliable cronjob service like FastCron.
+- **Website Speed**: Running backend functions can slow down your site.
+- **Server Resources**: Checking the scheduled task list each time WP Cron is triggered consumes CPU cycles and memory.
+- **Reliability**: WP Cron depends on site visits, so if there are no visitors, tasks won't be executed.
+- **Timeliness**: If you need tasks to run at specific times, it's better to use a reliable cronjob service like FastCron.
 
 To set up cronjobs for WP Cron, follow these instructions:
 
@@ -42,13 +37,15 @@ then save the file.
  ```
  (replace `https://example.com/` with your actual WordPress homepage URL)
 - Select **When to call**: Every 5 minutes
-- Click Save changes.
+- Click Save.
 
 And you're done!
 
-If you have some plugins that needs to update frequently, just change the time interval to **Every minute**.
+If you have some plugins that need to update frequently, just change the time interval to **Every minute**.
 
-You may notice that I add `?__random__` to the cronjob URL. It'll add a **random string** every time your cronjob is executed, preventing your web server from caching the HTTP request.
+You may notice that I added `?__random__` to the cronjob URL.
+It'll add a **random string** every time your cronjob is executed, 
+preventing your web server from caching the HTTP request.
 
 ## Popular WP plugins rely on WP Cron
 Some WordPress plugins rely on WP Cron to run their scheduled tasks.
