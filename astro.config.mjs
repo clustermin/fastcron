@@ -33,6 +33,10 @@ export default defineConfig({
         ]
       },
       {
+        label: 'Common questions',
+        autogenerate: { directory: 'questions' }
+      },
+      {
         label: 'Guides',
         autogenerate: { directory: 'guides' }
       },

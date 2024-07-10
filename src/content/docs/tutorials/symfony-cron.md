@@ -63,7 +63,7 @@ class CleanupCommand extends Command
 To run it once a day, at 5:30, you need to set up a cronjob on your server like this:
 
 ```sh
-30 5 * * * cd /path/to/project/root && php bin/console app:cleanup
+30 5 * * * cd /home/example.com && php bin/console app:cleanup
 ```
 
 Everything is okay, until it's not:
