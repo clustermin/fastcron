@@ -7,7 +7,7 @@ sidebar:
 ## About Symfony
 
 Symfony is one of the most popular PHP frameworks.
-They also provide multiple components used by other frameworks like Laravel.
+It also provides multiple components used by other frameworks like Laravel.
 
 ## Running Symfony cronjobs, the old way
 
