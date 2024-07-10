@@ -1,5 +1,5 @@
 ---
-title: Integrations
+title: Notification channels
 description: "Receive cron notifications on your channels when your cronjobs fail or succeed."
 ---
 

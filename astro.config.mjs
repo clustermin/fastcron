@@ -41,7 +41,7 @@ export default defineConfig({
         autogenerate: { directory: 'tutorials' }
       },
       {
-        label: 'Channels',
+        label: 'Integrations',
         autogenerate: { directory: 'integrations' }
       },
       {
