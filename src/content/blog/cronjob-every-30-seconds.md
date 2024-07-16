@@ -14,7 +14,8 @@ If you are using the **Cron Jobs** feature from your hosting or your server `cro
 Now your `script.sh` will run every 30 seconds.
 
 ## Tired of your subpar Cron Jobs?
-FastCron is the best place to run your cronjob every 30 seconds. You just need to create **one cronjob**, and you'll get:
+FastCron is the best place to run your cronjob every 30 seconds.
+You just need to create **one cronjob**, and you'll get:
 
 - Full cron logs including starting time, total time, script output, etc.
 - Email notifications when your cronjob fails or backs up again.
