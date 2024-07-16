@@ -18,7 +18,6 @@ Both FastCron and Cron-job.org have a free plan.
 | Max response size                                                  | 8 KB             | **100 MB**     |
 | Max failure threshold                                              | 15               | **20**         |
 | Max API calls per day                                              | 100              | **unlimited**  |
-| Custom timezone for cronjobs                                       | no               | **yes**        |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**        |
 | Runs cronjobs manually                                             | no               | **yes**        |
 | Track running cronjobs                                             | no               | **yes**        |
