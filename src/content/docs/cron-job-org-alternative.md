@@ -12,7 +12,6 @@ Both FastCron and Cron-job.org have a free plan.
 |                                                                    | Cron-job.org     | **FastCron**   |
 | ------------------------------------------------------------------ | ---------------- | -------------- |
 | Number of cronjobs                                                 | unlimited        | 3              |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **864**        |
 | Minimum cron interval                                              | 1 minute         | 5 minutes      |
 | Max cron history logs                                              | 25               | 25             |
 | Max cron timeout                                                   | 30 seconds       | **60 seconds** |
@@ -35,7 +34,6 @@ Cron-job.org sustenances with donations.
 | ------------------------------------------------------------------ | ---------------- | ------------- |
 | Starting price                                                     | $12 / year       | $9 / month    |
 | Number of cronjobs                                                 | unlimited        | 15            |
-| Number of [one-time cronjobs](/guides/one-time-cronjobs)           | no               | **21,600**    |
 | Minimum cron interval                                              | 1 minute         | **5 seconds** |
 | Max cron history logs                                              | 25               | **200**       |
 | Max cron timeout                                                   | 5 minutes        | **1 hour**  |
@@ -55,7 +53,7 @@ To keep the table short, these premium features are available only at FastCron:
 - Mark cronjob as failed if its output (not) contains a word
 - Retry failed cronjobs
 - [Repeat cronjobs](/blog/repeat-cronjob) when/until its output contains a word
-- **Slack**, **webhook** notifications
+- Integrations with [Slack, Discord, Teams, etc](/integrations)
 - **Team management** with roles
 - Send email notifications to other team members when cron fails.
 
