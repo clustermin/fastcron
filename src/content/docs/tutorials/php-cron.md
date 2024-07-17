@@ -9,7 +9,7 @@ sidebar:
 PHP is one of the most popular web programming languages.
 It lets you quickly create and improve websites, from a simple one-page website
 to full content managment system like [WordPress](/tutorials/wp-cron) 
-or an ever-changing [SaaS](/tutorial/symfony-cron).
+or an ever-changing [SaaS](/tutorial/laravel-cron).
 
 
 ## Run PHP cronjobs via crontab

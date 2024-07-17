@@ -11,7 +11,7 @@ It also provides multiple components used by other frameworks like Laravel.
 
 ## Running Symfony cronjobs, the old way
 
-Unlike Laravel, Symfony doesn't have a recommended way to run cronjobs.
+Unlike [Laravel](/tutorials/laravel-cron), Symfony doesn't have a recommended way to run cronjobs.
 
 Usually, you create a command using the `make` bundle:
 
@@ -70,7 +70,7 @@ Everything is okay, until it's not:
 - Some error occurs, and it fails silently.
 - You need to change the time pattern, and you forgot the crontab syntax (`minute hour day month weekday` by the way).
 - You need the script output from last Thursday, and there's no way to retrieve it.
-- You need to test-run it. Now log in to your server and do your thing.
+- You need to test-run it. Now log in to your server and work your magic.
 - You changed the server, and you forgot to add the cronjob.
 
 Some say cronjobs are not to be trusted, let's add a cronjob monitoring service.
