@@ -69,7 +69,6 @@ Add a new cronjob.
 | httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters, e.g.                |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
 | notifyEvery      | int     | 1                | When notify is true, send notification every notifyEvery fails.                                  |
-| ignoreHttpStatus | bool    | true             | True to not check your cron execution's HTTP result.                                             |
 | failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |
