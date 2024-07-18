@@ -4,9 +4,9 @@ description: "We are releasing several updates a month. Read the latest updates 
 ---
 
 ## July 2024
-#### Cronjob statistics and monthly report
-FastCron has started collecting cronjob statistics (total runs/failures, average execution times, total 4xx/5xx responses) since July 15.
-You can choose to receive monthly reports on your profile page.
+
+#### Unlimited team members
+You can now add unlimited team members to your account, even in the free plan!
 
 #### Ignore HTTP status is removed
 Your cronjob URLs should return HTTP status code 2xx.
@@ -15,6 +15,10 @@ Otherwise, they will be marked as failed and disabled after a number of consecut
 Previously, you can choose to ignore all HTTP status codes (3xx, 4xx, 5xx).
 The option has been removed.
 You can choose to ignore one HTTP status code at a time on the cron logs page or in a failure notification email.
+
+#### Cronjob statistics and monthly report
+FastCron has started collecting cronjob statistics (total runs/failures, average execution times, total 4xx/5xx responses) since July 15.
+You can choose to receive monthly reports on your profile page.
 
 ## June 2024
 
