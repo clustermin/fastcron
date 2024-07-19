@@ -1,7 +1,7 @@
 ---
-title: List of free cronjob services
+title: List of free cronjob services in 2024
 description: Need an alternative to your hosting provider cronjobs? Try one of these free online cronjob services!
-pubDate: Sep 08, 2019
+pubDate: July 7 2024
 ---
 
 Some hosting providers limit the usage of their Cron Jobs.
