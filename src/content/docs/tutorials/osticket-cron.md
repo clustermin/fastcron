@@ -6,7 +6,7 @@ sidebar:
 ---
 
 
-When uncompressing osTicket installation package, you will see two folders including `upload` (which you upload to your server to install osTicket), and `scripts` (which contains various scripts).
+When extracting osTicket installation package, you will see two folders including `upload` (which you upload to your server to install osTicket), and `scripts` (which contains various scripts).
 
 When you completed setting up your osTicket, open the file `rcron.php` in the `scripts` folder, then update line 24 and 25 as below:
 
