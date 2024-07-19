@@ -12,7 +12,7 @@ If you want to use **recurring invoices**, you need to set up a cronjob.
 Follow this step-by-step to set up a cronjob for free:
 
 - Visit your InvoicePlane **Settings** > **General** page and copy the *cron key*.
-- Log in to FastCron, click the new **Cron job** button.
+- [Log in to FastCron](https://app.fastcron.com/login), click the new **Cron job** button.
 - Enter this cronjob URL into **URL to call** (replace `example.com/invoices` with your InvoicePlane URL)
 ```sh "CRON_KEY"
 https://example.com/invoices/cron/recur/CRON_KEY
