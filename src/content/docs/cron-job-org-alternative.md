@@ -9,40 +9,42 @@ Cron-job.org is a free cronjob service that allows you to run cronjobs from ever
 
 Both FastCron and Cron-job.org have a free plan.
 
-|                                                                    | Cron-job.org     | **FastCron**   |
-| ------------------------------------------------------------------ | ---------------- | -------------- |
-| Number of cronjobs                                                 | unlimited        | 3              |
-| Minimum cron interval                                              | 1 minute         | 5 minutes      |
-| Max cron history logs                                              | 25               | 25             |
-| Max cron timeout                                                   | 30 seconds       | **60 seconds** |
-| Max response size                                                  | 8 KB             | **100 MB**     |
-| Max failure threshold                                              | 15               | **20**         |
-| Max API calls per day                                              | 100              | **unlimited**  |
-| [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**        |
-| Runs cronjobs manually                                             | no               | **yes**        |
-| Track running cronjobs                                             | no               | **yes**        |
+|                                                                    | Cron-job.org | **FastCron**   |
+| ------------------------------------------------------------------ | ------------ | -------------- |
+| Number of cronjobs                                                 | unlimited    | 3              |
+| Minimum cron interval                                              | 1 minute     | 5 minutes      |
+| Max cron history logs                                              | 25           | 25             |
+| Max cron timeout                                                   | 30 seconds   | **60 seconds** |
+| Max response size                                                  | 8 KB         | **100 MB**     |
+| Max failure threshold                                              | 15           | **20**         |
+| Max API calls per day                                              | 100          | **unlimited**  |
+| [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no           | **yes**        |
+| Runs cronjobs manually                                             | no           | **yes**        |
+| Track running cronjobs                                             | no           | **yes**        |
+| Team members                                                       | no           | **unlimited**  |
 
 FastCron runs cron jobs reliably with more features even in the free plan.
 
 ## Premium cronjobs service
 
 FastCron is a premium service for professional website developers.
-Cron-job.org sustenances with donations.
+Cron-job.org relies on donations.
 
-|                                                                    | Cron-job.org     | **FastCron**  |
-| ------------------------------------------------------------------ | ---------------- | ------------- |
-| Starting price                                                     | $12 / year       | $9 / month    |
-| Number of cronjobs                                                 | unlimited        | 15            |
-| Minimum cron interval                                              | 1 minute         | **5 seconds** |
-| Max cron history logs                                              | 25               | **200**       |
-| Max cron timeout                                                   | 5 minutes        | **1 hour**  |
-| Max response size                                                  | 64 KB            | **100 MB**    |
-| Max failure threshold                                              | 150              | **1000**      |
-| Max API calls per day                                              | 5,000            | **unlimited** |
-| Custom timezone for cronjobs                                       | no               | **yes**       |
-| [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no               | **yes**       |
-| Runs cronjobs manually                                             | no               | **yes**       |
-| Track running cronjobs                                             | no               | **yes**       |
+|                                                                    | Cron-job.org | **FastCron**  |
+| ------------------------------------------------------------------ | ------------ | ------------- |
+| Starting price                                                     | $12 / year   | $9 / month    |
+| Number of cronjobs                                                 | unlimited    | 15            |
+| Minimum cron interval                                              | 1 minute     | **5 seconds** |
+| Max cron history logs                                              | 25           | **200**       |
+| Max cron timeout                                                   | 5 minutes    | **1 hour**    |
+| Max response size                                                  | 64 KB        | **100 MB**    |
+| Max failure threshold                                              | 150          | **1000**      |
+| Max API calls per day                                              | 5,000        | **unlimited** |
+| Custom timezone for cronjobs                                       | no           | **yes**       |
+| [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no           | **yes**       |
+| Runs cronjobs manually                                             | no           | **yes**       |
+| Track running cronjobs                                             | no           | **yes**       |
+| Team members                                                       | no           | **unlimited** |
 
 To keep the table short, these premium features are available only at FastCron:
 

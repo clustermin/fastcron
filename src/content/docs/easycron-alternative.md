@@ -22,6 +22,7 @@ Both FastCron and EasyCron have a free plan.
 | Keep failure logs                | no         | **3**          |
 | Email notifications              | no         | **yes**        |
 | Change HTTP method and headers   | no         | **yes**        |
+| Team members                     | no   | **unlimited**         |
 
 FastCron runs cron jobs reliably with more features and better limits, even in the free plan.
 
@@ -42,7 +43,7 @@ EasyCron is a **free and cheap** cronjob service.
 | Max cron timeout                 | 12 hours     | 1 hour        |
 | Keep failure logs                | 20           | 20            |
 | Webhook notifications            | from $120/yr | **yes**       |
-| Team members                     | from $120/yr | **2**         |
+| Team members                     | from $120/yr | **unlimited**         |
 
 EasyCron uses EPD (executions per day) to limit number of cronjobs and their interval.
 FastCron just limit number of cronjobs, with base cron interval 1 minute.
