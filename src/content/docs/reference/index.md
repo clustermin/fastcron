@@ -6,8 +6,7 @@ description: "FastCron API Docs. Overview, request and response format."
 With an API Token, you can work with your cronjobs, groups, and account settings without logging in.
 
 The API token is a 32-character string generated for all FastCron users.
-You can visit your <a href="https://app.fastcron.com/user" target="blank" rel="noindex, nofollow">Profile</a>
-page to copy your API key.
+You can visit your **Profile** page to copy your API key.
 
 ## API endpoint
 

@@ -23,7 +23,7 @@ https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
 
 ## Add it to your account Channels
 
-- Click the tab [**Channels**](https://app.fastcron.com/account/channel) on your account dashboard.
+- Click the tab **Channels** on your account dashboard.
 - Click the **Slack** button.
 - Paste the webhook URL, then **Save**.
 

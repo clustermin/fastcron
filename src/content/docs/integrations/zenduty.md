@@ -23,7 +23,7 @@ Now you'll get an integration key that allows FastCron to create and resolve inc
 
 ## Add it to your account Channels
 
-- Click the tab [**Channels**](https://app.fastcron.com/account/channel) on your account dashboard.
+- Click the tab **Channels** on your account dashboard.
 - Click the **Zenduty** button.
 - Paste the webhook URL, then **Save**.
 

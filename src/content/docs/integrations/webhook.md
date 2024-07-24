@@ -11,7 +11,7 @@ To set up integration from FastCron to a custom webhook URL, follow the instruct
 
 ## Add your webhook URL to Channels
 
-- Click the tab [**Channels**](https://app.fastcron.com/account/channel) on your account dashboard.
+- Click the tab **Channels** on your account dashboard.
 - Click the **Webhook** button.
 - Paste the webhook URL, then **Save**.
 

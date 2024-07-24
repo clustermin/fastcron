@@ -33,7 +33,7 @@ Please ensure that we can reach your cronjob URLs from these IP addresses.
 
 ## Subscribe to IP changes
 If you want to receive email notifications when we update our IP addresses,
-please log in to FastCron, visit Account > [Profile](https://app.fastcron.com/user), 
+please log in to FastCron, visit Account > Profile, 
 check the box **Receive email notifications about FastCron IP change**.
 
 

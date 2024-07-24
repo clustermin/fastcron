@@ -21,7 +21,7 @@ https://NAME.webhook.office.com/STUFF/GO_HERE
 
 ## Add it to your account Channels
 
-- Click the tab [**Channels**](https://app.fastcron.com/account/channel) on your account dashboard.
+- Click the tab **Channels** on your account dashboard.
 - Click the **Teams** button.
 - Paste the webhook URL, then **Save**.
 
