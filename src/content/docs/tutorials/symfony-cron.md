@@ -2,6 +2,7 @@
 title: How to set up cronjobs for Symfony
 sidebar:
   label: Symfony cron
+  order: 3
 ---
 
 ## About Symfony

@@ -2,7 +2,7 @@
 title: How to set up cronjob for InvoicePlane
 sidebar:
   label: InvoicePlane cron
-  order: 3
+  order: 4
 ---
 
 <a href="https://invoiceplane.com/?ref=fastcron.com" rel="nofollow" target="_blank">InvoicePlane</a> is a self-hosted open source application

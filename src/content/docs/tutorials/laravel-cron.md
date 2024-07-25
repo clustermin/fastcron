@@ -2,6 +2,7 @@
 title: How to set up cronjobs for Laravel
 sidebar:
   label: Laravel cron
+  order: 3
 ---
 
 ## About Laravel
