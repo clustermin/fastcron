@@ -32,4 +32,4 @@ Here are some examples for you:
 - Run on Friday the 12th, at 8:00: set the expression to `1 day 8:00` (or `0 8 * * *`) and the filter to `day == 12 and weekday == 'Fri'`
 - Run only on Tuesday and Wednesday, from day 10 to 20: `(weekday == 'Tue' or weekday == 'Wed') and day >= 10 and day <= 20` or `weekday in ['Tue', 'Wed'] and day >= 10 and day <= 20`
 
-**This feature is available for the Indie, Team, and Business plans.**
+This feature is available in all premium plans.
