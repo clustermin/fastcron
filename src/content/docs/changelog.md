@@ -3,6 +3,15 @@ title: FastCron Changelog
 description: "We are releasing several updates a month. Read the latest updates here."
 ---
 
+## August 2024
+
+## SSL certificate expiry dates
+
+FastCron will monitor your SSL certificate expiry dates for your active cronjobs.
+You can view the *SSL cert expiry dates* on the **Host** tab.
+
+It will be included in the monthly report.
+
 ## July 2024
 
 #### Unlimited team members
