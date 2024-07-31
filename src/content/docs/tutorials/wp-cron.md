@@ -11,10 +11,10 @@ sidebar:
 
 By default, WP Cron is triggered by website visits. Every time a visitor loads your site, there's a small chance WP Cron will run and execute scheduled tasks. This approach has some downsides:
 
-- **Website Speed**: Running backend functions can slow down your site.
-- **Server Resources**: Checking the scheduled task list each time WP Cron is triggered consumes CPU cycles and memory.
-- **Reliability**: WP Cron depends on site visits, so if there are no visitors, tasks won't be executed.
-- **Timeliness**: If you need tasks to run at specific times, it's better to use a reliable cronjob service like FastCron.
+- Running backend functions can slow down your site.
+- Checking the scheduled task list each time WP Cron is triggered consumes CPU cycles and memory.
+- WP Cron depends on site visits, so if there are no visitors, tasks won't be executed.
+- If you need tasks to run at specific times, it's better to use a reliable cronjob service like FastCron.
 
 To set up cronjobs for WP Cron, follow these instructions:
 
