@@ -6,7 +6,8 @@ sidebar:
 ---
 
 ## About Mailster
-Mailster (https://mailster.co/) is a WordPress newsletter plugin. It requires a cronjob to send scheduled emails to your subscribers.
+<a href="https://mailster.co/?ref=fastcron.com" target="_blank" rel="nofollow">Mailster</a>
+is a WordPress newsletter plugin. It requires a cronjob to send scheduled emails to your subscribers.
 
 ## Do NOT use a *real cron*
 Mailster cron script relies on JavaScript to process its tasks.

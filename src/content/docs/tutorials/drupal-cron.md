@@ -17,8 +17,10 @@ Follow this step-by-step to set up a cronjob for Drupal:
 | Drupal 6 and earlier | `https://www.example.com/cron.php`                |
 - [Log in to FastCron](https://app.fastcron.com/login), click the new **Cron job** button.
 - Enter the cronjob URL into **URL to call**
-- Select **When to call: 5 minutes**, then **Save** and run your cronjob
+- Select **When to call: Every 5 minutes**, then **Save** and run your cronjob
 
 And that's it.
 
 FastCron will run your cronjob for free, no monthly login required.
+
+If you're on a [premium plan](/pricing), you can run the cronjob every minute.

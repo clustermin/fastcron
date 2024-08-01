@@ -17,7 +17,7 @@ Follow this step-by-step to set up a cronjob for free:
 ```sh "CRON_KEY"
 https://example.com/invoices/cron/recur/CRON_KEY
 ```
-- Select **When to call: 1 day**, then **Save** and run your cronjob
+- Select **When to call: Every day**, then **Save** and run your cronjob
 
 And that's it.
 

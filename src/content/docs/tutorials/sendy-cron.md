@@ -17,14 +17,14 @@ Follow this step-by-step to set up cronjobs for free:
 ```sh
 https://example.com/sendy/scheduled.php
 ```
-- Select **When to call: 5 minutes**, then **Save** and run your cronjob
+- Select **When to call: Every 5 minutes**, then **Save** and run your cronjob
 
 - Click the new **Cron job** button again
 - Enter this cronjob URL into the **URL to call** field:
 ```sh
 https://example.com/sendy/autoresponders.php
 ```
-- Select **When to call: 5 minutes**, then **Save** and run your cronjob
+- Select **When to call: Every 5 minutes**, then **Save** and run your cronjob
 
 And that's it.
 
