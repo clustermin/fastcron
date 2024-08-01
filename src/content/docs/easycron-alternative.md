@@ -35,9 +35,9 @@ EasyCron is a **free and cheap** cronjob service.
 | -------------------------------- | ------------ | ------------- |
 | Starting price                   | $24 / year   | $90 / year    |
 | Minimum cron interval            | 1 minute     | **5 seconds** |
-| Max number of daily cronjobs [1] | 8,000        | 15            |
-| Max number of 1-minute cronjobs  | 5            | **15**        |
-| Max number of 30-second cronjobs | 0            | **7**         |
+| Max number of daily cronjobs [1] | 8,000        | 12            |
+| Max number of 1-minute cronjobs  | 5            | **12**        |
+| Max number of 30-second cronjobs | 0            | **6**         |
 | Max number of 5-second cronjobs  | 0            | **1**         |
 | Max cron history logs            | 200          | 200           |
 | Max cron timeout                 | 12 hours     | 1 hour        |
@@ -47,7 +47,7 @@ EasyCron is a **free and cheap** cronjob service.
 
 EasyCron uses EPD (executions per day) to limit number of cronjobs and their interval.
 FastCron just limit number of cronjobs, with base cron interval 1 minute.
-So, 15 cronjobs at FastCron is equal to 21,600 EPD at EasyCron.
+So, 12 cronjobs at FastCron is equal to 17,280 EPD at EasyCron.
 
 These handy features are available only at FastCron:
 
