@@ -5,6 +5,9 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 ## August 2024
 
+## Telegram integration
+You can now [receive a Telegram message](/integrations/telegram) from **@FastCronBot** when cronjobs fail/succeed.
+
 ## SSL certificate expiry dates
 
 FastCron will monitor your SSL certificate expiry dates for your active cronjobs.

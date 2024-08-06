@@ -11,7 +11,8 @@ To set up integration from FastCron to your Telegram user, group, or channel, fo
 
 ## Add FastCronBot
 
-**Direct messages**: If you want notifications sent to yourself directly, start a conversation with FastCronBot.
+**Direct messages**: If you want notifications sent to yourself directly, start a conversation with 
+<a href="https://t.me/FastCronBot" target="_blank" rel="nofollow">FastCronBot</a>.
 
 **Groups**: If you want notifications sent to a group, start by inviting FastCronBot to the group.
 The bot will get added as a member with no access to group messages.
@@ -29,7 +30,7 @@ Please note that the Chat ID for group/channel has a minus sign e.g. `-100123456
 ## Add it to your account Channels
 
 - Click the tab **Channels** on your account dashboard.
-- Click the **Telegram** button.
+- Click **Add channel** >  **Telegram**.
 - Paste the **Chat ID**, then **Save**.
 
 ## Enable notifications for your cronjobs

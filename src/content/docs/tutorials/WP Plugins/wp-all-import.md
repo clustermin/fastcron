@@ -24,7 +24,7 @@ To set up the **trigger** cronjob:
 - Click the new Cron Job button
 - Enter the **trigger** URL into the **URL to call** field
 ```sh "SECRET_KEY" "IMPORT_ID"
-https://example.com/wp-cron.php?import_key=SECRET_KEY&import_id=IMPORT_ID&action=trigger
+https://example.com/wp-load.php?import_key=SECRET_KEY&import_id=IMPORT_ID&action=trigger
 ```
 - Select **When to call: Every 4 hours**
 - Click **Save & run**.
@@ -38,7 +38,7 @@ To set up the **processing** cronjob:
 - Click the new Cron Job button
 - Enter the **processing** URL into the **URL to call** field
 ```sh "SECRET_KEY" "IMPORT_ID"
-https://example.com/wp-cron.php?import_key=SECRET_KEY&import_id=IMPORT_ID&action=processing
+https://example.com/wp-load.php?import_key=SECRET_KEY&import_id=IMPORT_ID&action=processing
 ```
 - Select **When to call: Every 2 minutes**
 - Click **Save** cronjob.

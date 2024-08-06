@@ -24,7 +24,7 @@ https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXX
 ## Add it to your account Channels
 
 - Click the tab **Channels** on your account dashboard.
-- Click the **Slack** button.
+- Click **Add channel** >  **Slack**.
 - Paste the webhook URL, then **Save**.
 
 ## Enable notifications for your cronjobs

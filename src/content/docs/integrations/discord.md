@@ -27,7 +27,7 @@ https://discord.com/api/webhooks/STUFF/GO_HERE
 ## Add it to your account Channels
 
 - Click the tab **Channels** on your account dashboard.
-- Click the **Discord** button.
+- Click **Add channel** >  **Discord**.
 - Paste the webhook URL, then **Save**.
 
 ## Enable notifications for your cronjobs

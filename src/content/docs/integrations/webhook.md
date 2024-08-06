@@ -12,7 +12,7 @@ To set up integration from FastCron to a custom webhook URL, follow the instruct
 ## Add your webhook URL to Channels
 
 - Click the tab **Channels** on your account dashboard.
-- Click the **Webhook** button.
+- Click **Add channel** >  **Webhook**.
 - Paste the webhook URL, then **Save**.
 
 ## Enable notifications for your cronjobs

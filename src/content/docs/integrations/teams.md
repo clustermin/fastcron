@@ -21,7 +21,7 @@ https://NAME.webhook.office.com/STUFF/GO_HERE
 ## Add it to your account Channels
 
 - Click the tab **Channels** on your account dashboard.
-- Click the **Teams** button.
+- Click **Add channel** >  **Teams**.
 - Paste the webhook URL, then **Save**.
 
 ## Enable notifications for your cronjobs
