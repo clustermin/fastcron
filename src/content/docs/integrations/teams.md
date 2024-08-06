@@ -7,7 +7,6 @@ sidebar:
 
 You can receive a message in your Teams channel when your cronjobs fail or succeed.
 
-
 ## Create an incoming webhook at Teams
 Please follow the instructions to 
 [create an webhook URL for your Teams](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook).

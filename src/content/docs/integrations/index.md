@@ -9,7 +9,8 @@ You can also receive them via other channels like Slack, Discord, webhook, etc.
 To add a channel to your account, please visit the **Channels** tab.
 Currently, FastCron supports these 5 channels:
 
-- [**Slack**](/integrations/slack), [**Teams**](/integrations/teams), and [**Discord**](/integrations/discord): messages to your channel
+- [**Slack**](/integrations/slack), [**Discord**](/integrations/discord), and [**Teams**](/integrations/teams): messages to your channel
+- [**Telegram**](/integrations/telegram): direct messages or posts to group/channel.
 - [**Zenduty**](/integrations/zenduty): incidents automatically created and resolved
 - [**Webhook**](/integrations/webhook): POST requests with JSON payload
 
