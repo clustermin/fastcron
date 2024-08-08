@@ -11,7 +11,7 @@ You can now [receive a Telegram message](/integrations/telegram) from **@FastCro
 #### SSL certificate expiry dates
 
 FastCron will monitor your SSL certificate expiry dates for your active cronjobs.
-You can view the *SSL cert expiry dates* on the **Host** tab.
+You can view the *SSL cert expiry dates* on the **Hosts** page.
 
 ## July 2024
 
