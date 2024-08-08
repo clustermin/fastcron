@@ -26,6 +26,7 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [WordPress cron](/tutorials/wp-cron)
 - [WP All Import](/tutorials/wp-plugins/wp-all-import-cron)
 - [Mailster](/tutorials/wp-plugins/mailster-cron)
+- [BackWPup](/tutorials/wp-plugins/backwpup-cron)
 - [Arigato PRo Autoresponder](/tutorials/wp-plugins/arigato-pro-autoresponder-cron)
 - [WPL Pro with MLS addon](/tutorials/wp-plugins/wpl-pro-mls-addon-cron)
 
