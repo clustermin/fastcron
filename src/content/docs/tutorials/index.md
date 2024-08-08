@@ -30,6 +30,12 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [Arigato PRo Autoresponder](/tutorials/wp-plugins/arigato-pro-autoresponder-cron)
 - [WPL Pro with MLS addon](/tutorials/wp-plugins/wpl-pro-mls-addon-cron)
 
+## Joomla components
+
+- [EasyBlog](/tutorials/joomla/easyblog-cron)
+- [EasyDiscuss](/tutorials/joomla/easydiscuss-cron)
+- [EasySocial](/tutorials/joomla/easysocial-cron)
+
 ## PrestaShop modules
 
 - [PrestaShop Cron tasks manager](/tutorials/prestashop)
