@@ -1,0 +1,29 @@
+---
+title: How to set up cronjobs with FastCron
+---
+
+FastCron is an external cronjob service.
+It runs your server-side scripts (PHP/NodeJS/Python/etc) by sending HTTP requests to your script URL.
+
+Below, you can see the list of tutorials to set up cronjobs for various scripts, plugins, and modules.
+
+If you want your plugins listed here, just email me at support@fastcron.com.
+
+## PHP scripts
+
+- [PHP cron](/tutorials/php-cron)
+- [WordPress cron](/tutorials/wp-cron)
+- [Laravel](/tutorials/laravel-cron)
+- [Symfony](/tutorials/symfony-cron)
+- [WHMCS](/tutorials/whmcs-cron)
+- [Drupal](/tutorials/drupal-cron)
+- [Sendy.co](/tutorials/sendy-cron)
+- [osTicket](/tutorials/osticket-cron)
+- [InvoicePlane](/tutorials/invoiceplane-cron)
+
+## WordPress Plugins
+
+- [WordPress cron](/tutorials/wp-cron)
+- [WP All Import](/tutorials/wp-plugins/wp-all-import)
+- [Mailster](/tutorials/wp-plugins/mailster)
+- [Arigato PRo Autoresponder](/tutorials/wp-plugins/arigato-pro-autoresponder)

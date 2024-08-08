@@ -1,8 +1,5 @@
 ---
 title: How to set up cronjob for Mailster
-sidebar:
-  label: Mailster (WP plugin)
-  order: 2
 ---
 
 ## About Mailster

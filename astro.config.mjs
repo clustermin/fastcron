@@ -29,16 +29,13 @@ export default defineConfig({
           { label: 'Welcome', link: '/docs' },
           { label: 'IP addresses', link: '/ip-addresses' },
           { label: 'FAQ', link: '/docs/faq' },
-          { label: 'Changelog', link: '/changelog' }
+          { label: 'Changelog', link: '/changelog' },
+          { label: 'Tutorials', link: '/tutorials' }
         ]
       },
       {
         label: 'Guides',
         autogenerate: { directory: 'guides' }
-      },
-      {
-        label: 'Tutorials',
-        autogenerate: { directory: 'tutorials' }
       },
       {
         label: 'Integrations',
