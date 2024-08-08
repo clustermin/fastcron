@@ -53,3 +53,4 @@ If you're using one of these, set up a cronjob to run your website WP cron.
 
 - WP Offload S3 https://wordpress.org/plugins/amazon-s3-and-cloudfront/
 - Postie https://wordpress.org/plugins/postie/
+- UpdraftPlus http://wordpress.org/plugins/updraftplus/
