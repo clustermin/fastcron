@@ -21,9 +21,14 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [osTicket](/tutorials/osticket-cron)
 - [InvoicePlane](/tutorials/invoiceplane-cron)
 
-## WordPress Plugins
+## WordPress plugins
 
 - [WordPress cron](/tutorials/wp-cron)
-- [WP All Import](/tutorials/wp-plugins/wp-all-import)
-- [Mailster](/tutorials/wp-plugins/mailster)
-- [Arigato PRo Autoresponder](/tutorials/wp-plugins/arigato-pro-autoresponder)
+- [WP All Import](/tutorials/wp-plugins/wp-all-import-cron)
+- [Mailster](/tutorials/wp-plugins/mailster-cron)
+- [Arigato PRo Autoresponder](/tutorials/wp-plugins/arigato-pro-autoresponder-cron)
+
+## PrestaShop modules
+
+- [PrestaShop Cron tasks manager](/tutorials/prestashop)
+- [Abandoned cart reminder](/tutorials/prestashop/abandonded-cart-reminder-cron)
