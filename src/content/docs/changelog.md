@@ -5,6 +5,11 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 ## August 2024
 
+#### `cron_next` API function
+
+A new API function has been added.
+[`cron_next`](/reference/cron#cron_next) will return an array of next execution times.
+
 #### Telegram integration
 You can now [receive a Telegram message](/integrations/telegram) from **@FastCronBot** when cronjobs fail/succeed.
 
