@@ -199,15 +199,15 @@ If no `id` is provided, it will return an array of all cronjobs failure logs.
 
 ## `cron_next`
 
-Get next execution time of your cronjob.
+Get next execution times of your cronjob.
 
 | Name      | Type    | Description    |
 | --------- | ------- | -------------- |
 | **token** | string  | Your API token |
 | **id**    | integer | Cronjob ID     |
 
-Returns an array of queued/scheduled execution timestamps. Example results:
-
+Returns an array of queued/scheduled execution times (Unix timestamp). Max 100 results.
+Example response:
 ```json
 { "status": "success", "code": 0, "data": [1723256352, 1723342752, 1723429152] }
 ```
