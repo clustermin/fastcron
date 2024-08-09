@@ -197,6 +197,21 @@ Returns an array of cron execution results data structures.
 
 If no `id` is provided, it will return an array of all cronjobs failure logs.
 
+## `cron_next`
+
+Get next execution time of your cronjob.
+
+| Name      | Type    | Description    |
+| --------- | ------- | -------------- |
+| **token** | string  | Your API token |
+| **id**    | integer | Cronjob ID     |
+
+Returns an array of queued/scheduled execution timestamps. Example results:
+
+```json
+{ "status": "success", "code": 0, "data": [1723256352, 1723342752, 1723429152] }
+```
+
 ## `cron_batch_add`
 
 Add multiple cronjobs at once/
