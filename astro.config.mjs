@@ -30,16 +30,13 @@ export default defineConfig({
           { label: 'IP addresses', link: '/ip-addresses' },
           { label: 'FAQ', link: '/docs/faq' },
           { label: 'Changelog', link: '/changelog' },
-          { label: 'Tutorials', link: '/tutorials' }
+          { label: 'Tutorials', link: '/tutorials' },
+          { label: 'Notification channels', link: '/integrations' }
         ]
       },
       {
         label: 'Guides',
         autogenerate: { directory: 'guides' }
-      },
-      {
-        label: 'Integrations',
-        autogenerate: { directory: 'integrations' }
       },
       {
         label: 'Troubleshooting',
