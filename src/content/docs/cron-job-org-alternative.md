@@ -40,7 +40,6 @@ Cron-job.org relies on donations.
 | Max response size                                                  | 64 KB        | **100 MB**    |
 | Max failure threshold                                              | 150          | **1000**      |
 | Max API calls per day                                              | 5,000        | **unlimited** |
-| Custom timezone for cronjobs                                       | no           | **yes**       |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no           | **yes**       |
 | Runs cronjobs manually                                             | no           | **yes**       |
 | Track running cronjobs                                             | no           | **yes**       |

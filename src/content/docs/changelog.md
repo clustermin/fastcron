@@ -5,6 +5,11 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 ## August 2024
 
+#### `cron_run` with `time` and `payload`
+
+You can now set both `time` and `payload` when calling [`cron_run`](/reference/cron#cron_run) function.
+It's great for running one-time cronjobs programmatically.
+
 #### `cron_next` API function
 
 A new API function has been added.

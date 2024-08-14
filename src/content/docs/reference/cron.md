@@ -65,10 +65,10 @@ Add a new cronjob.
 | username         | string  | null             | Username for HTTP authentication                                                                 |
 | password         | string  | null             | Password for HTTP authentication                                                                 |
 | httpMethod       | string  | GET              | HTTP method of the HTTP request to send to your cronjob URL                                      |
-| postData         | string  | null             | When httpMethod is POST or PUT, send this post data with the HTTP request.                       |
+| postData         | string  | null             | When `httpMethod` is POST, PUT, or PATCH, send this post data with the HTTP request.             |
 | httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters, e.g.                |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
-| notifyEvery      | int     | 1                | When notify is true, send notification every notifyEvery fails.                                  |
+| notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
 | failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |
@@ -164,11 +164,20 @@ Returns the structure of the deleted cronjob, with ID set to null.
 Schedule the cronjob to run within next minute or at a specific time.
 This doesn't change the cronjob time settings.
 
-| Name      | Type    | Description              |
-| --------- | ------- | ------------------------ |
-| **token** | string  | Your API token           |
-| **id**    | integer | Cronjob ID               |
-| time      | integer | Timestamp to run cronjob |
+| Name      | Type    | Description                                  |
+| --------- | ------- | -------------------------------------------- |
+| **token** | string  | Your API token                               |
+| **id**    | integer | Cronjob ID                                   |
+| time      | integer | Timestamp to run cronjob                     |
+| payload   | string  | Payload to send this time (read more below). |
+
+`payload` should be valid HTTP **query string** `name=value&name2=value2` or valid **JSON** `{"name": "value", "number": 1}`.
+
+- If cronjob's `httpMethod` is POST, PUT, or PATCH, `payload` will overwrite the cronjob's `postData`.
+  If `payload` is valid JSON, FastCron will add `Content-Type: application/json` to the HTTP request headers.
+
+- If cronjob's `httpMethod` is GET, HEAD, or DELETE, `payload` must be HTTP query string, and will append to the cronjob URL.
+  FastCron automatically add `?` or `&` before appending the payload so you don't need to.
 
 Returns the timestamp which cronjob will run at.
 
@@ -208,6 +217,7 @@ Get next execution times of your cronjob.
 
 Returns an array of queued/scheduled execution times (Unix timestamp). Max 100 results.
 Example response:
+
 ```json
 { "status": "success", "code": 0, "data": [1723256352, 1723342752, 1723429152] }
 ```

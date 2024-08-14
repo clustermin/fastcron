@@ -1,15 +1,16 @@
 ---
-title: How to set up one-time cronjobs
+title: How to run one-time cronjobs
 sidebar:
   label: One-time cronjobs
 ---
 
-## Create one-time cronjobs
+## Create one-time cronjobs manually
 If you would like to set up a one-time cronjob, i.e. a cronjob that runs once at a specific time, you can follow these instructions:
 
 - Click new Cron Job
 - Enter the URL to your cron script.
-- Enter the time into the **Time Pattern** field, e.g. **Feb 14, 2030, 7:30**
+- Click the **Expression** button next to **When to call**
+- Enter the time into the **Expression** field, e.g. **Feb 14, 2030, 7:30**
 - Make sure you select the correct **Timezone**
 - Click **Save** changes.
 
