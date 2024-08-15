@@ -52,6 +52,7 @@ No, you can't change the country and company VAT number once it's added.
 Please cancel your current subscription first, then renew your account with the new company info.
 
 ## Cron jobs
+
 ### Do you support HTTP and HTTPS?
 Yes, FastCron supports both HTTP and HTTPS protocol.
 It's recommended to use HTTPS for your cronjob URL, like this:
@@ -101,32 +102,7 @@ For JSON payload, FastCron automatically adds HTTP header
 `Content-Type: application/json`
 to the HTTP request, so you don't need to.
 
-### Does FastCron follow redirections?
-Yes, FastCron follows redirections (301, 302, 307, 308).
-
-This feature helps in these cases:
-- You changed the script URL with redirections.
-- The cron script needs to split into several steps (e.g. Akeeba backup).
-
-### Can I run shell/bash script?
-
-FastCron needs your web server to execute the script, it couldn't run a shell script directly.
-
-If you're using PHP, please check if your hosting allows `exec` or `shell_exec`, then create a cron script to run the bash script like this:
-```php
-// /home/example.com/public_html/cron.php
-echo shell_exec('/home/example.com/shell/backup.sh');
-```
-Once you confirm that the script can be triggered by visiting the URL\
-`https://example.com/cron.php`\
-with your browser, you can create a cron job to run script.
-
-Most shared hosting providers disable those functions, so you won't be able to run shell/bash script with FastCron.
-
-### Will my cronjobs overlap?
-
-Yes, similar to your hosting's cron jobs, your script will overlap.
-
-If you create a cron job to run every minute, and your script takes more than 1 minute to complete, it'll overlap. There will be 2 instances running at the same time.
-
-To prevent overlapping, FastCron supports [Max instances](/blog/max-instances).
+### Other questions
+- [Does FastCron follow redirections?](/questions/will-fastcron-follow-redirections)
+- [Can I run shell/bash script?](/questions/can-i-run-shell-bash-script)
+- [Will my cronjobs overlap?](questions/will-cronjobs-overlap)
