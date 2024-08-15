@@ -2,17 +2,24 @@
 title: How to set up cronjob for Mailster
 ---
 
-## About Mailster
 <a href="https://mailster.co/?ref=fastcron.com" target="_blank" rel="nofollow">Mailster</a>
 is a WordPress newsletter plugin. It requires a cronjob to send scheduled emails to your subscribers.
 
-## Do NOT use a *real cron*
-Mailster cron script relies on JavaScript to process its tasks.
-FastCron doesn't process Javascript in your script output.
-Fortunately, it supports WP Cron, so you should switch to using WP Cron first before setting up a cronjob.
+To set up cronjob for your Mailster plugin, follow these instructions:
 
-## Set up cronjob using WP Cron
-You must first switch Mailster to use WP Cron instead of *real cron*.
-![Mailster settings](/screenshots/mailster.png)
+- Log in to your WordPress dashboard
+- Visit Newsletter > Settings > Cron, switch to **Use a real cron to send newsletters**
+- Copy the Mailster cron URL, then click **Save Changes**.
+![Mailster settings](/screenshots/wordpress/mailster.png)
+- Try visiting the cron URL with your browser to confirm it's okay.
+- [Log in to FastCron](https://app.fastcron.com/login).
+- Click the new Cron Job button
+- Enter the mailster URL into the **URL to call** field
+- Select **When to call: Every 5 minutes**
+- Click **Save & run**.
 
-After that, follow the tutorial to [set cronjob for WP cron](/tutorials/wp-cron).
+And that's it.
+
+FastCron will run your cronjob for free, no monthly login required.
+
+If you have a [premium plan](/pricing), you should run your cronjob every minute.

@@ -11,7 +11,7 @@ For example, I schedule an email blast to notify [new IP addresses](/ip-addresse
 For other use cases, there are some better ways:
 - If you'd like to process one item at a time,
 instead of creating a one-time cronjob with the item ID, 
-you should store those items (with their scheduled times if necessary) in your database, 
+you should store those items (with their scheduled times if necessary) in your database,
 and set a cronjob every few seconds or minutes to retrieve and process those items.
 - If you'd like to process a multi-step cronjob,
 instead of creating a one-time cronjob with the next step data,
