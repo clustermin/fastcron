@@ -10,6 +10,11 @@ description: "We are releasing several updates a month. Read the latest updates 
 You can now set both `time` and `payload` when calling [`cron_run`](/reference/cron#cron_run) function.
 It's great for running one-time cronjobs programmatically.
 
+This is the recommended way to [run one-time cronjobs](/guides/one-time-cronjobs).
+
+**Note**: In **3 months** (**November 18, 2024**), a one-time cronjob will count as one regular cronjob.
+Please update your script to use `cron_run` instead of `cron_add` before that day.
+
 #### `cron_next` API function
 
 A new API function has been added.

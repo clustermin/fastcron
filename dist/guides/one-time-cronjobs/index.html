@@ -38,7 +38,7 @@ For example, I schedule an email blast to notify <a href="/ip-addresses">new IP 
 <p>For other use cases, there are some better ways:</p>
 <ul>
 <li>If you’d like to process one item at a time,
-instead of creating a one-time cronjob with the item ID,
+instead of creating a one-time cronjob with the item data,
 you should store those items (with their scheduled times if necessary) in your database,
 and set a cronjob every few seconds or minutes to retrieve and process those items.</li>
 <li>If you’d like to process a multi-step cronjob,
@@ -46,7 +46,7 @@ instead of creating a one-time cronjob with the next step data,
 you should redirect to the new URL.
 FastCron will <a href="/questions/will-fastcron-follow-redirections">follow the HTTP redirection</a>.</li>
 </ul>
-<p>If you still insist on creating/running one-time cronjobs, follow the instructions below.</p>
+<p>If you still need to create/run one-time cronjobs, follow the instructions below.</p>
 <h2 id="create-one-time-cronjobs-manually">Create one-time cronjobs manually</h2>
 <ul>
 <li>Click new Cron Job</li>
@@ -58,8 +58,9 @@ FastCron will <a href="/questions/will-fastcron-follow-redirections">follow the 
 <p>And that’s it.
 You can hover/click on the time pattern field e.g. <strong>Feb 14, 2030, 7:30</strong> in the example above, and it’ll show the next execution time so you can confirm the time settings are correct.</p>
 <h2 id="run-one-time-cronjobs-using-api">Run one-time cronjobs using API</h2>
-<p>Alternatively, you can create a cronjob (with <strong>When to call: Manual</strong>), then schedule to run it at a specific time
-using <a href="/reference/cron#cron_run"><code dir="auto">cron_run</code></a>.</p>
+<p>To programmatically run one-time cronjobs, you can create a cronjob (with <strong>When to call: Manual</strong>),
+then schedule to run it at a specific time using
+<a href="/reference/cron#cron_run"><code dir="auto">cron_run</code></a>.</p>
 <div class="expressive-code"><link rel="stylesheet" href="/_astro/ec.d6kn2.css"><script type="module" src="/_astro/ec.3zb7u.js"></script><figure class="frame is-terminal not-content"><figcaption class="header"><span class="title"></span><span class="sr-only">Terminal window</span></figcaption><pre data-language="bash"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3C63B3">curl</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3C63B3">-X</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#3C63B3">POST</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#D9F5DD;--1:#111111">"</span><span style="--0:#ECC48D;--1:#9B504E">https://app.fastcron.com/api/v1/cron_run</span><span style="--0:#D9F5DD;--1:#111111">"</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">\</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#82AAFF;--1:#3C63B3">-H</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#D9F5DD;--1:#111111">'</span><span style="--0:#ECC48D;--1:#9B504E">Content-Type: application/json</span><span style="--0:#D9F5DD;--1:#111111">'</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">\</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#82AAFF;--1:#3C63B3">-d</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#D9F5DD;--1:#111111">'</span><span style="--0:#ECC48D;--1:#9B504E">{</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#ECC48D;--1:#9B504E">        </span></span><span style="--0:#ECC48D;--1:#9B504E">"token": "</span><mark><span style="--0:#ECC48D;--1:#834442">YOUR_API_TOKEN</span></mark><span style="--0:#ECC48D;--1:#9B504E">",</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#ECC48D;--1:#9B504E">        </span></span><span style="--0:#ECC48D;--1:#9B504E">"id": </span><mark><span style="--0:#ECC48D;--1:#834442">CRONJOB_ID</span></mark><span style="--0:#ECC48D;--1:#9B504E">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#ECC48D;--1:#9B504E">        </span></span><span style="--0:#ECC48D;--1:#9B504E">"time": 1905821065</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#ECC48D;--1:#9B504E">    </span></span><span style="--0:#ECC48D;--1:#9B504E">}</span><span style="--0:#D9F5DD;--1:#111111">'</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="curl -X POST &#x22;https://app.fastcron.com/api/v1/cron_run&#x22; \    -H &#x27;Content-Type: application/json&#x27; \    -d &#x27;{        &#x22;token&#x22;: &#x22;YOUR_API_TOKEN&#x22;,        &#x22;id&#x22;: CRONJOB_ID,        &#x22;time&#x22;: 1905821065    }&#x27;"><div></div></button></div></figure></div>
 <p>The command above will run your cronjob at <strong>Friday, May 24, 2030 2:44:25</strong>.</p>
 <p>You can also attach a <code dir="auto">payload</code> to the execution time like this:</p>

@@ -10,7 +10,7 @@ For example, I schedule an email blast to notify [new IP addresses](/ip-addresse
 
 For other use cases, there are some better ways:
 - If you'd like to process one item at a time,
-instead of creating a one-time cronjob with the item ID, 
+instead of creating a one-time cronjob with the item data,
 you should store those items (with their scheduled times if necessary) in your database,
 and set a cronjob every few seconds or minutes to retrieve and process those items.
 - If you'd like to process a multi-step cronjob,
@@ -18,7 +18,7 @@ instead of creating a one-time cronjob with the next step data,
 you should redirect to the new URL.
 FastCron will [follow the HTTP redirection](/questions/will-fastcron-follow-redirections). 
 
-If you still insist on creating/running one-time cronjobs, follow the instructions below.
+If you still need to create/run one-time cronjobs, follow the instructions below.
 
 ## Create one-time cronjobs manually
 
@@ -32,8 +32,9 @@ And that's it.
 You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the example above, and it'll show the next execution time so you can confirm the time settings are correct.
 
 ## Run one-time cronjobs using API 
-Alternatively, you can create a cronjob (with **When to call: Manual**), then schedule to run it at a specific time
-using [`cron_run`](/reference/cron#cron_run).
+To programmatically run one-time cronjobs, you can create a cronjob (with **When to call: Manual**),
+then schedule to run it at a specific time using
+[`cron_run`](/reference/cron#cron_run).
 
 ```bash "YOUR_API_TOKEN" "CRONJOB_ID"
 curl -X POST "https://app.fastcron.com/api/v1/cron_run" \

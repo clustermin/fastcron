@@ -36,6 +36,9 @@
 <h4 id="cron_run-with-time-and-payload"><code dir="auto">cron_run</code> with <code dir="auto">time</code> and <code dir="auto">payload</code></h4>
 <p>You can now set both <code dir="auto">time</code> and <code dir="auto">payload</code> when calling <a href="/reference/cron#cron_run"><code dir="auto">cron_run</code></a> function.
 It’s great for running one-time cronjobs programmatically.</p>
+<p>This is the recommended way to <a href="/guides/one-time-cronjobs">run one-time cronjobs</a>.</p>
+<p><strong>Note</strong>: In <strong>3 months</strong> (<strong>November 18, 2024</strong>), a one-time cronjob will count as one regular cronjob.
+Please update your script to use <code dir="auto">cron_run</code> instead of <code dir="auto">cron_add</code> before that day.</p>
 <h4 id="cron_next-api-function"><code dir="auto">cron_next</code> API function</h4>
 <p>A new API function has been added.
 <a href="/reference/cron#cron_next"><code dir="auto">cron_next</code></a> will return an array of next execution times.</p>
