@@ -29,11 +29,11 @@ https://example.com/cron.php?name=value&oHJXpSbyDMZDEnBJ
 ## Supported keywords
 FastCron supports 4 keywords:
 - `__random__` will be replaced with a random string
-- `__timestamp__` will be replaced with the current Unix timestamp
-- `__timestamp_ms__` will be replaced with the current Unix timestamp in milliseconds
+- `__timestamp__` will be replaced with the scheduled execution time (Unix timestamp)
+- `__timestamp_ms__` will be replaced with the scheduled execution time (Unix timestamp in milliseconds)
 - `__cronjob__` will be replaced with the cronjob ID
 
-You can also add those keywords to your POST data (only available with HTTP method POST or PUT).
+You can also add those keywords to your [`postData`](/reference/cron#cron_add) or [`payload`](/reference/cron#cron_run) when using HTTP method POST, PUT, or PATCH.
 
 ## Auto add random strings to URLs
 You can let us automatically add the `__random__` keyword to your cronjob URLs on the Account settings page.

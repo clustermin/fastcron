@@ -46,11 +46,11 @@ You should add a random string to your cronjob URL using the keyword <code dir="
 <p>FastCron supports 4 keywords:</p>
 <ul>
 <li><code dir="auto">__random__</code> will be replaced with a random string</li>
-<li><code dir="auto">__timestamp__</code> will be replaced with the current Unix timestamp</li>
-<li><code dir="auto">__timestamp_ms__</code> will be replaced with the current Unix timestamp in milliseconds</li>
+<li><code dir="auto">__timestamp__</code> will be replaced with the scheduled execution time (Unix timestamp)</li>
+<li><code dir="auto">__timestamp_ms__</code> will be replaced with the scheduled execution time (Unix timestamp in milliseconds)</li>
 <li><code dir="auto">__cronjob__</code> will be replaced with the cronjob ID</li>
 </ul>
-<p>You can also add those keywords to your POST data (only available with HTTP method POST or PUT).</p>
+<p>You can also add those keywords to your <a href="/reference/cron#cron_add"><code dir="auto">postData</code></a> or <a href="/reference/cron#cron_run"><code dir="auto">payload</code></a> when using HTTP method POST, PUT, or PATCH.</p>
 <h2 id="auto-add-random-strings-to-urls">Auto add random strings to URLs</h2>
 <p>You can let us automatically add the <code dir="auto">__random__</code> keyword to your cronjob URLs on the Account settings page.</p>
 <p><img src="/screenshots/account-settings.png" alt="Account settings"></p> </div> <footer class="astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr"> <a href="/guides/one-time-cronjobs" rel="prev" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg>  <span class="astro-u2l5gyhi"> Previous <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">One-time cronjobs</span> </span> </a> <a href="/guides/random-time" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg>  <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Random time</span> </span> </a> </div>  </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>

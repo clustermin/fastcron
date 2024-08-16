@@ -179,6 +179,8 @@ This doesn't change the cronjob time settings.
 - If cronjob's `httpMethod` is GET, HEAD, or DELETE, `payload` must be HTTP query string, and will append to the cronjob URL.
   FastCron automatically add `?` or `&` before appending the payload so you don't need to.
 
+You can also use [keywords like `__random__` and `__timestamp__`](/guides/random-keywords#supported-keywords) in your payload.
+
 Returns the timestamp which cronjob will run at.
 
 ## `cron_logs`
