@@ -3,7 +3,23 @@ title: FastCron Changelog
 description: "We are releasing several updates a month. Read the latest updates here."
 ---
 
+You can receive monthly product updates from FastCron by subscribing on the **Profile** page.
+
 ## August 2024
+
+#### Disabled cronjobs won't run
+
+In **2 months** (after **October 20, 2024**), you can no longer use `cron_run` to run disabled cronjobs.
+You need to edit the disabled cronjobs, select **When to call: Manual**,
+then **Save** and **Enable** them.
+
+#### Cron expression `manual`
+
+You can now create cronjob to run manually by selecting **When to call: Manual** or set the `expression` to `manual`.
+Use it to:
+- Run cronjob manually only when necessary
+- Create an endpoint URL for one-time executions
+- Create chained cronjobs: run this cronjob only after another cronjob complete (edit cronjob > Notifications, at Run cronjob, select the manual cronjob).
 
 #### `cron_run` with `time` and `payload`
 
