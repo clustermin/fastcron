@@ -29,7 +29,6 @@ FastCron will send a POST request to your URL when a cronjob in your account fai
 The POST payload looks like this:
 ```json
 {
-  "redirect": "",
   "output": "<!doctype html>\n<html>\n ... </html>\n",
   "downloaded": 1256,
   "httpStatus": 404,
@@ -40,6 +39,7 @@ The POST payload looks like this:
   "startTime": 1720409270,
   "executionTime": 0.02,
   "status": 1,
+  "message": "fails",
   "id": 16910124,
   "name": null,
   "url": "https://example.com/404",
