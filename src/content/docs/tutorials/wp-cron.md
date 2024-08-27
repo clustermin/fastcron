@@ -7,7 +7,7 @@ sidebar:
 
 ## About WP Cron
 
-**WordPress Cron** (wp-cron.php) is the built-in task scheduler in WordPress, used to run scheduled tasks. Many plugins depend on WP Cron for their backend functions.
+**WordPress Cron** (`wp-cron.php`) is the built-in task scheduler in WordPress, used to run scheduled tasks. Many plugins depend on WP Cron for their backend functions.
 
 By default, WP Cron is triggered by website visits. Every time a visitor loads your site, there's a small chance WP Cron will run and execute scheduled tasks. This approach has some downsides:
 
@@ -28,23 +28,30 @@ define('DISABLE_WP_CRON', true);
 ```
 then save the file.
 
+## Install FastCron plugin
+
+FastCron has an official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">free plugin here</a>.
+You just need to install and activate it, FastCron will create a free cronjob running every 5 minutes to run `wp-cron.php` file for you.
+
+It's the best for personal blog. If you manage several WordPress websites for your clients, please set up separate cronjobs at FastCron:
+
 ## Set up cronjob at FastCron
 - Log in to your FastCron account
-- Click Add a cronjob 
+- Click the new Cron Job button 
 - Enter the URL to call
  ```
- https://example.com/wp-cron.php?doing_wp_cron=1&__random__
+ https://example.com/wp-cron.php?doing_wp_cron=1&__timestamp__
  ```
  (replace `https://example.com/` with your actual WordPress homepage URL)
-- Select **When to call**: Every 5 minutes
+- Select **When to call: Every 5 minutes**
 - Click Save.
 
 And you're done!
 
 If you have some plugins that need to update frequently, just change the time interval to **Every minute**.
 
-You may notice that I added `?__random__` to the cronjob URL.
-It'll add a **random string** every time your cronjob is executed, 
+You may notice that I added `&__timestamp__` to the cronjob URL.
+It'll add a number (Unix timestamp) to your cronjob URL every time your cronjob is executed, 
 preventing your web server from caching the HTTP request.
 
 ## Popular WP plugins rely on WP Cron

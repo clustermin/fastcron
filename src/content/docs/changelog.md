@@ -7,7 +7,14 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## September 2024
 
+#### Free WordPress plugin
+
+You can now install and activate our official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">WordPress plugin here</a>.
+It will create a **free cronjob** running every 5 minutes to your `wp-cron.php`.
+Completely free, no registration required, just activate and done.
+
 #### Jira integration
+
 FastCron now supports [Jira integration](/integrations/jira).
 FastCron will trigger your automation rule with incoming webhook trigger.
 You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.
