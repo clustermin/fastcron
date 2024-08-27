@@ -5,6 +5,13 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 You can receive monthly product updates from FastCron by subscribing on the **Profile** page.
 
+## September 2024
+
+#### Jira integration
+FastCron now supports [Jira integration](/integrations/jira).
+FastCron will trigger your automation rule with incoming webhook trigger.
+You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.
+
 ## August 2024
 
 #### Disabled cronjobs won't run
