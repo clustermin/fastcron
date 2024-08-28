@@ -33,7 +33,8 @@ then save the file.
 FastCron has an official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">free plugin here</a>.
 You just need to install and activate it, FastCron will create a free cronjob running every 5 minutes to run `wp-cron.php` file for you.
 
-It's the best for personal blog. If you manage several WordPress websites for your clients, please set up separate cronjobs at FastCron:
+It's the best for personal blogs.
+If you manage several WordPress websites for your clients, please set up separate cronjobs at FastCron:
 
 ## Set up cronjob at FastCron
 - Log in to your FastCron account
