@@ -187,10 +187,11 @@ Returns the timestamp which cronjob will run at.
 
 Get your cronjob execution logs.
 
-| Name      | Type    | Description    |
-| --------- | ------- | -------------- |
-| **token** | string  | Your API token |
-| **id**    | integer | Cronjob ID     |
+| Name      | Type    | Description                                                                     |
+| --------- | ------- | ------------------------------------------------------------------------------- |
+| **token** | string  | Your API token                                                                  |
+| **id**    | integer | Cronjob ID                                                                      |
+| keyword   | string  | Keyword to search in execution time, output, IP addresses, error messages, etc. |
 
 Returns an array of [cron execution results](data#cron-execution-result).
 
@@ -198,15 +199,13 @@ Returns an array of [cron execution results](data#cron-execution-result).
 
 Get your cronjobs failed execution logs.
 
-| Name      | Type    | Default | Description      |
-| --------- | ------- | ------- | ---------------- |
-| **token** | string  |         | Your API token   |
-| id        | integer | null    | Cronjob ID       |
-| limit     | integer | 50      | Max result limit |
+| Name      | Type    | Description                                                                     |
+| --------- | ------- | ------------------------------------------------------------------------------- |
+| **token** | string  | Your API token                                                                  |
+| **id**    | integer | Cronjob ID                                                                      |
+| keyword   | string  | Keyword to search in execution time, output, IP addresses, error messages, etc. |
 
-Returns an array of cron execution results data structures.
-
-If no `id` is provided, it will return an array of all cronjobs failure logs.
+Returns an array of [cron execution results](data#cron-execution-result).
 
 ## `cron_next`
 

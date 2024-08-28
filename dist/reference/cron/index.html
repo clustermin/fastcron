@@ -419,7 +419,12 @@ FastCron automatically add <code dir="auto">?</code> or <code dir="auto">&#x26;<
 
 
 
-<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>token</strong></td><td>string</td><td>Your API token</td></tr><tr><td><strong>id</strong></td><td>integer</td><td>Cronjob ID</td></tr></tbody></table>
+
+
+
+
+
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>token</strong></td><td>string</td><td>Your API token</td></tr><tr><td><strong>id</strong></td><td>integer</td><td>Cronjob ID</td></tr><tr><td>keyword</td><td>string</td><td>Keyword to search in execution time, output, IP addresses, error messages, etc.</td></tr></tbody></table>
 <p>Returns an array of <a href="data#cron-execution-result">cron execution results</a>.</p>
 <h2 id="cron_failures"><code dir="auto">cron_failures</code></h2>
 <p>Get your cronjobs failed execution logs.</p>
@@ -448,13 +453,8 @@ FastCron automatically add <code dir="auto">?</code> or <code dir="auto">&#x26;<
 
 
 
-
-
-
-
-<table><thead><tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><strong>token</strong></td><td>string</td><td></td><td>Your API token</td></tr><tr><td>id</td><td>integer</td><td>null</td><td>Cronjob ID</td></tr><tr><td>limit</td><td>integer</td><td>50</td><td>Max result limit</td></tr></tbody></table>
-<p>Returns an array of cron execution results data structures.</p>
-<p>If no <code dir="auto">id</code> is provided, it will return an array of all cronjobs failure logs.</p>
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><strong>token</strong></td><td>string</td><td>Your API token</td></tr><tr><td><strong>id</strong></td><td>integer</td><td>Cronjob ID</td></tr><tr><td>keyword</td><td>string</td><td>Keyword to search in execution time, output, IP addresses, error messages, etc.</td></tr></tbody></table>
+<p>Returns an array of <a href="data#cron-execution-result">cron execution results</a>.</p>
 <h2 id="cron_next"><code dir="auto">cron_next</code></h2>
 <p>Get next execution times of your cronjob.</p>
 

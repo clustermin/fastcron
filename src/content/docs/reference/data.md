@@ -26,15 +26,6 @@ Each cronjob contains these members:
 | notifyEvery | int     | Number of consecutive failures between each notification                                         |
 | points      | integer | Points, number of executions per day                                                             |
 
-## Status codes
-
-Here's the list of cronjob status codes:
-
-| Value | Name            | Description                     |
-| ----- | --------------- | ------------------------------- |
-| 0     | STATUS_ACTIVE   | Cronjob is active and running   |
-| 1     | STATUS_DISABLED | Disabled by user                |
-| 2     | STATUS_EXPIRED  | Disabled due to account expired |
 
 ## Cron execution result
 
@@ -48,16 +39,14 @@ Each cron execution results contains these members:
 
 | Name          | Type    | Description                                            |
 | ------------- | ------- | ------------------------------------------------------ |
-| url           | string  | The actual URL that our servers sent HTTP requests to. |
 | output        | string  | Your script output                                     |
 | downloaded    | integer | Total output size (in bytes).                          |
 | httpStatus    | integer | HTTP status code e.g. 200                              |
 | error         | string  | Error message, if any.                                 |
-| message       | string  | System message, if any                                 |
 | ip            | string  | Destination IP.                                        |
 | source_ip     | string  | IP address of the server that process your cronjob.    |
 | time          | integer | Unix timestamp of scheduled time.                      |
-| startTime     | decimal | Unix timestamp of starting time with milliseconds.     |
+| startTime     | decimal | Unix timestamp of starting time.     |
 | executionTime | decimal | Total execution time, in seconds.                      |
 | status        | integer | Execution status, 0 means "success"                    |
 
@@ -81,5 +70,4 @@ Your account contains these members:
 | timezone    | string  | Default timezone                    |
 | plan        | string  | Plan name e.g. Pro                  |
 | cron        | integer | Max cronjobs e.g. 40                |
-| memberLimit | integer | Team member limit e.g. 5            |
 | expiryDate  | string  | Account expiry date e.g. 2023-12-31 |
