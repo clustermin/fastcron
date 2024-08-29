@@ -39,7 +39,6 @@ It's up to you to set up the action. The webhook data is the same with our [webh
   "ip": "93.184.215.14",
   "source_ip": "app1",
   "time": 1720409270,
-  "startTime": 1720409270,
   "executionTime": 0.02,
   "status": 1,
   "message": "fails",

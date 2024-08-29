@@ -67,7 +67,6 @@ Here are the comparison table for the top 3 free cronjob services:
 | Max cron timeout               | 30 seconds    | **60 seconds** | 5 seconds     |
 | Keep failure logs              | no            | **3**          | no            |
 | Max response size              | 8 KB          | **100 MB**     | **100 MB**    |
-| Max failure threshold          | 15            | **20**         | -             |
 | Max API calls per day          | 100           | **unlimited**  | **unlimited** |
 | Change HTTP method and headers | **yes**       | **yes**        | no            |
 | Runs cronjobs manually         | no            | **yes**        | **yes**       |

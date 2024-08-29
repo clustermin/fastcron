@@ -46,7 +46,6 @@ Each cron execution results contains these members:
 | ip            | string  | Destination IP.                                        |
 | source_ip     | string  | IP address of the server that process your cronjob.    |
 | time          | integer | Unix timestamp of scheduled time.                      |
-| startTime     | decimal | Unix timestamp of starting time.     |
 | executionTime | decimal | Total execution time, in seconds.                      |
 | status        | integer | Execution status, 0 means "success"                    |
 

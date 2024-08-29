@@ -42,6 +42,9 @@ Completely free, no registration required, just activate and done.</p>
 <p>FastCron now supports <a href="/integrations/jira">Jira integration</a>.
 FastCron will trigger your automation rule with incoming webhook trigger.
 You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.</p>
+<h4 id="search-in-cron_logs-and-cron_failures">Search in <code dir="auto">cron_logs</code> and <code dir="auto">cron_failures</code></h4>
+<p>You can now add <code dir="auto">keyword</code> to <a href="/reference/cron#cron_logs"><code dir="auto">cron_logs</code></a> and <a href="/reference/cron#cron_failures"><code dir="auto">cron_failures</code></a> function
+to search in logs output, error message, and execution time (Unix timestamp).</p>
 <h2 id="august-2024">August 2024</h2>
 <h4 id="disabled-cronjobs-wont-run">Disabled cronjobs won’t run</h4>
 <p>In <strong>2 months</strong> (after <strong>October 20, 2024</strong>), you can no longer use <code dir="auto">cron_run</code> to run disabled cronjobs.

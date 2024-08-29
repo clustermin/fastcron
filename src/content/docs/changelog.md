@@ -19,6 +19,11 @@ FastCron now supports [Jira integration](/integrations/jira).
 FastCron will trigger your automation rule with incoming webhook trigger.
 You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.
 
+#### Search in `cron_logs` and `cron_failures`
+
+You can now add `keyword` to [`cron_logs`](/reference/cron#cron_logs) and [`cron_failures`](/reference/cron#cron_failures) function
+to search in logs output, error message, and execution time (Unix timestamp).
+
 ## August 2024
 
 #### Disabled cronjobs won't run
