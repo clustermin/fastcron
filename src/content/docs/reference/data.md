@@ -43,8 +43,6 @@ Each cron execution results contains these members:
 | downloaded    | integer | Total output size (in bytes).                          |
 | httpStatus    | integer | HTTP status code e.g. 200                              |
 | error         | string  | Error message, if any.                                 |
-| ip            | string  | Destination IP.                                        |
-| source_ip     | string  | IP address of the server that process your cronjob.    |
 | time          | integer | Unix timestamp of scheduled time.                      |
 | executionTime | decimal | Total execution time, in seconds.                      |
 | status        | integer | Execution status, 0 means "success"                    |

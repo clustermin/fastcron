@@ -33,8 +33,6 @@ The POST payload looks like this:
   "downloaded": 1256,
   "httpStatus": 404,
   "error": "",
-  "ip": "93.184.215.14",
-  "source_ip": "app1",
   "time": 1720409270,
   "executionTime": 0.02,
   "status": 1,
