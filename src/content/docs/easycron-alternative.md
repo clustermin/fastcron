@@ -39,7 +39,7 @@ EasyCron is a **free and cheap** cronjob service.
 | Max number of 1-minute cronjobs  | 5            | **20**        |
 | Max number of 30-second cronjobs | 0            | **10**        |
 | Max number of 10-second cronjobs | 0            | **3**         |
-| Max cron history logs            | 200          | 200           |
+| Max cron history logs            | 200          | **250**       |
 | Max cron timeout                 | 12 hours     | 1 hour        |
 | Keep failure logs                | 20           | 20            |
 | Webhook notifications            | from $120/yr | **yes**       |

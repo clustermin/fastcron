@@ -34,7 +34,7 @@ Cron-job.org relies on donations.
 | Starting price                                                     | $12 / year   | $120 / year   |
 | Number of cronjobs                                                 | unlimited    | 20            |
 | Minimum cron interval                                              | 1 minute     | **5 seconds** |
-| Max cron history logs                                              | 25           | **200**       |
+| Max cron history logs                                              | 25           | **250**       |
 | Max cron timeout                                                   | 5 minutes    | **1 hour**    |
 | Max response size                                                  | 64 KB        | **100 MB**    |
 | Max API calls per day                                              | 5,000        | **unlimited** |
