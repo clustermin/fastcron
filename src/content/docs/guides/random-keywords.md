@@ -1,41 +1,43 @@
 ---
-title: Bypass your website cache by adding a random string
+title: Bypass your website cache by adding timestamps
 sidebar:
   label: Random keywords
 ---
 
 Your web server may cache your script output, rendering online cronjob ineffective.
-You should add a random string to your cronjob URL using the keyword `__random__`.
+You should add `__timestamp__` to your cronjob URL to bypass website cache.
 
 For example, you set up a cronjob with the URL to call
 
-```txt "__random__"
-https://example.com/cron.php?__random__
+```txt "__timestamp__"
+https://example.com/cron.php?__timestamp__
 ```
 or
-```txt "__random__"
-https://example.com/cron.php?name=value&__random__
+```txt "__timestamp__"
+https://example.com/cron.php?name=value&__timestamp__
 ```
 
-Every time your cronjob runs, the `__random__` keyword will be replaced with a random string:
-```txt "oHJXpSbyDMZDEnBJ"
-https://example.com/cron.php?oHJXpSbyDMZDEnBJ
+Every time your cronjob runs, the `__timestamp__` keyword will be replaced with a Unix timestamp:
+```txt "1725456136"
+https://example.com/cron.php?1725456136
 ```
 or
-```txt "oHJXpSbyDMZDEnBJ"
-https://example.com/cron.php?name=value&oHJXpSbyDMZDEnBJ
+```txt "1725456136"
+https://example.com/cron.php?name=value&1725456136
 ```
 
 ## Supported keywords
-FastCron supports 4 keywords:
-- `__random__` will be replaced with a random string
+FastCron supports 3 keywords:
 - `__timestamp__` will be replaced with the scheduled execution time (Unix timestamp)
 - `__timestamp_ms__` will be replaced with the scheduled execution time (Unix timestamp in milliseconds)
 - `__cronjob__` will be replaced with the cronjob ID
 
 You can also add those keywords to your [`postData`](/reference/cron#cron_add) or [`payload`](/reference/cron#cron_run) when using HTTP method POST, PUT, or PATCH.
 
-## Auto add random strings to URLs
-You can let us automatically add the `__random__` keyword to your cronjob URLs on the Account settings page.
+## Auto update cronjob URLs
+
+You can let us automatically add the `__timestamp__` keyword to your cronjob URLs on the Account settings page.
 
 ![Account settings](/screenshots/account-settings.png)
+
+When FastCron detects website cache, it will update your cronjob URLs.

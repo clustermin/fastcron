@@ -6,12 +6,10 @@ pubDate: 'Oct 26, 2023'
 
 You can now change:
 - Default timezone, which is also account timezone.
-- Cron server, if you'd like to run cronjobs from a specific server IP
-- Auto delete stopped cronjobs
-- Auto delete failed cronjobs
-- Auto add `__random__` to cron job URLs to bypass cache.
+- Auto delete stopped [one-time cronjobs](/guides/one-time-cronjobs)
+- Auto add [`__timestamp__`](/guides/random-keywords) to cron job URLs to bypass cache.
 
 ![account-settings](/images/account-settings.png)
 
-
-**For new users only**: FastCron will now automatically delete stopped cronjobs after 30 days, and failed cronjobs  365 days. You can change it on the account settings page.
+**For new users only**: FastCron will now automatically delete stopped cronjobs after 30 days.
+You can change it on the account settings page.
