@@ -18,9 +18,9 @@ Sometimes I'm <a href="https://x.com/thuan_dev" target="_blank" rel="nofollow">o
 
 The service is profitable, at least enough for a solo developer.
 
-Here are a few metrics about the service (updated manually, last updated: August 14, 2024).
+Here are a few metrics about the service (updated manually, last updated: Sep 05, 2024).
 
-- **Total users**: 7,800
+- **Total users**: 8,030
 - **Total cronjobs**: 244,000
 - **Executions per day**: 12,000,000
 
