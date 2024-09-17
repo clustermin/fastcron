@@ -124,7 +124,7 @@
 
 
 
-<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>integer</td><td>Cron job ID</td></tr><tr><td>group</td><td>integer</td><td>Group ID, nullable</td></tr><tr><td>expression</td><td>string</td><td>Cron expression (crontab syntax e.g. <code dir="auto">0 12 * * 1-5</code> or expression e.g. <code dir="auto">1 day</code>)</td></tr><tr><td>timezone</td><td>string</td><td>Time zone</td></tr><tr><td>timeout</td><td>int</td><td>The timeout limit. Max time that FastCron will wait for your script output.</td></tr><tr><td>instances</td><td>integer</td><td>Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions</td></tr><tr><td>url</td><td>string</td><td>URL to call</td></tr><tr><td>httpMethod</td><td>string</td><td>The HTTP Method to send HTTP requests to your URL.</td></tr><tr><td>httpHeaders</td><td>string</td><td>Plain HTTP headers to send to your cronjob URL.</td></tr><tr><td>postData</td><td>string</td><td>The data to POST to your URL, either query format or JSON</td></tr><tr><td>fail</td><td>integer</td><td>Number of current consecutive failures</td></tr><tr><td>status</td><td>integer</td><td>Status code, 0 means “active”</td></tr><tr><td>name</td><td>string</td><td>Name of cronjob</td></tr><tr><td>notify</td><td>bool</td><td>Notify when cronjob fails</td></tr><tr><td>notifyEvery</td><td>int</td><td>Number of consecutive failures between each notification</td></tr><tr><td>points</td><td>integer</td><td>Points, number of executions per day</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>integer</td><td>Cron job ID</td></tr><tr><td>group</td><td>integer</td><td>Group ID, nullable</td></tr><tr><td>expression</td><td>string</td><td>Cron expression (crontab syntax e.g. <code dir="auto">0 12 * * 1-5</code> or expression e.g. <code dir="auto">1 day</code>)</td></tr><tr><td>timezone</td><td>string</td><td>Time zone</td></tr><tr><td>timeout</td><td>int</td><td>The timeout limit. Max time that FastCron will wait for your script output.</td></tr><tr><td>instances</td><td>integer</td><td>Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions</td></tr><tr><td>url</td><td>string</td><td>URL to call</td></tr><tr><td>httpMethod</td><td>string</td><td>The HTTP Method to send HTTP requests to your URL.</td></tr><tr><td>httpHeaders</td><td>string</td><td>Plain HTTP headers to send to your cronjob URL.</td></tr><tr><td>postData</td><td>string</td><td>The data to POST to your URL, either query format or JSON</td></tr><tr><td>fail</td><td>integer</td><td>Number of current consecutive failures</td></tr><tr><td>status</td><td>integer</td><td>Status code, 0 means “active”</td></tr><tr><td>name</td><td>string</td><td>Name of cronjob</td></tr><tr><td>notify</td><td>bool</td><td>Notify when cronjob fails</td></tr><tr><td>notifyEvery</td><td>int</td><td>Number of consecutive failures between each notification</td></tr><tr><td>priority</td><td>integer</td><td>Priority: normal (0), high (1), higher (2)</td></tr></tbody></table>
 <h2 id="cron-execution-result">Cron execution result</h2>
 <p>Each cron execution results contains these members:</p>
 
@@ -212,7 +212,17 @@
 
 
 
-<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>integer</td><td>ID</td></tr><tr><td>name</td><td>string</td><td>Name</td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>id</td><td>integer</td><td>ID</td></tr><tr><td>name</td><td>string</td><td>Name</td></tr><tr><td>jobCount</td><td>integer</td><td>Total number of cronjobs</td></tr><tr><td>priority</td><td>integer</td><td>Priority: normal (0), high (1), higher (2)</td></tr></tbody></table>
 <h2 id="account">Account</h2>
 <p>Your account contains these members:</p>
 

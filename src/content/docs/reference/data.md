@@ -24,8 +24,7 @@ Each cronjob contains these members:
 | name        | string  | Name of cronjob                                                                                  |
 | notify      | bool    | Notify when cronjob fails                                                                        |
 | notifyEvery | int     | Number of consecutive failures between each notification                                         |
-| points      | integer | Points, number of executions per day                                                             |
-
+| priority    | integer | Priority: normal (0), high (1), higher (2)                                                       |
 
 ## Cron execution result
 
@@ -37,34 +36,36 @@ Each cron execution results contains these members:
 
 `result` contains these members:
 
-| Name          | Type    | Description                                            |
-| ------------- | ------- | ------------------------------------------------------ |
-| output        | string  | Your script output                                     |
-| downloaded    | integer | Total output size (in bytes).                          |
-| httpStatus    | integer | HTTP status code e.g. 200                              |
-| error         | string  | Error message, if any.                                 |
-| time          | integer | Unix timestamp of scheduled time.                      |
-| executionTime | decimal | Total execution time, in seconds.                      |
-| status        | integer | Execution status, 0 means "success"                    |
+| Name          | Type    | Description                         |
+| ------------- | ------- | ----------------------------------- |
+| output        | string  | Your script output                  |
+| downloaded    | integer | Total output size (in bytes).       |
+| httpStatus    | integer | HTTP status code e.g. 200           |
+| error         | string  | Error message, if any.              |
+| time          | integer | Unix timestamp of scheduled time.   |
+| executionTime | decimal | Total execution time, in seconds.   |
+| status        | integer | Execution status, 0 means "success" |
 
 ## Group
 
 Each group contains these members:
 
-| Name | Type    | Description |
-| ---- | ------- | ----------- |
-| id   | integer | ID          |
-| name | string  | Name        |
+| Name     | Type    | Description                                |
+| -------- | ------- | ------------------------------------------ |
+| id       | integer | ID                                         |
+| name     | string  | Name                                       |
+| jobCount | integer | Total number of cronjobs                   |
+| priority | integer | Priority: normal (0), high (1), higher (2) |
 
 ## Account
 
 Your account contains these members:
 
-| Name        | Type    | Description                         |
-| ----------- | ------- | ----------------------------------- |
-| id          | integer | Account ID                          |
-| name        | string  | Account name                        |
-| timezone    | string  | Default timezone                    |
-| plan        | string  | Plan name e.g. Pro                  |
-| cron        | integer | Max cronjobs e.g. 40                |
-| expiryDate  | string  | Account expiry date e.g. 2023-12-31 |
+| Name       | Type    | Description                         |
+| ---------- | ------- | ----------------------------------- |
+| id         | integer | Account ID                          |
+| name       | string  | Account name                        |
+| timezone   | string  | Default timezone                    |
+| plan       | string  | Plan name e.g. Pro                  |
+| cron       | integer | Max cronjobs e.g. 40                |
+| expiryDate | string  | Account expiry date e.g. 2023-12-31 |
