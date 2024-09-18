@@ -7,6 +7,10 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## September 2024
 
+#### Priority level
+
+You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, and team members.
+
 #### Free WordPress plugin
 
 You can now install and activate our official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">WordPress plugin here</a>.
