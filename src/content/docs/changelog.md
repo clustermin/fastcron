@@ -7,6 +7,11 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## September 2024
 
+#### Team members
+
+Members and Viewers now can see other team members.
+All team members can choose to start/stop receiving cron notifications from the team account on the Members page.
+
 #### Priority level
 
 You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, and team members.
