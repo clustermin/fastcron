@@ -4,7 +4,7 @@ Cronjobs belong to a group.
 Team members can access a limited number of groups.
 Cron notifications will be sent to a specific webhook/Slack or member emails.</p>
 <p>However, having several team members and groups makes it increasingly complicated.</p>
-<p>In order to simplify the item categorization, FastCron now supports <strong>Priority</strong>.</p>
+<p>To simplify the item categorization, FastCron now supports <strong>Priority</strong>.</p>
 <p>There are 3 priority levels: <strong>Normal</strong>, <strong>High</strong>, and <strong>Higher</strong>.
 You may use them for your <strong>test</strong>, <strong>staging</strong>, and <strong>production</strong> environment.</p>
 <h2 id="cron-job-priority">Cron job priority</h2>
@@ -30,10 +30,14 @@ Team members and admin will have priority <strong>Higher</strong> by default, so
 <ul>
 <li>
 <p>Existing team members <em>with limited group access</em> will be able to access all items with the same priority or lower.
-Please update your team members with a suitable priority level if you still want to limit their access.</p>
+Please update your team members with a suitable priority level if you still want to limit their access.
+<img src="/images/team-member-allowed-groups.png" alt="Team member allowed groups">
+In the screenshot above, the allowed groups will be removed.</p>
 </li>
 <li>
-<p>Team members <em>receiving cron notifications from some groups</em> will receive cron notifications from <strong>ALL</strong> cronjobs with the same priority or lower.</p>
+<p>Team members <em>receiving cron notifications from some groups</em> will receive cron notifications from <strong>ALL</strong> cronjobs with the same priority or lower.
+<img src="/images/group-send-cron-notifications.png" alt="Send cron notifications to team members">
+In the screenshot above, all the selected team members will receive cron notifications from all cronjobs.</p>
 </li>
 </ul>
 <p>If you have any questions, please email me at <a href="mailto:support@fastcron.com">support@fastcron.com</a>.</p>  <a href="/blog" class="flex items-baseline">

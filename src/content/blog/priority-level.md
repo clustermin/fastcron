@@ -11,7 +11,7 @@ Cron notifications will be sent to a specific webhook/Slack or member emails.
 
 However, having several team members and groups makes it increasingly complicated.
 
-In order to simplify the item categorization, FastCron now supports **Priority**.
+To simplify the item categorization, FastCron now supports **Priority**.
 
 There are 3 priority levels: **Normal**, **High**, and **Higher**.
 You may use them for your **test**, **staging**, and **production** environment.
@@ -50,7 +50,11 @@ Team members and admin will have priority **Higher** by default, so they can vie
 In **1 month** (**Oct 18, 2024**): 
 - Existing team members *with limited group access* will be able to access all items with the same priority or lower.
 Please update your team members with a suitable priority level if you still want to limit their access.
+![Team member allowed groups](/images/team-member-allowed-groups.png)
+In the screenshot above, the allowed groups will be removed.
 
 - Team members *receiving cron notifications from some groups* will receive cron notifications from **ALL** cronjobs with the same priority or lower.
+![Send cron notifications to team members](/images/group-send-cron-notifications.png)
+In the screenshot above, all the selected team members will receive cron notifications from all cronjobs.
 
 If you have any questions, please email me at support@fastcron.com.
