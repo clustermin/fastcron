@@ -7,6 +7,17 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## September 2024
 
+#### Variables
+
+You can now add variables on the Environment variables page.
+
+Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value.
+It's useful for secret key/token, API/authorization token, or configuration values.
+
+Use it when:
+- you don't want to share secrets with your team members.
+- you want to change it once and apply to all cronjobs.
+
 #### Team members
 
 Members and Viewers now can see other team members.

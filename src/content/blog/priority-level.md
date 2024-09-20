@@ -1,6 +1,6 @@
 ---
 title: 'Priority level: a better way to categorize items'
-description: You can now set priority (Normal, High, Higher) for cronjobs, groups, notification channels, and team members.
+description: You can now set priority (Normal, High, Higher) for cronjobs, groups, variables, notification channels, and team members.
 pubDate: 'Sep 18, 2024'
 ---
 
@@ -27,6 +27,13 @@ If you move it to another group, its priority will be updated to the new group p
 You can set the group priority when adding/editing a group.
 Changing a group priority will update all its cronjobs to the same priority.
 
+## Environment variable priority
+
+You can set the variable priority when adding/editing a variable.
+Variables can be used in all cronjobs, be seen by all team members.
+
+Only team members with the same or higher priority can edit (and see the variable value) and delete a variable.
+
 ## Notification channel priority
 
 You can set the channel priority when adding/editing a channel.
@@ -37,7 +44,7 @@ A notification channel will receive cron notifications from cronjobs with **the 
 You can set the team member priority when inviting/editing a team member.
 
 **Admins** can add/view/edit/remove **Members** with **the same priority or lower**.
-Team members can add/view/edit/delete items (cronjobs, groups, channels) with **the same priority or lower**.
+Team members can add/view/edit/delete items (cronjobs, groups, variables, channels) with **the same priority or lower**.
 
 Team members will receive cron notifications via email from cronjobs with **the same priority or lower**.
 You need to check **Send cron notifications to this member** when adding/editing a team member.
