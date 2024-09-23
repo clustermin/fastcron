@@ -41,9 +41,10 @@
 <path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M20 6H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Z"></path>
 <path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M6 9h.01v.01H6V9Zm0 3h.01v.01H6V12Zm0 3h.01v.01H6V15Zm3-6h.01v.01H9V9Zm0 3h.01v.01H9V12Zm3-3h.01v.01H12V9Zm0 3h.01v.01H12V12Zm3 0h.01v.01H15V12Zm3 0h.01v.01H18V12Zm0 3h.01v.01H18V15Zm-3-6h.01v.01H15V9Zm3 0h.01v.01H18V9Z"></path>
 </svg>
-<strong>Environment variables</strong> pagepage.</p>
-<p>Use <code dir="auto">__variable_name__</code> in the cronjob URL, POST data, or payload, and it will be replaced with the variable value.
-It’s useful for secret key/token, API/authorization token, or configuration values.</p>
+<strong>Environment variables</strong> page.</p>
+<p>Use <code dir="auto">__variable_name__</code> in the cronjob URL, POST data, or payload, and it will be replaced with the variable value
+when the cronjob priority is <strong>the same or higher</strong> than the variable priority.</p>
+<p>It’s useful for secret key/token, API/authorization token, or configuration values.</p>
 <p>Use it when:</p>
 <ul>
 <li>you don’t want to share secrets with your team members.</li>
@@ -53,7 +54,7 @@ It’s useful for secret key/token, API/authorization token, or configuration va
 <p>Members and Viewers now can see other team members.
 All team members can choose to start/stop receiving cron notifications from the team account on the Members page.</p>
 <h4 id="priority-level">Priority level</h4>
-<p>You can now set <a href="/blog/priority-level">priority level</a> for your cronjobs, groups, channels, and team members.</p>
+<p>You can now set <a href="/blog/priority-level">priority level</a> for your cronjobs, groups, channels, variables, and team members.</p>
 <h4 id="free-wordpress-plugin">Free WordPress plugin</h4>
 <p>You can now install and activate our official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">WordPress plugin here</a>.
 It will create a <strong>free cronjob</strong> running every 5 minutes to your <code dir="auto">wp-cron.php</code>.

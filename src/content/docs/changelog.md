@@ -18,9 +18,11 @@ You can now add variables on the
     <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
           d="M6 9h.01v.01H6V9Zm0 3h.01v.01H6V12Zm0 3h.01v.01H6V15Zm3-6h.01v.01H9V9Zm0 3h.01v.01H9V12Zm3-3h.01v.01H12V9Zm0 3h.01v.01H12V12Zm3 0h.01v.01H15V12Zm3 0h.01v.01H18V12Zm0 3h.01v.01H18V15Zm-3-6h.01v.01H15V9Zm3 0h.01v.01H18V9Z"/>
 </svg>
-**Environment variables** pagepage.
+**Environment variables** page.
 
-Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value.
+Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value
+when the cronjob priority is **the same or higher** than the variable priority.
+
 It's useful for secret key/token, API/authorization token, or configuration values.
 
 Use it when:
@@ -34,7 +36,7 @@ All team members can choose to start/stop receiving cron notifications from the 
 
 #### Priority level
 
-You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, and team members.
+You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, variables, and team members.
 
 #### Free WordPress plugin
 
