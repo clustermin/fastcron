@@ -66,7 +66,7 @@ Add a new cronjob.
 | password         | string  | null             | Password for HTTP authentication                                                                 |
 | httpMethod       | string  | GET              | HTTP method of the HTTP request to send to your cronjob URL                                      |
 | postData         | string  | null             | When `httpMethod` is POST, PUT, or PATCH, send this post data with the HTTP request.             |
-| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters, e.g.                |
+| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters.                |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
 | notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
 | failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
