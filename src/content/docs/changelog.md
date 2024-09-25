@@ -5,6 +5,13 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 You can receive monthly product updates from FastCron by subscribing on the **Profile** page.
 
+## October 2024
+
+#### Notify when output contains a word
+
+You can receive cron notifications (from emails and all other channels) when your cronjob output does / doesn't contain a word.
+To enable it, click **Edit** cronjob. In the section **Notifications**, enter the desired word into **Notify if contains**.
+
 ## September 2024
 
 #### Variables
