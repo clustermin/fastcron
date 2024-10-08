@@ -7,9 +7,25 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## October 2024
 
+#### Feature requests
+
+You can now <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a>.
+I will prioritize feature requests with 5 or more votes.
+
+#### Hide archived cronjobs
+
+FastCron will archive disabled cronjobs after 1 year, and won't show them on the dashboard by default.
+You can see them when using the search form.
+To see all archived cronjobs, select *Archived* status on the search form.
+
+#### Remove inactive account
+
+FastCron will remove free accounts with no active cronjobs and no activity in the last year.
+Due to the high rate of invalid email addresses and bounced messages, FastCron **won’t send** any notifications before removal.
+
 #### Notify when output contains a word
 
-You can receive cron notifications (from emails and all other channels) when your cronjob output does / doesn't contain a word.
+You can receive cron notifications (from emails and all other channels) when your cronjob output does/doesn't contain a word.
 To enable it, click **Edit** cronjob. In the section **Notifications**, enter the desired word into **Notify if contains**.
 
 ## September 2024

@@ -22,16 +22,13 @@ minute hour day month weekday
 
 | Field   | Allowed values  | Allowed special characters |
 | ------- | --------------- | -------------------------- |
-| Minute  | 0..59           | `*/,-`                     |
-| Hour    | 0..23           | `*/,-`                     |
-| Day     | 1..31           | `*/,-`                     |
+| Minute  | 0..59           | `*/,-R`                    |
+| Hour    | 0..23           | `*/,-R`                    |
+| Day     | 1..31           | `*/,-L`                    |
 | Month   | 1..12           | `*/,-`                     |
 | Weekday | 1..7 (Mon..Sun) | `*/,-`                     |
 
 You can list all values for a field using commas like `1,2,3`, or using range like `1-3`.
-
-
-## Commons time settings
 
 | Cron expression | Time expression | When to run     |
 | --------------- | --------------- | --------------- |
