@@ -9,6 +9,9 @@ Below, you can see the list of tutorials to set up cronjobs for various scripts,
 
 If you want your plugins listed here, just email me at support@fastcron.com.
 
+## Cloud hosting provider
+- [Render cron](/tutorials/render-cron)
+
 ## PHP scripts
 
 - [PHP cron](/tutorials/php-cron)

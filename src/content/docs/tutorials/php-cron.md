@@ -1,8 +1,5 @@
 ---
 title: How to run PHP cronjobs
-sidebar:
-  label: PHP cron
-  order: 3
 ---
 
 ## About PHP

@@ -1,8 +1,5 @@
 ---
 title: How to set up cronjobs for Sendy.co
-sidebar:
-  label: Sendy cron
-  order: 4
 ---
 
 <a href="https://sendy.co/?ref=fastcron.com" rel="nofollow" target="_blank">Sendy</a> is a self-hosted  email newsletter application
@@ -24,7 +21,7 @@ https://example.com/sendy/scheduled.php
 ```sh
 https://example.com/sendy/autoresponders.php
 ```
-- Select **When to call: Every 5 minutes**, then **Save** and run your cronjob
+- Select **When to call: Every 5 minutes**, then **Save and run** your cronjob
 
 And that's it.
 
