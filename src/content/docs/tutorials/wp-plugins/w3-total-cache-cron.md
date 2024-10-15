@@ -2,7 +2,8 @@
 title: How to set up cronjob for W3 Total Cache
 ---
 
-The <a href="https://wordpress.org/plugins/w3-total-cache/" target="_blank" rel="nofollow">W3 Total Cache</a> plugin relies on [WP Cron](/tutorials/wp-cron) to run its scheduled tasks.
+The <a href="https://wordpress.org/plugins/w3-total-cache/" target="_blank" rel="nofollow">W3 Total Cache</a> plugin 
+relies on [WP Cron](/tutorials/wp-cron) to run its scheduled tasks.
 To set up cronjob for your **W3 Total Cache** plugin, you can:
 
 ## Install the free WordPress plugin

@@ -30,6 +30,7 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [WP All Import](/tutorials/wp-plugins/wp-all-import-cron)
 - [WP Offload S3](/tutorials/wp-plugins/wp-offload-s3-cron)
 - [BackupWordPress](/tutorials/wp-plugins/wp-backup-wordpress-cron)
+- [WP Fastest Cache](/tutorials/wp-plugins/wp-fastest-cache-cron)
 - [Newsletter](/tutorials/wp-plugins/wp-newsletter-cron)
 - [Postie](/tutorials/wp-plugins/wp-postie-cron)
 - [UpdraftPlus](/tutorials/wp-plugins/wp-updraft-plus-cron)
