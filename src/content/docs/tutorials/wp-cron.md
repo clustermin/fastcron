@@ -64,3 +64,4 @@ If you're using one of these, set up a cronjob to run your website WP cron.
 - [Newsletter](/tutorials/wp-plugins/wp-newsletter-cron)
 - [Postie](/tutorials/wp-plugins/wp-postie-cron)
 - [UpdraftPlus](/tutorials/wp-plugins/wp-updraft-plus-cron)
+- [W3 Total Cache](/tutorials/wp-plugins/w3-total-cache-cron)
