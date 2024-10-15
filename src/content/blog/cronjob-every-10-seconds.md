@@ -1,7 +1,7 @@
 ---
 title: 'How to run cron job every 10 seconds'
 description: 'You can run cronjobs every 10 seconds using Unix crontab or FastCron service.'
-pubDate: 'Sep 30 2023'
+pubDate: Sep 30 2023
 ---
 
 If you are using the **Cron Jobs** feature from your hosting or your server `crontab`,
