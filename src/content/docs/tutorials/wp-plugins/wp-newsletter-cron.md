@@ -1,9 +1,9 @@
 ---
-title: How to set up cronjob for Postie
+title: How to set up cronjob for WP Newsletter
 ---
 
-The <a href="https://wordpress.org/plugins/postie/" target="_blank" rel="nofollow">Postie</a> plugin relies on [WP Cron](/tutorials/wp-cron) to run its scheduled tasks.
-To set up cronjob for your **Postie** plugin, you can:
+The <a href="https://wordpress.org/plugins/newsletter/" target="_blank" rel="nofollow">WP Newsletter</a> plugin relies on [WP Cron](/tutorials/wp-cron) to run its scheduled tasks.
+To set up cronjob for your **Newsletter** plugin, you can:
 
 ## Install the free WordPress plugin
 
