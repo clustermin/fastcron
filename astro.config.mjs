@@ -9,7 +9,7 @@ export default defineConfig({
   site: 'https://www.fastcron.com',
   trailingSlash: 'never',
   integrations: [sitemap(), tailwind(), starlight({
-    title: 'Docs',
+    title: 'FastCron',
     disable404Route: true,
     favicon: '/images/logo.png',
     customCss: ['./src/styles/docs.css'],
