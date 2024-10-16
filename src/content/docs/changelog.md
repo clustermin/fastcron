@@ -7,6 +7,13 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 ## October 2024
 
+#### POST data/payload validation
+
+FastCron will now validate [`postData`](/reference/cron#cron_add) and [`payload`](/reference/cron#cron_run).
+The POST data must be
+- Valid query string in the format `name=value&name2=value2`. No newlines are allowed.
+- If the `postData`/`payload` has newlines or starts with `{`, it must be valid JSON string.
+
 #### Feature requests
 
 You can now <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a>.

@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-has-toc data-has-sidebar data-theme="dark" class="astro-bguv2lll"> <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Cron expression and time expression | FastCron</title><link rel="canonical" href="https://www.fastcron.com/guides/cron-expressions"/><link rel="sitemap" href="/sitemap-index.xml"/><link rel="shortcut icon" href="/images/logo.png" type="image/png"/><meta name="generator" content="Astro v4.7.1"/><meta name="generator" content="Starlight v0.22.3"/><meta property="og:title" content="Cron expression and time expression"/><meta property="og:type" content="article"/><meta property="og:url" content="https://www.fastcron.com/guides/cron-expressions"/><meta property="og:locale" content="en"/><meta property="og:description"/><meta property="og:site_name" content="FastCron"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Cron expression and time expression"/><meta name="twitter:description"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg> <svg aria-hidden="true" class="dark astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg> <svg aria-hidden="true" class="auto astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> </template><link rel="stylesheet" href="/_astro/index.DD7_F-sh.css">
+<link rel="stylesheet" href="/_astro/index.B7LPmij8.css">
+<style>svg:where(.astro-c6vsoqas){color:var(--sl-icon-color);font-size:var(--sl-icon-size, 1em);width:1em;height:1em}
+</style><script type="module" src="/_astro/hoisted.CG3JS_KA.js"></script>
+<script type="module" src="/_astro/page.BO5rBSqo.js"></script></head> <body class="astro-bguv2lll"> <a href="#_top" class="astro-7q3lir66">Skip to content</a>  <div class="page sl-flex astro-vrdttmbt"> <header class="header astro-vrdttmbt"><div class="header sl-flex astro-kmkmnagf"> <div class="title-wrapper sl-flex astro-kmkmnagf"> <a href="/" class="site-title sl-flex astro-m46x6ez3">  <img class="light:sl-hidden astro-m46x6ez3" alt="FastCron" src="/_astro/rush-dark.BUMYpqxa.png" width="32" height="32"> <img class="dark:sl-hidden astro-m46x6ez3" alt="FastCron" src="/_astro/logo.BmmjkdaC.png" width="256" height="256"> <span class="astro-m46x6ez3"> FastCron </span> </a>  </div> <div class="sl-flex astro-kmkmnagf"> <site-search data-translations="{&#34;placeholder&#34;:&#34;Search&#34;}" data-strip-trailing-slash class="astro-v37mnknz"> <button data-open-modal disabled class="astro-v37mnknz">  <svg aria-label="Search" class="astro-v37mnknz astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg>  <span class="sl-hidden md:sl-block astro-v37mnknz" aria-hidden="true">Search</span> <svg aria-label="(Press / to Search)" class="sl-hidden md:sl-block astro-v37mnknz astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5Zm3 15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10Z"/><path d="M15.293 6.707a1 1 0 1 1 1.414 1.414l-8.485 8.486a1 1 0 0 1-1.414-1.415l8.485-8.485Z"/></svg>  </button> <dialog style="padding:0" aria-label="Search" class="astro-v37mnknz"> <div class="dialog-frame sl-flex astro-v37mnknz">  <button data-close-modal class="sl-flex md:sl-hidden astro-v37mnknz"> Cancel </button> <div class="search-container astro-v37mnknz"> <div id="starlight__search" class="astro-v37mnknz"></div> </div> </div> </dialog> </site-search>    </div> <div class="sl-hidden md:sl-flex right-group astro-kmkmnagf"> <div class="sl-flex social-icons astro-kmkmnagf"> <a href="https://app.fastcron.com/login" class="hidden md:inline-flex text-gray-800 dark:text-white bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:ring-gray-400 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> <a href="https://app.fastcron.com/signup" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign up</a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected="true" class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>   </div> </div> </header> <nav class="sidebar astro-vrdttmbt" aria-label="Main"> <starlight-menu-button class="astro-jif73yzw"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-jif73yzw"> <svg aria-hidden="true" class="astro-jif73yzw astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg>  </button> </starlight-menu-button>    <div id="starlight__sidebar" class="sidebar-pane astro-vrdttmbt"> <div class="sidebar-content sl-flex astro-vrdttmbt"> <ul class="top-level astro-3ii7xxms"> <li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Getting started</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/docs" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Welcome</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/ip-addresses" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">IP addresses</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/docs/faq" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">FAQ</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/changelog" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Changelog</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/tutorials" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Tutorials</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/integrations" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Notification channels</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Guides</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/guides/cloudflare-whitelist" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Whitelist FastCron</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/guides/cron-expressions" aria-current="page" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Cron expressions</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/guides/dns-cache" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">DNS cache</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/guides/one-time-cronjobs" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">One-time cronjobs</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/guides/random-keywords" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Random keywords</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/guides/random-time" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Random time</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details class="astro-3ii7xxms"> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Troubleshooting</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/troubleshooting/406-not-acceptable" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">406 Not Acceptable</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/500-internal-server-error" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">500 Internal Server Error</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/503-service-unavailable" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">503 Service Unavailable</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/504-gateway-timeout" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">504 Gateway Timeout</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/connection-refused" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Connection refused</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/connection-reset" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Connection reset</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/troubleshooting/connection-timed-out" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Connection timed out</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">FastCron API</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/reference" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Introduction</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/reference/data" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Data structure</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/reference/cron" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">cron_*</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/reference/group" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">group_*</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/reference/account" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">account_*</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Compare to</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/cron-job-org-alternative" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">cron-job.org</span>  </a> </li><li class="astro-3ii7xxms"> <a href="/easycron-alternative" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">EasyCron</span>  </a> </li> </ul>  </details> </li> </ul>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="sl-flex social-icons astro-wu23bvmt"> <a href="https://app.fastcron.com/login" class="hidden md:inline-flex text-gray-800 dark:text-white bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:ring-gray-400 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> <a href="https://app.fastcron.com/signup" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Sign up</a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected="true" class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><div class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </div><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#crontab-expression" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Crontab expression</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#time-expression" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Time expression</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#crontab-expression" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Crontab expression</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#time-expression" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Time expression</span> </a>  </li> </ul> </nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body lang="en" dir="ltr" class="astro-bguv2lll">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Cron expression and time expression</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <p>FastCron accepts both</p>
+<ul>
+<li>standard <strong>cron expressions</strong> like <code dir="auto">*/5 * * * *</code></li>
+<li>simple <strong>time expressions</strong> like <code dir="auto">5 minutes</code>.</li>
+</ul>
+<p>It will automatically check the expression and calculate the next execution times.</p>
+<h2 id="crontab-expression">Crontab expression</h2>
+<p>The standard crontab expression consists of 5 fields:</p>
+<div class="expressive-code"><link rel="stylesheet" href="/_astro/ec.d6kn2.css"><script type="module" src="/_astro/ec.3zb7u.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">minute hour day month weekday</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="minute hour day month weekday"><div></div></button></div></figure></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field</th><th>Allowed values</th><th>Allowed special characters</th></tr></thead><tbody><tr><td><code dir="auto">minute</code></td><td>0..59</td><td><code dir="auto">*/,-R</code></td></tr><tr><td><code dir="auto">hour</code></td><td>0..23</td><td><code dir="auto">*/,-R</code></td></tr><tr><td><code dir="auto">day</code></td><td>1..31</td><td><code dir="auto">*/,-L</code></td></tr><tr><td><code dir="auto">month</code></td><td>1..12</td><td><code dir="auto">*/,-</code></td></tr><tr><td><code dir="auto">weekday</code></td><td>1..7 (Mon..Sun)</td><td><code dir="auto">*/,-</code></td></tr></tbody></table>
+<p>There are multiple ways to set the values for each field:</p>
+<ul>
+<li>Use <code dir="auto">*</code> to select all allowed values</li>
+<li>Use <code dir="auto">*/n</code> to select all values with a step number <code dir="auto">n</code>
+<ul>
+<li><code dir="auto">*/5</code> in the <code dir="auto">minute</code> field will select from <code dir="auto">0</code>, <code dir="auto">5</code>, <code dir="auto">10</code>, to <code dir="auto">55</code></li>
+<li><code dir="auto">*/2</code> in the <code dir="auto">day</code> field will select from <code dir="auto">1</code>, <code dir="auto">3</code>, <code dir="auto">5</code>, to <code dir="auto">27</code>, <code dir="auto">29</code>, <code dir="auto">31</code></li>
+</ul>
+</li>
+<li>List all values with commas <code dir="auto">1,2,3,4,5,6,7</code></li>
+<li>Use a simple range like <code dir="auto">1-7</code></li>
+<li>Use a simple range with a step like <code dir="auto">1-7/2</code></li>
+<li>Use <code dir="auto">L</code> at the <code dir="auto">day</code> field to select <strong>the last day of the month</strong></li>
+<li>Use <code dir="auto">R</code> to select <strong>one random value</strong></li>
+<li>Use <code dir="auto">R,values</code> to select one random value from a list e.g. <code dir="auto">R,1-7</code> will select one random value from 1 to 7.</li>
+</ul>
+<p>Your cronjob will run when the current time matches <strong>ALL</strong> the fields of the cron expression.
+For example, cronjob with the expression <code dir="auto">30 7 * 10 Mon</code> will run in October, every Monday at 07:30.</p>
+<p>If you select specific value(s) for both the <code dir="auto">day</code> and <code dir="auto">weekday</code> fields, it will run when the current time matches <strong>EITHER</strong> values.
+For example, <code dir="auto">30 7 15 10 Mon</code> will run <strong>in October, at 07:30 every Monday</strong> AND <strong>at 07:30 Oct 15</strong>.
+You may want to use the cron expression <code dir="auto">30 7 * 10 Mon</code> with the <a href="/blog/time-filter">time filter</a> <code dir="auto">day == 15</code> to run only Monday, Oct 15.</p>
+<p>If you’d like to run a cronjob at a specific time, see <a href="/guides/one-time-cronjobs">one-time cronjobs</a>.</p>
+<p>Due to the limitation of the time values, some cron expressions are impossible (time never matches),
+some time intervals e.g. <em>every 48 minutes</em> are not available,
+and some time interval can’t matches perfectly e.g. every 2 days.
+You should try using the <a href="#time-expression">time expression</a> to fit your requirements.</p>
+<p>Here are some popular cron expressions:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Expression</th><th>Meaning</th></tr></thead><tbody><tr><td><code dir="auto">* * * * *</code></td><td>Every minute</td></tr><tr><td><code dir="auto">*/2 * * * *</code></td><td>Every 2 minutes</td></tr><tr><td><code dir="auto">*/5 * * * *</code></td><td>Every 5 minutes</td></tr><tr><td><code dir="auto">*/10 * * * *</code></td><td>Every 10 minutes</td></tr><tr><td><code dir="auto">*/15 * * * *</code></td><td>Every 15 minutes</td></tr><tr><td><code dir="auto">*/30 * * * *</code></td><td>Every 30 minutes</td></tr><tr><td><code dir="auto">5 * * * *</code></td><td>Every hour</td></tr><tr><td><code dir="auto">5 */2 * * *</code></td><td>Every 2 hours</td></tr><tr><td><code dir="auto">5 */3 * * *</code></td><td>Every 3 hours</td></tr><tr><td><code dir="auto">5 */4 * * *</code></td><td>Every 4 hours</td></tr><tr><td><code dir="auto">5 */6 * * *</code></td><td>Every 6 hours</td></tr><tr><td><code dir="auto">5 */8 * * *</code></td><td>Every 8 hours</td></tr><tr><td><code dir="auto">5 0,12 * * *</code></td><td>Twice a day</td></tr><tr><td><code dir="auto">5 7 * * *</code></td><td>Every day</td></tr><tr><td><code dir="auto">5 7 */2 * *</code></td><td>Every 2 days / Every other day</td></tr><tr><td><code dir="auto">5 7 */3 * *</code></td><td>Every 3 days</td></tr><tr><td><code dir="auto">5 7 * * 1</code></td><td>Every week, on Monday at 07:05</td></tr><tr><td><code dir="auto">5 7 15 * *</code></td><td>Every month, on day 15, at 7:05</td></tr></tbody></table>
+<h2 id="time-expression">Time expression</h2>
+<p>FastCron also supports simple time expressions like <code dir="auto">5 minutes</code> or <code dir="auto">next Friday 7:05 PM</code>.</p>
+<p>Internally, it uses the PHP function
+<a href="https://www.php.net/manual/en/function.strtotime.php" target="_blank" rel="nofollow"><code dir="auto">strtotime</code></a>.
+It works by calculating the next execution times based on the current execution time.</p>
+<p>If you enter a specific time e.g. `Oct 16, 2024 07:50 PM’, then it will <a href="/guides/one-time-cronjobs">run only once</a>.</p>
+<p>Here are some popular time expressions:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Expression</th><th>Meaning</th></tr></thead><tbody><tr><td><code dir="auto">10 seconds</code></td><td>Every 10 seconds</td></tr><tr><td><code dir="auto">30 seconds</code></td><td>Every 30 seconds</td></tr><tr><td><code dir="auto">1 minute</code></td><td>Every minute</td></tr><tr><td><code dir="auto">5 minutes</code></td><td>Every 5 minutes</td></tr><tr><td><code dir="auto">14 minutes</code></td><td>Every 14 minutes</td></tr><tr><td><code dir="auto">1 hour</code></td><td>Every hour</td></tr><tr><td><code dir="auto">7 hours</code></td><td>Every 7 hours</td></tr><tr><td><code dir="auto">1 day</code></td><td>Every day</td></tr><tr><td><code dir="auto">1 day 17:05</code></td><td>Every day at 17:05</td></tr><tr><td><code dir="auto">2 days</code></td><td>Every 2 days</td></tr><tr><td><code dir="auto">2 days 17:05</code></td><td>Every 2 days at 17:05</td></tr><tr><td><code dir="auto">next Friday 17:05</code></td><td>Every week, on Friday at 17:05</td></tr><tr><td><code dir="auto">2 weeks Friday 17:05</code></td><td>Every 2 weeks, on Friday at 17:05</td></tr><tr><td><code dir="auto">1 month 17:05</code></td><td>Every month at 17:05</td></tr><tr><td><code dir="auto">first day of next month 17:05</code></td><td>Every first day of the month, at 17:05</td></tr><tr><td><code dir="auto">last day of next month 17:05</code></td><td>Every last day of the month, at 17:05</td></tr></tbody></table>
+<p>If you need help choosing the right cron expression, <a href="mailto:support@fastcron.com">email me</a> and I’ll help.</p> </div> <footer class="astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr"> <a href="/guides/cloudflare-whitelist" rel="prev" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg>  <span class="astro-u2l5gyhi"> Previous <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Whitelist FastCron</span> </span> </a> <a href="/guides/dns-cache" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg>  <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">DNS cache</span> </span> </a> </div>  </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
