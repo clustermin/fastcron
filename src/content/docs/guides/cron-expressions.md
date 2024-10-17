@@ -51,7 +51,7 @@ If you'd like to run a cronjob at a specific time, see [one-time cronjobs](/guid
 
 Due to the limitation of the time values, some cron expressions are impossible (time never matches),
 some time intervals e.g. _every 48 minutes_ are not available,
-and some time interval can't matches perfectly e.g. every 2 days.
+and some time interval can't match perfectly e.g. every 2 days.
 You should try using the [time expression](#time-expression) to fit your requirements.
 
 Here are some popular cron expressions:
