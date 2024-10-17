@@ -18,9 +18,10 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [WordPress cron](/tutorials/wp-cron)
 - [Laravel](/tutorials/laravel-cron)
 - [Symfony](/tutorials/symfony-cron)
-- [WHMCS](/tutorials/whmcs-cron)
 - [Drupal](/tutorials/drupal-cron)
 - [Sendy.co](/tutorials/sendy-cron)
+- [WHMCS](/tutorials/whmcs-cron)
+- [Blesta](/tutorials/blesta-cron)
 - [osTicket](/tutorials/osticket-cron)
 - [InvoicePlane](/tutorials/invoiceplane-cron)
 

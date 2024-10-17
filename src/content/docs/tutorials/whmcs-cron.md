@@ -1,8 +1,5 @@
 ---
 title: How to set up cronjobs for WHMCS
-sidebar:
-  label: WHMCS cron
-  order: 4
 ---
 
 Follow this step-by-step to set up cronjobs for <a href="https://www.whmcs.com/?ref=fastcron.com" rel="nofollow" target="_blank">WHMCS</a>:
