@@ -24,15 +24,6 @@ Premium accounts will be downgraded to the free plan. If you have more cronjobs 
 
 Free accounts don't expire.
 
-### How to transfer my account?
-To move all cronjobs to another owner, you have 2 options:
-
-- Update your account email to the new owner. Visit Profile > Change email. Enter the new email address, then Save. It will send a confirmation email to the new email address. Once it's confirmed, your account will belong to the new owner.
-
-- Export all cronjobs (visit Cronjobs > Export > Export all cronjobs), then download it and send it to the new account owner. They can import it to their account by visiting Cronjobs > Import and uploading the exported JSON file.
-
-If you need any help with transferring your account/cronjobs, submit a request and I'll help.
-
 ## Billing and payments
 ### Is the service free?
 Yes, FastCron has a free plan with limited features. Please check the [Pricing](/pricing) for plan comparisons.
@@ -98,11 +89,13 @@ or in JSON format like this:
   "id": 123,
 }
 ```
+
 For JSON payload, FastCron automatically adds HTTP header
 `Content-Type: application/json`
 to the HTTP request, so you don't need to.
 
-### Other questions
+## Other questions
+- [How to transfer my account?](/questions/how-to-transfer-account)
 - [Does FastCron follow redirections?](/questions/will-fastcron-follow-redirections)
 - [Can I run shell/bash script?](/questions/can-i-run-shell-bash-script)
 - [Will my cronjobs overlap?](questions/will-cronjobs-overlap)
