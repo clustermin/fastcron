@@ -5,6 +5,8 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 You can receive monthly product updates from FastCron by subscribing on the **Profile** page.
 
+You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a> or vote on existing feature requests.
+
 ## October 2024
 
 #### POST data/payload validation
@@ -14,11 +16,6 @@ The POST data must be
 - Valid query string in the format `name=value&name2=value2`. No newlines are allowed.
 - If the `postData`/`payload` has newlines or starts with `{`, it must be valid JSON string.
 
-#### Feature requests
-
-You can now <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a>.
-I will prioritize feature requests with 5 or more votes.
-
 #### Hide archived cronjobs
 
 FastCron will archive disabled cronjobs after 1 year, and won't show them on the dashboard by default.
@@ -27,7 +24,7 @@ To see all archived cronjobs, select *Archived* status on the search form.
 
 #### Remove inactive account
 
-FastCron will remove free accounts with no active cronjobs and no activity in the last year.
+FastCron will remove free accounts with no active cronjobs and no activity in the last 6 months.
 Due to the high rate of invalid email addresses and bounced messages, FastCron **won’t send** any notifications before removal.
 
 #### Notify when output contains a word
