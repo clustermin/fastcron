@@ -11,11 +11,11 @@ You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel=
 
 #### Clean up
 - Old webhook URLs have been moved to the Notification channels.
-- Team members' allowed groups have been removed. They will see all cronjobs with the same or lower priority.
+- The allowed groups of team members have been removed. They will see all cronjobs with the same or lower priority.
 - Group notification recipients have been removed. They will receive cron notifications from all cronjobs with the same or lower priority.
 - Stopped one-time cronjobs will be removed after 3 days.
 - You won't be able to run disabled cronjobs using the API function `cron_run`.
-- Exports have priority too. Tea members can view, download, delete, and import files with the same or lower priority.
+- Exports have priority too. Team members can view, download, delete, and import files with the same or lower priority.
 
 #### POST data/payload validation
 
