@@ -9,6 +9,14 @@ You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel=
 
 ## October 2024
 
+#### Clean up
+- Old webhook URLs have been moved to the Notification channels.
+- Team members' allowed groups have been removed. They will see all cronjobs with the same or lower priority.
+- Group notification recipients have been removed. They will receive cron notifications from all cronjobs with the same or lower priority.
+- Stopped one-time cronjobs will be removed after 3 days.
+- You won't be able to run disabled cronjobs using the API function `cron_run`.
+- Exports have priority too. Tea members can view, download, delete, and import files with the same or lower priority.
+
 #### POST data/payload validation
 
 FastCron will now validate [`postData`](/reference/cron#cron_add) and [`payload`](/reference/cron#cron_run).
@@ -18,13 +26,13 @@ The POST data must be
 
 #### Hide archived cronjobs
 
-FastCron will archive disabled cronjobs after 1 year, and won't show them on the dashboard by default.
+FastCron will archive disabled cronjobs after 180 days, and won't show them on the dashboard by default.
 You can see them when using the search form.
 To see all archived cronjobs, select *Archived* status on the search form.
 
 #### Remove inactive account
 
-FastCron will remove free accounts with no active cronjobs and no activity in the last 6 months.
+FastCron will remove free accounts with no active cronjobs and no activity after 180 days.
 Due to the high rate of invalid email addresses and bounced messages, FastCron **won’t send** any notifications before removal.
 
 #### Notify when output contains a word
