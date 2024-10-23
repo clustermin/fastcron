@@ -1,8 +1,5 @@
 ---
 title: How to set up cronjob for osTicket
-sidebar:
-  label: osTicket cron
-  order: 4
 ---
 
 
