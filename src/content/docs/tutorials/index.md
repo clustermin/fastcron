@@ -24,6 +24,7 @@ If you want your plugins listed here, just email me at support@fastcron.com.
 - [Blesta](/tutorials/blesta-cron)
 - [osTicket](/tutorials/osticket-cron)
 - [Hesk](/tutorials/hesk-cron)
+- [Nextcloud](/tutorials/nextcloud-cron)
 - [InvoicePlane](/tutorials/invoiceplane-cron)
 
 ## WordPress plugins

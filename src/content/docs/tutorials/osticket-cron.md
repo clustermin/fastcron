@@ -24,4 +24,4 @@ Upload the file `rcron.php` to the same directory of your osTicket installation,
 
 `https://yourdomain.com/support/rcron.php`
 
-Once you're done, you can set up cronjob with the URL above. When creating cronjob, just enter the URL, and select **When to call**: **Every 5 minutes**, and **Save**.
+Once you're done, you can set up cronjob with the URL above. When creating cronjob, just enter the URL, and select **When to call: Every 2 minutes**, and **Save**.
