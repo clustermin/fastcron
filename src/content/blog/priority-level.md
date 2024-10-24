@@ -27,6 +27,12 @@ If you move it to another group, its priority will be updated to the new group p
 You can set the group priority when adding/editing a group.
 Changing a group priority will update all its cronjobs to the same priority.
 
+## Export priority
+
+The default export file's priority is Higher.
+When a team member exports cronjobs to a JSON file, the export file will have the same priority as them.
+Team members can view, download, import, and delete export files with the same priority or lower.
+
 ## Environment variable priority
 
 You can set the variable priority when adding/editing a variable.
