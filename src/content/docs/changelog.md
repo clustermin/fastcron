@@ -16,6 +16,8 @@ You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel=
 - Stopped one-time cronjobs will be removed after 3 days.
 - You won't be able to run disabled cronjobs using the API function `cron_run`.
 - Exports have priority too. Team members can view, download, delete, and import files with the same or lower priority.
+- Fixed: use `Rn` in the hour field in your [cron expressions](/guides/cron-expressions#crontab-expression) 
+to select `n` [random values](/guides/random-time#run-several-random-times-a-day).
 
 #### POST data/payload validation
 

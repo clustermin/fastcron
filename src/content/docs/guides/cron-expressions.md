@@ -37,7 +37,7 @@ There are multiple ways to set the values for each field:
 - Use a simple range like `1-7`
 - Use a simple range with a step like `1-7/2`
 - Use `L` at the `day` field to select **the last day of the month**
-- Use `R` to select **one random value**
+- Use `R` to select **one random value**, `Rn` to select `n` random value
 - Use `R,values` to select one random value from a list e.g. `R,1-7` will select one random value from 1 to 7.
 
 Your cronjob will run when the current time matches **ALL** the fields of the cron expression.
