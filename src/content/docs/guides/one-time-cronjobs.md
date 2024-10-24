@@ -31,6 +31,11 @@ If you still need to create/run one-time cronjobs, follow the instructions below
 And that's it. 
 You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the example above, and it'll show the next execution time so you can confirm the time settings are correct.
 
+:::note[Clean up stopped one-time cronjobs]
+FastCron will automatically delete stopped one-time cronjobs **3 days** after their last executions.
+You don't need to delete it manually or using [`cron_delete`](/reference/cron#cron_delete).
+:::
+
 ## Run one-time cronjobs using API 
 To programmatically run one-time cronjobs, you can create a cronjob (with **When to call: Manual**),
 then schedule to run it at a specific time using
