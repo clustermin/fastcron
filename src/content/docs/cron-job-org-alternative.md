@@ -14,7 +14,7 @@ Both FastCron and Cron-job.org have a free plan.
 | Number of cronjobs                                                 | unlimited    | 3              |
 | Minimum cron interval                                              | 1 minute     | 5 minutes      |
 | Max cron history logs                                              | 25           | 25             |
-| Max cron timeout                                                   | 30 seconds   | **60 seconds** |
+| Max cron timeout                                                   | 30 seconds   | **4 hours** |
 | Max response size                                                  | 8 KB         | **100 MB**     |
 | Max API calls per day                                              | 100          | **unlimited**  |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no           | **yes**        |
@@ -34,7 +34,7 @@ Cron-job.org relies on donations.
 | Number of cronjobs                                                 | unlimited    | 25            |
 | Minimum cron interval                                              | 1 minute     | **5 seconds** |
 | Max cron history logs                                              | 25           | **250**       |
-| Max cron timeout                                                   | 5 minutes    | **1 hour**    |
+| Max cron timeout                                                   | 5 minutes    | **4 hours**    |
 | Max response size                                                  | 64 KB        | **100 MB**    |
 | Max API calls per day                                              | 5,000        | **unlimited** |
 | [Randomized cronjob URLs](/guides/random-keywords) to bypass cache | no           | **yes**       |
