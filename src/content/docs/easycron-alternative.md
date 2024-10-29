@@ -13,12 +13,12 @@ Both FastCron and EasyCron have a free plan.
 | -------------------------------- | ---------- | -------------- |
 | Requires monthly login           | yes        | **no**         |
 | Minimum cron interval            | 20 minutes | **5 minutes**  |
-| Max number of daily cronjobs     | 200        | 3              |
-| Max number of 20-minute cronjobs | 2          | **3**          |
-| Max number of 10-minute cronjobs | 1          | **3**          |
-| Max number of 5-minute cronjobs  | 0          | **3**          |
+| Max number of daily cronjobs     | 200        | 5              |
+| Max number of 20-minute cronjobs | 2          | **5**          |
+| Max number of 10-minute cronjobs | 1          | **5**          |
+| Max number of 5-minute cronjobs  | 0          | **5**          |
 | Max cron history logs            | 10         | **25**         |
-| Max cron timeout                 | 5 seconds  | **60 seconds** |
+| Max cron timeout                 | 5 seconds  | **4 hours**    |
 | Keep failure logs                | no         | **3**          |
 | Email notifications              | no         | **yes**        |
 | Change HTTP method and headers   | no         | **yes**        |
@@ -28,21 +28,20 @@ FastCron runs cron jobs reliably with more features and better limits, even in t
 
 ## Premium cronjobs service
 
-FastCron is a **premium service for professional website developers**.
+FastCron is a **reliable cron service for professional website developers**.
 EasyCron is a **free and cheap** cronjob service.
 
 |                                  | EasyCron     | **FastCron**  |
 | -------------------------------- | ------------ | ------------- |
-| Starting price                   | $24 / year   | $140 / year   |
+| Starting price                   | $24 / year   | $100 / year   |
 | Minimum cron interval            | 1 minute     | **5 seconds** |
-| Max number of daily cronjobs [1] | 8,000        | 25            |
-| Max number of 1-minute cronjobs  | 5            | **20**        |
-| Max number of 30-second cronjobs | 0            | **10**        |
-| Max number of 10-second cronjobs | 0            | **3**         |
+| Max number of daily cronjobs [1] | 8,000        | 15            |
+| Max number of 1-minute cronjobs  | 5            | **15**        |
+| Max number of 30-second cronjobs | 0            | **7**         |
+| Max number of 10-second cronjobs | 0            | **2**         |
 | Max cron history logs            | 200          | **250**       |
-| Max cron timeout                 | 12 hours     | 1 hour        |
+| Max cron timeout                 | 12 hours     | 4 hours       |
 | Keep failure logs                | 20           | 20            |
-| Webhook notifications            | from $120/yr | **yes**       |
 | Team members                     | from $120/yr | **unlimited** |
 
 EasyCron uses EPD (executions per day) to limit number of cronjobs and their interval.
