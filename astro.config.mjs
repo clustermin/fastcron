@@ -56,6 +56,7 @@ export default defineConfig({
       {
         label: 'Compare to',
         items: [
+          { label: 'Unix crontab', link: '/crontab-alternative' },
           { label: 'cron-job.org', link: '/cron-job-org-alternative' },
           { label: 'EasyCron', link: '/easycron-alternative' }
         ]
