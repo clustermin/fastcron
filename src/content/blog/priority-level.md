@@ -19,13 +19,12 @@ You may use them for your **test**, **staging**, and **production** environment.
 ## Cron job priority
 
 You can set cronjob priority at the section **Name, group, priority, and note** when adding/editing a cronjob.
-If a cronjob belongs to a group, it will inherit the group priority.
-If you move it to another group, its priority will be updated to the new group priority.
+When you move cronjob to a group, its priority will be set to the group priority, but you can change it on the form.
 
 ## Group priority
 
 You can set the group priority when adding/editing a group.
-Changing a group priority will update all its cronjobs to the same priority.
+Changing a group priority will only raise all its cronjobs to the same priority.
 
 ## Export priority
 

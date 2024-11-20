@@ -7,6 +7,18 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a> or vote on existing feature requests.
 
+## November 2024
+
+#### Cronjob vs group priority
+
+A cronjob can have a different priority than its group priority.
+Changing a group priority will only raise all its cronjobs to the same priority.
+
+#### Old API endpoint deprecated
+
+FastCron will stop proxying `https://www.fastcron.com/api/` to `https://app.fastcronjob.com/api/v1/`.
+Please update your endpoint URL in your config as soon as possible.
+
 ## October 2024
 
 #### Clean up
