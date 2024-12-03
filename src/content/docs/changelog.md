@@ -7,6 +7,14 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a> or vote on existing feature requests.
 
+## December 2024
+
+#### Schedule a maintenance
+
+To pause cronjobs during a planned outage, you can schedule a maintenance.
+Your cronjobs won't run during a scheduled maintenance period.
+Queued cron executions will be rescheduled to run after maintenance ended.
+
 ## November 2024
 
 #### Filter cronjobs by priority

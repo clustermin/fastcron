@@ -44,12 +44,16 @@ Only team members with the same or higher priority can edit (and see the variabl
 You can set the channel priority when adding/editing a channel.
 A notification channel will receive cron notifications from cronjobs with **the same priority**.
 
+## Maintenance priority
+You can set the maintenance priority when scheduling a maintenance.
+The maintenance period will apply to all cronjobs with **the same priority**.
+
 ## Team member priority
 
 You can set the team member priority when inviting/editing a team member.
 
 **Admins** can add/view/edit/remove **Members** with **the same priority or lower**.
-Team members can add/view/edit/delete items (cronjobs, groups, variables, channels) with **the same priority or lower**.
+Team members can add/view/edit/delete items (cronjobs, groups, variables, channels, maintenances) with **the same priority or lower**.
 
 Team members will receive cron notifications via email from cronjobs with **the same priority or lower**.
 You need to check **Send cron notifications to this member** when adding/editing a team member.
