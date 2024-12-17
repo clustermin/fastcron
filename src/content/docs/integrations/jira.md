@@ -1,8 +1,6 @@
 ---
 title: Jira integration
 description: "Receive cron notifications to your Jira project when your cronjobs fail or succeed."
-sidebar:
-  label: Jira
 ---
 
 **Jira** offers powerful and flexible automation to handle FastCron cronjob notifications.

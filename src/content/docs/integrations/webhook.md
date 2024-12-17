@@ -1,8 +1,6 @@
 ---
 title: Webhook integration
 description: "Receive cron notifications via webhook when your cronjobs fail or succeed."
-sidebar:
-    label: Webhook
 ---
 
 You can get webhook notifications when your cronjobs fail and succeed again.

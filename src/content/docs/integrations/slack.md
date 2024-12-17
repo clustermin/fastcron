@@ -1,8 +1,6 @@
 ---
 title: Slack integration
 description: "Receive cron notifications on your Slack channel when your cronjobs fail or succeed."
-sidebar:
-    label: Slack
 ---
 
 You can receive a message in your Slack channel when your cronjobs fail or succeed.

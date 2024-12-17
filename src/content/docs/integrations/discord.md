@@ -1,8 +1,6 @@
 ---
 title: Discord integration
 description: "Receive cron notifications on your Discord channel when your cronjobs fail or succeed."
-sidebar:
-    label: Discord
 ---
 
 You can receive a message in your Discord channel when your cronjobs fail or succeed.

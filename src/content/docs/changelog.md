@@ -9,6 +9,20 @@ You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel=
 
 ## December 2024
 
+#### Pushover.net integration
+
+You can receive cron notifications on your Pushover.net devices.
+Copy your *user key* from your Pushover account, then add it on the Channels page.
+
+
+#### Random delay
+
+You can now add a random delay when adding/editing cronjobs.
+Click the Expression button and enter a delay time in minutes.
+
+For example, you schedule your cronjob with cron expression `45 6 * * *` and a random delay of 20 minutes.
+Your cronjob will run once a day from 6:45 to 7:05.
+
 #### Schedule a maintenance
 
 To pause cronjobs during a planned outage, you can schedule a maintenance.

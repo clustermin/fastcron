@@ -1,8 +1,6 @@
 ---
 title: Teams integration
 description: "Receive cron notifications on your Teams channel when your cronjobs fail or succeed."
-sidebar:
-    label: Teams
 ---
 
 You can receive a message in your Teams channel when your cronjobs fail or succeed.

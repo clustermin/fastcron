@@ -1,8 +1,6 @@
 ---
 title: Telegram integration
 description: "Receive cron notifications via Telegram when your cronjobs fail or succeed."
-sidebar:
-    label: Telegram
 ---
 
 You can receive a message via Telegram when your cronjobs fail or succeed.

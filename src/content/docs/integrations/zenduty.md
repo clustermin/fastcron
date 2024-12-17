@@ -1,8 +1,6 @@
 ---
 title: Zenduty integration
 description: "Receive cron notifications to your Zenduty account when your cronjobs fail or succeed."
-sidebar:
-    label: Zenduty
 ---
 
 You can get Zenduty incident notifications when your cronjobs fail.
