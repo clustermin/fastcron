@@ -90,7 +90,7 @@
 <li>Use a simple range like <code dir="auto">1-7</code></li>
 <li>Use a simple range with a step like <code dir="auto">1-7/2</code></li>
 <li>Use <code dir="auto">L</code> at the <code dir="auto">day</code> field to select <strong>the last day of the month</strong></li>
-<li>Use <code dir="auto">R</code> to select <strong>one random value</strong>, <code dir="auto">Rn</code> to select <code dir="auto">n</code> random value</li>
+<li>Use <code dir="auto">R</code> to select <strong>one random value</strong>, <code dir="auto">Rn</code> to select <code dir="auto">n</code> random values</li>
 <li>Use <code dir="auto">R,values</code> to select one random value from a list e.g. <code dir="auto">R,1-7</code> will select one random value from 1 to 7.</li>
 </ul>
 <p>Your cronjob will run when the current time matches <strong>ALL</strong> the fields of the cron expression.
@@ -102,7 +102,7 @@ You may want to use the cron expression <code dir="auto">30 7 * 10 Mon</code> wi
 <p>Due to the limitation of the time values, some cron expressions are impossible (time never matches),
 some time intervals e.g. <em>every 48 minutes</em> are not available,
 and some time interval can’t match perfectly e.g. every 2 days.
-You should try using the <a href="#time-expression">time expression</a> to fit your requirements.</p>
+You should use the <a href="#time-expression">time expression</a> to fit your requirements.</p>
 <p>Here are some popular cron expressions:</p>
 
 
