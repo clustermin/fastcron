@@ -73,3 +73,12 @@ you can also select desired **Minute** values to run your cronjobs at.
 
 For example, the expression `R,1-7 9 * * *` will run your cronjob 
 **once a day between 9:01 to 9:07**.
+
+## Run cronjob with random delays
+
+You can also set a random delay when adding/editing cronjobs, click the Expression button, then enter the Random delay.
+
+![Random delay](/screenshots/random-delay.png)
+
+For example, you set the expression to `0 * * * *`, then enter a random delay of **59** minutes.
+Your cronjob will run every hour between minute 0 and 59.

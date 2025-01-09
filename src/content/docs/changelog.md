@@ -7,13 +7,23 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a> or vote on existing feature requests.
 
+## January 2025
+
+#### Allow/disallow a HTTP status codes
+For HTTP status code 3xx or higher, you can allow or disallow them on a specific cronjob.
+To do so, view cronjob Logs, then click on result with the HTTP status code, then click *Ignore HTTP status code 404*.
+To undo, click *Disallow HTTP status code 404*.
+
+#### Cron logs bar charts
+The cron logs chart of execution times is now shown by default.
+You can click on a bar to scroll down and view the corresponding execution result.
+
 ## December 2024
 
 #### Pushover.net integration
 
 You can receive cron notifications on your Pushover.net devices.
 Copy your *user key* from your Pushover account, then add it on the Channels page.
-
 
 #### Random delay
 
