@@ -59,14 +59,17 @@ Add a new cronjob.
 | **token**        | string  |                  | Your API token                                                                                   |
 | **url**          | string  |                  | URL to call                                                                                      |
 | expression       | string  | 1 hour           | Time expression, may be either crontab syntax or time interval in English                        |
+| filter           | string  | null             | [Filter](/blog/time-filter) scheduled execution times                                            |
+| delay            | integer | 0                | Random delay (in minutes) before running your cronjob. No delay by default.                      |
 | timezone         | string  | account timezone | Cronjob timezone                                                                                 |
-| timeout          | integer | plan timeout     | Cron timeout - max time to wait for your URL to response.                                        |
+| timeout          | integer | 1800             | Cron timeout - max time to wait for your URL to response.                                        |
 | instances        | integer | 0                | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
 | username         | string  | null             | Username for HTTP authentication                                                                 |
 | password         | string  | null             | Password for HTTP authentication                                                                 |
 | httpMethod       | string  | GET              | HTTP method of the HTTP request to send to your cronjob URL                                      |
 | postData         | string  | null             | When `httpMethod` is POST, PUT, or PATCH, send this post data with the HTTP request.             |
-| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters.                |
+| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters.                     |
+| userAgent        | string  | null             | User agent, default is `Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)`       |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
 | notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
 | failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
