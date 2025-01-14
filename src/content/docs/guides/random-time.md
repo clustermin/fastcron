@@ -7,14 +7,15 @@ sidebar:
 You can run your cronjobs at random times with FastCron to:
 
 - Spread your load evenly throughout the day.
-- Do scheduled tasks (like sending emails, creating posts, etc) at a random time 
-so they don't look like automated actions.
+- Do scheduled tasks (like sending emails, creating posts, etc) at a random time
+  so they don't look like automated actions.
 
 Anyway, we make it really simple for you to run your cronjobs randomly.
 
 ![Run cronjobs at random times](/screenshots/crontab-random-times.png)
 
 ## Run cronjob every day, at a random time
+
 To run your cronjob once a day, at a random time, follow this instructions:
 
 - Click new Cron Job
@@ -32,7 +33,8 @@ You can now click the Logs button, then visit the Queued tab:
 As you can see, your cronjob is scheduled to run once a day, at a random time.
 
 ### Limit the time range
-After selecting **Random** in the **Hour** field, 
+
+After selecting **Random** in the **Hour** field,
 you can also select desired **Hour** values to run your cronjobs at.
 
 For example, if you'd like to run your cronjob once from **8 AM to 5 PM**,
@@ -57,6 +59,7 @@ This will run your cronjobs 4 times a day,
 randomly between 8:00 and 11:59, and between 13:00 and 16:59.
 
 ## Run cronjob every hour, at random times
+
 To run your cronjob every hour, at a random time, follow this instructions:
 
 - Click new Cron Job
@@ -68,10 +71,11 @@ To run your cronjob every hour, at a random time, follow this instructions:
 Your cronjob expression will be `R * * * *`.
 
 ### Limit the time range
-After selecting **Random** in the **Minute** field, 
+
+After selecting **Random** in the **Minute** field,
 you can also select desired **Minute** values to run your cronjobs at.
 
-For example, the expression `R,1-7 9 * * *` will run your cronjob 
+For example, the expression `R,1-7 9 * * *` will run your cronjob
 **once a day between 9:01 to 9:07**.
 
 ## Run cronjob with random delays
@@ -81,4 +85,11 @@ You can also set a random delay when adding/editing cronjobs, click the Expressi
 ![Random delay](/screenshots/random-delay.png)
 
 For example, you set the expression to `0 * * * *`, then enter a random delay of **59** minutes.
-Your cronjob will run every hour between minute 0 and 59.
+Your cronjob will run once an hour, between minute 0 and 59.
+
+| Expression     | Delay | Meaning                                                |
+| -------------- | ----- | ------------------------------------------------------ |
+| `*/10 * * * *` | 5     | Run 6 times an hour with random delay within 5 minutes |
+| `0 * * * * *`  | 59    | Runs once an hour, between minute 0 and 59             |
+| `45 6 * * *`   | 30    | Run once a day, between 6:45 and 7:30                  |
+| `0 9 * * *`    | 180   | Run once a day, between 9:00 and 12:00                 |

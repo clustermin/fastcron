@@ -1,5 +1,7 @@
 ---
-title: Bypass your website cache by adding timestamps
+title: Adding timestamps to bypass cache
+sidebar:
+    label: Keywords / Variables
 ---
 
 Your web server may cache your script output, rendering online cronjob ineffective.
