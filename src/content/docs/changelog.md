@@ -5,7 +5,7 @@ description: "We are releasing several updates a month. Read the latest updates 
 
 You can receive monthly product updates from FastCron by subscribing on the **Profile** page.
 
-You can <a href="https://app.fastcron.com/feature-requests" target="_blank" rel="nofollow, noindex">request a feature here</a> or vote on existing feature requests.
+You can email me at support@fastcron.com to suggest a feature.
 
 ## January 2025
 

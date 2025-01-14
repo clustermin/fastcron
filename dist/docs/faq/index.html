@@ -68,12 +68,13 @@ It’s recommended to use HTTPS for your cronjob URL, like this:</p>
 <p>Yes, if your website accepts HTTP Basic Authentication, just add username and password at the section <strong>Send HTTP request</strong>.</p>
 <p>You can also add a username and password to your cronjob URL like this:</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">https://username:password@example.com/backup.php</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="https://username:password@example.com/backup.php"><div></div></button></div></figure></div>
-<p>We also support adding a token in the HTTP headers.</p>
+<p>We also support adding a token in the HTTP headers.
+<img src="/screenshots/user-agent.png" alt="HTTP headers"/></p>
 <h3 id="can-i-send-cookies-along-with-my-http-request">Can I send cookies along with my HTTP request?</h3>
 <p>Yes, just edit your cronjob and add your cookie to the <strong>HTTP headers</strong> like this:</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Cookie: name=value</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="Cookie: name=value"><div></div></button></div></figure></div>
 <p>Add multiple cookies like this:</p>
-<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Cookie: yummy_cookie=choco; tasty_cookie=strawberry</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="Cookie: yummy_cookie=choco; tasty_cookie=strawberry"><div></div></button></div></figure></div>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Cookie: yummy_cookie=chocolate; tasty_cookie=strawberry</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="Cookie: yummy_cookie=chocolate; tasty_cookie=strawberry"><div></div></button></div></figure></div>
 <h3 id="what-http-methods-are-supported">What HTTP methods are supported?</h3>
 <p>We support GET, POST, PUT, PATCH, HEAD, and DELETE.</p>
 <p>For POST and PUT, you can add the payload (post data).
