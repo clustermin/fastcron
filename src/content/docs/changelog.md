@@ -77,12 +77,6 @@ The POST data must be
 - Valid query string in the format `name=value&name2=value2`. No newlines are allowed.
 - If the `postData`/`payload` has newlines or starts with `{`, it must be valid JSON string.
 
-#### Hide archived cronjobs
-
-FastCron will archive disabled cronjobs after 180 days, and won't show them on the dashboard by default.
-You can see them when using the search form.
-To see all archived cronjobs, select *Archived* status on the search form.
-
 #### Remove inactive account
 
 FastCron will remove free accounts with no active cronjobs and no activity after 180 days.

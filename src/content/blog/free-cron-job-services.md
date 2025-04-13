@@ -10,7 +10,7 @@ For example, you can't set cronjobs to run more frequently than every 15 minutes
 In that case, you can try a free, online cronjob service.
 
 What is a **cronjob service** (web cron)?
-Basically, they run your cronjobs by visting your cronjob URL at an interval.
+Basically, they run your cronjobs by visiting your cronjob URL at an interval.
 For example, to run **wp-cron.php** every 5 minutes,
 just set up a cronjob to [https://example.com/wp-cron.php?doing_wp_cron=1](/tutorials/wp-cron)
 
@@ -64,7 +64,7 @@ Here are the comparison table for the top 3 free cronjob services:
 | Number of cronjobs             | **unlimited** | 3              | 200           |
 | Minimum cron interval          | **1 minute**  | 5 minutes      | 20 minutes    |
 | Max cron history logs          | **25**        | **25**         | 10            |
-| Max cron timeout               | 30 seconds    | **60 seconds** | 5 seconds     |
+| Max cron timeout               | 30 seconds    | 30 seconds     | 5 seconds     |
 | Keep failure logs              | no            | **3**          | no            |
 | Max response size              | 8 KB          | **100 MB**     | **100 MB**    |
 | Max API calls per day          | 100           | **unlimited**  | **unlimited** |

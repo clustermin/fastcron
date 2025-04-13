@@ -62,7 +62,7 @@ Add a new cronjob.
 | filter           | string  | null             | [Filter](/blog/time-filter) scheduled execution times                                            |
 | delay            | integer | 0                | Random delay (in minutes) before running your cronjob. No delay by default.                      |
 | timezone         | string  | account timezone | Cronjob timezone                                                                                 |
-| timeout          | integer | 1800             | Cron timeout - max time to wait for your URL to response.                                        |
+| timeout          | integer | 300              | Cron timeout - max time to wait for your URL to response.                                        |
 | instances        | integer | 0                | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
 | username         | string  | null             | Username for HTTP authentication                                                                 |
 | password         | string  | null             | Password for HTTP authentication                                                                 |
