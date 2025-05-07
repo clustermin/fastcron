@@ -20,7 +20,7 @@ For example, with a failure threshold of 20 consecutive failures:
 - After 19 consecutive failures, we remove the next 9 queued executions.
 - After 20 consecutive failures, we disable your cronjob.
 
-The removed queued executions must be within:
+The removed queued executions have no [`payload`](/reference/cron#cron_run) and are within:
   - 1 day if your cronjob runs 4 times a day or less
   - 3 hours if your cronjob runs 24 times a day or less
   - 1 hour otherwise
