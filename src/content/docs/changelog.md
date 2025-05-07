@@ -7,6 +7,12 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## May 2025
+
+#### Back off failing cronjobs
+
+FastCron will back off failing cronjobs linearly. Learn more about [cronjob failing and disabled](/questions/why-cronjob-disabled-failures).
+
 ## January 2025
 
 #### Allow/disallow a HTTP status codes
@@ -91,16 +97,7 @@ To enable it, click **Edit** cronjob. In the section **Notifications**, enter th
 
 #### Variables
 
-You can now add variables on the 
-<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" style="display: inline-block"
-      viewBox="0 0 24 24">
-    <path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M8 15h7.01v.01H15L8 15Z"/>
-    <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-          d="M20 6H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Z"/>
-    <path stroke="currentColor" stroke-linecap="square" stroke-width="2"
-          d="M6 9h.01v.01H6V9Zm0 3h.01v.01H6V12Zm0 3h.01v.01H6V15Zm3-6h.01v.01H9V9Zm0 3h.01v.01H9V12Zm3-3h.01v.01H12V9Zm0 3h.01v.01H12V12Zm3 0h.01v.01H15V12Zm3 0h.01v.01H18V12Zm0 3h.01v.01H18V15Zm-3-6h.01v.01H15V9Zm3 0h.01v.01H18V9Z"/>
-</svg>
-**Environment variables** page.
+You can now add variables on the **Environment variables** page.
 
 Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value
 when the cronjob priority is **the same or higher** than the variable priority.
@@ -211,17 +208,6 @@ The base cronjob interval is 1 minute.
 You can create cronjobs to run up to every 5 seconds, but they will count as 12 cronjobs.
 You can create up to 1,440x one-time cronjobs.
 
-#### Changed retrying failed cronjobs
-
-Failed then disabled cronjobs will no longer be retried and enabled.
-- The default failure threshold is 20 consecutive failures.
-- You can update it at the section **Failures, retry, and repeat**.
-- When your cronjob fails half of the threshold, we will back off:
-  - 1 day if your cronjob runs 4 times a day or less
-  - 3 hours if your cronjob runs 24 times a day or less
-  - 1 hour otherwise
-- When the cronjob exceeds the failure threshold, it will be disabled.
-- You will receive a cron notification (via email, Slack, or webhook) when that happened.
 
 #### Removed old servers
 

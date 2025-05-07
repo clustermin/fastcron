@@ -1,6 +1,6 @@
 ---
 title: Can I run shell/bash script?
-description: Can I run shell/bash script?
+description: You can't run run bash/shell script directly, but there are workarounds.
 ---
 
 FastCron needs your web server to execute the script, it couldn't run a shell script directly.
