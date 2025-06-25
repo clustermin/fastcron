@@ -7,6 +7,18 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## June 2025
+
+#### Opsgenie integration
+You can now receive an alert in your Opsgenie account when your cronjob fails.
+
+#### Slack/Mattermost integration
+You can now also use your Mattermost webhook URL instead of Slack's. 
+
+#### Account expiration
+Your account will be downgraded to the free plan if applicable (less than 5 cronjobs).
+Otherwise it will just expire and all cronjobs will be disabled.
+
 ## May 2025
 
 #### Back off failing cronjobs
