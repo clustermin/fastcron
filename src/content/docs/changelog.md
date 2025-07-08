@@ -7,6 +7,11 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## July 2025
+
+#### Cronjob statistic with timezone
+Cronjob stats will be calculated based on its own timezone rather than FastCron's server timezone (UTC).
+
 ## June 2025
 
 #### Opsgenie integration
