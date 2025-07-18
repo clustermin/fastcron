@@ -95,7 +95,7 @@ Check your Jira issue and see if a new comment is added.
 
 FastCron enables notifications for your cronjobs by default.
 
-To check it, edit cronjobs, at the section **Notifications**,
+To check it, edit cronjobs, in the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
 FastCron will post to your webhook URL when a cronjob in your account fails, and when it succeeds again.

@@ -15,7 +15,7 @@ Server: LiteSpeed
 ...
 ```
 
-To fix this, click **Edit** cronjob, at the section **Send HTTP request**, update **User Agent** with this:
+To fix this, click **Edit** cronjob, in the section **Send HTTP request**, update **User Agent** with this:
 
 ```json
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36

@@ -34,7 +34,7 @@ Please note that the Chat ID for group/channel has a minus sign e.g. `-100123456
 ## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
-To check it, edit cronjobs, at the section **Notifications**,
+To check it, edit cronjobs, in the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
 FastCron will send you a message when a cronjob in your account fails, and when it succeeds again.

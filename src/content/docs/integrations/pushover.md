@@ -22,7 +22,7 @@ After logging in to your Pushover account, you can get the user key.
 ## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
-To check it, edit cronjobs, at the section **Notifications**,
+To check it, edit cronjobs, in the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
 FastCron will send you a message when a cronjob in your account fails, and when it succeeds again.

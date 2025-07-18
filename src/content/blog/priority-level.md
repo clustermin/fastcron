@@ -18,7 +18,7 @@ You may use them for your **test**, **staging**, and **production** environment.
 
 ## Cron job priority
 
-You can set cronjob priority at the section **Name, group, priority, and note** when adding/editing a cronjob.
+You can set cronjob priority in the section **Name, group, priority, and note** when adding/editing a cronjob.
 When you move cronjob to a group, its priority will be set to the group priority, but you can change it on the form.
 
 ## Group priority

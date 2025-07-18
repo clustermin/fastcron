@@ -16,7 +16,7 @@ To set up integration from FastCron to a custom webhook URL, follow the instruct
 ## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
-To check it, edit cronjobs, at the section **Notifications**,
+To check it, edit cronjobs, in the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
 

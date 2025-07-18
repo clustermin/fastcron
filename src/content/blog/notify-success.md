@@ -9,7 +9,7 @@ I've added a new feature to enable email/Slack notifications when your cronjob s
 
 It's enabled by default for new cronjobs.
 
-To enable it, edit (or batch edit) your cronjobs, at the section Notifications, check the box **Notify me: when cronjob fails**, and **when cronjob succeeds after failed**.
+To enable it, edit (or batch edit) your cronjobs, in the section Notifications, check the box **Notify me: when cronjob fails**, and **when cronjob succeeds after failed**.
 
 ![notify](/images/notify-6600f396b585b9.67961961.png)
 

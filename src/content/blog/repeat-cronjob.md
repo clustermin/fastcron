@@ -12,7 +12,7 @@ You can also test if the output does not match a word by prepending `!` to the w
 
 This will reduce the load on servers running unnecessary tasks when there is no need for repetition.
 
-To enable this on your cronjob, at the section `Failures, retry, and repeat`, update the field `Repeat if contains` and `Repeat up to`.
+To enable this on your cronjob, in the section `Failures, retry, and repeat`, update the field `Repeat if contains` and `Repeat up to`.
 ![Repeat cronjob](/screenshots/repeat.png)
 
 This will increase the daily execution number of the cronjob.

@@ -9,6 +9,14 @@ You can email me at support@fastcron.com to suggest a feature.
 
 ## July 2025
 
+#### Notify slow cron jobs
+You can now receive cron notifications when your cron job takes more than `n` seconds to complete.
+To update your cron jobs, click Edit, in the section Notifications, change the value of **Notify if runs over**.
+Enter a value other than 0 to enable it.
+
+#### Telegram cron notifications
+You can now send `/stop` to FastCronBot to stop receiving cron notifications.
+
 #### Cronjob statistic with timezone
 Cronjob stats will be calculated based on its own timezone rather than FastCron's server timezone (UTC).
 

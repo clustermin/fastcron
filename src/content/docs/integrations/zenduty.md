@@ -33,7 +33,7 @@ https://www.zenduty.com/api/events/INTEGRATION_KEY/
 ## Enable notifications for your cronjobs
 FastCron enables notifications for your cronjobs by default.
 
-To check it, edit cronjobs, at the section **Notifications**,
+To check it, edit cronjobs, in the section **Notifications**,
 ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
 
 FastCron will create an incident when a cronjob in your account fails, and resolves when it succeeds again.
