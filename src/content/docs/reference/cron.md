@@ -68,10 +68,12 @@ Add a new cronjob.
 | password         | string  | null             | Password for HTTP authentication                                                                 |
 | httpMethod       | string  | GET              | HTTP method of the HTTP request to send to your cronjob URL                                      |
 | postData         | string  | null             | When `httpMethod` is POST, PUT, or PATCH, send this post data with the HTTP request.             |
-| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines as delimiters.                     |
+| httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines \r\n as delimiters.                |
 | userAgent        | string  | null             | User agent, default is `Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)`       |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
 | notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
+| notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
+| notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
 | failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |

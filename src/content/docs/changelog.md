@@ -7,6 +7,16 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+
+## August 2025
+
+#### DNS cache removed
+FastCron has stopped implement its own DNS cache. The resolved hostname will be stored in-memory up to 10 minutes, and will be purged immediate when your cron job fails.
+No more stale IP addresses when your hostname updates.
+
+#### Delete inactive cronjobs
+Cronjobs that are inactive for 3 years will be deleted.
+
 ## July 2025
 
 #### Notify slow cron jobs
