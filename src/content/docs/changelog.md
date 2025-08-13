@@ -10,6 +10,9 @@ You can email me at support@fastcron.com to suggest a feature.
 
 ## August 2025
 
+#### `cron_batch_edit` removed
+The API function `cron_batch_edit` has been removed. You should use `cron_edit` instead.
+
 #### DNS cache removed
 FastCron has stopped implement its own DNS cache. The resolved hostname will be stored in-memory up to 10 minutes, and will be purged immediate when your cron job fails.
 No more stale IP addresses when your hostname updates.

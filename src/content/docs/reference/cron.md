@@ -247,18 +247,6 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
 
 Returns an array of cronjob data structures.
 
-## `cron_batch_edit`
-
-Update multiple cronjobs at once.
-
-| Name      | Type   | Default        | Description                                                   |
-| --------- | ------ | -------------- | ------------------------------------------------------------- |
-| **token** | string |                | Your API token                                                |
-| **id**    | array  |                | List of cronjob IDs                                           |
-| any       | any    | current values | Any parameters listed in `cron_add` parameters except `token` |
-
-Returns an array of updated cronjob data structures.
-
 ## `cron_batch_delete`
 
 Delete multiple cronjobs at once.
