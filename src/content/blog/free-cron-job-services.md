@@ -61,7 +61,7 @@ Here are the comparison table for the top 3 free cronjob services:
 
 |                                | Cron-job.org  | FastCron       | EasyCron      |
 | ------------------------------ | ------------- | -------------- | ------------- |
-| Number of cronjobs             | **unlimited** | 3              | 200           |
+| Number of cronjobs             | **unlimited** | 5              | 200           |
 | Minimum cron interval          | **1 minute**  | 5 minutes      | 20 minutes    |
 | Max cron history logs          | **25**        | **25**         | 10            |
 | Max cron timeout               | 30 seconds    | 30 seconds     | 5 seconds     |

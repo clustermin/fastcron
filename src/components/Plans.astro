@@ -1,20 +1,10 @@
 <section class="bg-white dark:bg-gray-900" id="pricing">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Free cronjobs service for webdev</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Free cronjobs service</h2>
             <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
                 Start with a free account. Upgrade, downgrade, or cancel at any time.
             </p>
-        </div>
-        <div class="flex justify-center">
-            <label class="inline-flex items-center mb-5 cursor-pointer">
-                <span class="me-2 text-sm font-medium text-gray-700 dark:text-gray-300">Monthly</span>
-                <input type="checkbox" class="sr-only peer"
-                onchange="Array.from(document.getElementsByClassName('price')).forEach(p => this.checked ? p.innerHTML*=10 : p.innerHTML/=10); Array.from(document.getElementsByClassName('cycle')).forEach(p => p.innerHTML = this.checked ? '/year' : '/month');"
-                >
-                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                <span class="ms-3 text-sm font-medium text-gray-700 dark:text-gray-300">Annual</span>
-            </label>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-6 sm:gap-3 xl:gap-4 lg:space-y-0">
             <!-- Free plan -->
@@ -57,7 +47,7 @@
             <div class="flex flex-col lg:col-span-2 p-6 mx-auto max-w-lg lg:w-full text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                 <h3 class="text-2xl font-semibold">Pro</h3>
                 <div class="flex justify-center items-baseline my-6">
-                    <span class="mr-2 text-5xl font-extrabold">$<span class="price">10</span></span>
+                    <span class="mr-2 text-5xl font-extrabold">$<span class="price">6</span></span>
                     <span class="text-gray-500 dark:text-gray-400 cycle">/month</span>
                 </div>
                 <!-- List -->
@@ -65,7 +55,7 @@
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
                         <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                        <span><strong class="text-xl font-semibold">20</strong> cron jobs</span>
+                        <span><strong class="text-xl font-semibold">12</strong> cron jobs</span>
                     </li>
                     <li class="flex items-center space-x-3">
                         <!-- Icon -->
