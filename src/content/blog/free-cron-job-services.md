@@ -18,10 +18,10 @@ Here are the best free cronjob services:
 
 ## FastCron
 
-With [FastCron](/), you can create up to 3 cronjobs running every 5 minutes.
+With [FastCron](/), you can create up to 5 cronjobs running every 5 minutes.
 That's enough for your WordPress blog and some simple PHP websites.
 
-The timeout limit is 60 seconds, and you get to see the last 25 execution results.
+The timeout limit is 30 seconds, and you get to see the last 25 execution results.
 You'll receive email notifications when your cronjobs fail and succeed again.
 
 ## cron-job.org
@@ -29,11 +29,11 @@ You'll receive email notifications when your cronjobs fail and succeed again.
 [cron-job.org](/cron-job-org-alternative) is the most generous free cronjob service.
 You can create unlimited cronjobs and run up to every minute.
 
-The cron timeout is 30 seconds, which is okay.
-You'd better keep your script output short, less than 8 KB,
+The timeout limit is 30 seconds.
+You'd better keep your script output short, less than 64 KB,
 or they will mark your cronjobs as failed and disable them after 15 executions.
 
-They are running a lot of cronjobs every day, so there are some delays ('jitter') from 4 to 40 seconds.
+They are running a lot of cronjobs every day, so there are some random delays ('jitter') from 4 to 40 seconds.
 
 ## EasyCron
 
@@ -66,7 +66,7 @@ Here are the comparison table for the top 3 free cronjob services:
 | Max cron history logs          | **25**        | **25**         | 10            |
 | Max cron timeout               | 30 seconds    | 30 seconds     | 5 seconds     |
 | Keep failure logs              | no            | **3**          | no            |
-| Max response size              | 8 KB          | **100 MB**     | **100 MB**    |
+| Max response size              | 64 KB         | **100 MB**     | **100 MB**    |
 | Max API calls per day          | 100           | **unlimited**  | **unlimited** |
 | Change HTTP method and headers | **yes**       | **yes**        | no            |
 | Runs cronjobs manually         | no            | **yes**        | **yes**       |
