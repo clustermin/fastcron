@@ -5,6 +5,9 @@ description: "Compared to EasyCron, FastCron is more reliable, on-time, with mor
 
 EasyCron is a task scheduler which provides services of calling specified URLs at specified time or by time interval.
 
+> FastCron and EasyCron developers are actively working on their products, so some information may be outdated.
+Please email me at support@fastcron.com if you have any feedback.
+
 ## Free cronjobs service
 
 Both FastCron and EasyCron have a free plan.
@@ -15,7 +18,7 @@ Both FastCron and EasyCron have a free plan.
 | Minimum cron interval            | 20 minutes | **5 minutes**  |
 | Max number of daily cronjobs     | 200        | 5              |
 | Max number of 20-minute cronjobs | 2          | **5**          |
-| Max number of 10-minute cronjobs | 1          | **5**          |
+| Max number of 10-minute cronjobs | 0          | **5**          |
 | Max number of 5-minute cronjobs  | 0          | **5**          |
 | Max cron history logs            | 10         | **25**         |
 | Max cron timeout                 | 5 seconds  | **30 seconds** |

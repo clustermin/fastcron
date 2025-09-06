@@ -5,6 +5,9 @@ description: "Compared to cron-job.org, FastCron is more reliable, on-time, with
 
 Cron-job.org is a free cronjob service that allows you to run cronjobs from every minute to once a year.
 
+> FastCron and Cron-job.org developers are actively working on their products, so some information may be outdated.
+Please email me at support@fastcron.com if you have any feedback.
+
 ## Free cronjobs service
 
 Both FastCron and Cron-job.org have a free plan.
