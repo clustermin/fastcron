@@ -36,13 +36,13 @@ EasyCron is a **free and cheap** cronjob service.
 
 |                                  | EasyCron     | **FastCron**  |
 | -------------------------------- | ------------ | ------------- |
-| Starting price                   | $24 / year   | $6 / month    |
-| Minimum cron interval            | 1 minute     | **5 seconds** |
-| Max number of daily cronjobs [1] | 8,000        | 12            |
-| Max number of 1-minute cronjobs  | 5            | **12**        |
-| Max number of 30-second cronjobs | 0            | **6**         |
-| Max number of 10-second cronjobs | 0            | **3**         |
-| Max cron history logs            | 200          | **500**       |
+| Starting price                   | $2 / month   | $5 / month    |
+| Minimum cron interval            | 1 minute     | **10 seconds** |
+| Max number of daily cronjobs [1] | 8,000        | 10            |
+| Max number of 1-minute cronjobs  | 5            | **10**        |
+| Max number of 30-second cronjobs | 0            | **5**         |
+| Max number of 10-second cronjobs | 0            | **1**         |
+| Max cron history logs            | 200          | **1000**      |
 | Max cron timeout                 | 12 hours     | 4 hours       |
 | Keep failure logs                | 20           | 20            |
 | Team members                     | from $120/yr | **unlimited** |

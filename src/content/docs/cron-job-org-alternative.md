@@ -32,10 +32,10 @@ Cron-job.org relies on donations.
 
 |                                                                    | Cron-job.org | **FastCron**  |
 | ------------------------------------------------------------------ | ------------ | ------------- |
-| Starting price                                                     | $1 / month   | $6 / month    |
-| Number of cronjobs                                                 | unlimited    | 12            |
+| Starting price                                                     | $1 / month   | $5 / month    |
+| Number of cronjobs                                                 | unlimited    | 10            |
 | Minimum cron interval                                              | 1 minute     | **5 seconds** |
-| Max cron history logs                                              | 25           | **500**       |
+| Max cron history logs                                              | 25           | **1000**      |
 | Max cron timeout                                                   | 5 minutes    | **4 hours**   |
 | Max response size                                                  | 256 KB       | **100 MB**    |
 | Max API calls per day                                              | 5,000        | **unlimited** |
@@ -53,6 +53,8 @@ To keep the table short, these premium features are available only at FastCron:
 - Integrations with [Slack, Discord, Telegram, etc](/integrations)
 - **Team management** with roles
 - Send email notifications to other team members when cron fails.
+
+Some features (e.g. status pages and badges) are only available at Cron-job.org.
 
 ## The best cron-job.org alternative
 
