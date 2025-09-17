@@ -8,6 +8,10 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 You can email me at support@fastcron.com to suggest a feature.
 
 
+## September 2025
+
+You can now view the public status page at <a href="https://status.fastcron.com" target="_blank" rel="nofollow">status.fastcron.com</a>.
+
 ## August 2025
 
 #### `cron_batch_edit` removed
