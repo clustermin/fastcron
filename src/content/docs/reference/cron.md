@@ -58,11 +58,11 @@ Add a new cronjob.
 | ---------------- | ------- | ---------------- | ------------------------------------------------------------------------------------------------ |
 | **token**        | string  |                  | Your API token                                                                                   |
 | **url**          | string  |                  | URL to call                                                                                      |
-| expression       | string  | 1 hour           | Time expression, may be either crontab syntax or time interval in English                        |
+| expression       | string  | 15 minutes       | Time expression, may be either crontab syntax or time interval in English                        |
 | filter           | string  | null             | [Filter](/blog/time-filter) scheduled execution times                                            |
 | delay            | integer | 0                | Random delay (in minutes) before running your cronjob. No delay by default.                      |
 | timezone         | string  | account timezone | Cronjob timezone                                                                                 |
-| timeout          | integer | 300              | Cron timeout - max time to wait for your URL to response.                                        |
+| timeout          | integer | 30               | Cron timeout - max time to wait for your URL to response.                                        |
 | instances        | integer | 0                | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
 | username         | string  | null             | Username for HTTP authentication                                                                 |
 | password         | string  | null             | Password for HTTP authentication                                                                 |
@@ -74,7 +74,7 @@ Add a new cronjob.
 | notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
-| failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob.                                 |
+| failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 10                   |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
