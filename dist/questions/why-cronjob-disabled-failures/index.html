@@ -37,14 +37,14 @@
 The default failure threshold is 10 consecutive failures.
 You can update it in the section <strong>Failures, retry, and repeat</strong> when adding/editing cronjobs.</p>
 <p>You will receive a <a href="/integrations">cron notification</a> (via email, Slack, or webhook) when your cronjob was disabled because of failures.</p>
-<p>When your cronjob fails half of the threshold, we will back off linearly.
-For example, with a failure threshold of 1 consecutive failures:</p>
+<p>When your cronjob fails 3 consecutive times, we will back off linearly.
+For example, with a failure threshold of 10:</p>
 <ul>
-<li>After 5 consecutive failures, we remove the next queued execution.</li>
-<li>After 6 consecutive failures, we remove the next 2 queued executions.</li>
-<li>After 7 consecutive failures, we remove the next 3 queued executions.</li>
-<li>After 8 consecutive failures, we remove the next 4 queued executions.</li>
-<li>After 9 consecutive failures, we remove the next 5 queued executions.</li>
+<li>After 3 consecutive failures, we remove the next queued execution.</li>
+<li>After 4 consecutive failures, we remove the next 2 queued executions.</li>
+<li>After 5 consecutive failures, we remove the next 3 queued executions.</li>
+<li>…</li>
+<li>After 9 consecutive failures, we remove the next 7 queued executions.</li>
 <li>After 10 consecutive failures, we disable your cronjob.</li>
 </ul>
 <p>The removed queued executions have no <a href="/reference/cron#cron_run"><code dir="auto">payload</code></a> and are within:</p>
@@ -54,6 +54,6 @@ For example, with a failure threshold of 1 consecutive failures:</p>
 <li>1 hour otherwise</li>
 </ul>
 <p>For example, your web server is down, and your cronjob every minute keeps failing.
-After 5 minutes - 5 consecutive failures, it will skip one minute, then 2 minutes, then 3 minutes, …, then 4 minutes.
-It will be disabled after a continuous downtime of 26 minutes.</p>
+After 3 minutes - 3 consecutive failures, it will skip one minute, then 2 minutes, then 3 minutes, …, then 7 minutes.
+It will be disabled after a continuous downtime of 39 minutes.</p>
 <p>This way FastCron won’t hitting your failing cronjobs repeatedly and overloading your server with unnecessary requests.</p> </div> <footer class="astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr">   </div>  </footer>  </div> </div>   </main> </div> </div>  </div> </div>  </body></html>

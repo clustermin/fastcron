@@ -11,13 +11,13 @@ You can update it in the section **Failures, retry, and repeat** when adding/edi
 
 You will receive a [cron notification](/integrations) (via email, Slack, or webhook) when your cronjob was disabled because of failures.
 
-When your cronjob fails half of the threshold, we will back off linearly.
-For example, with a failure threshold of 1 consecutive failures:
-- After 5 consecutive failures, we remove the next queued execution.
-- After 6 consecutive failures, we remove the next 2 queued executions.
-- After 7 consecutive failures, we remove the next 3 queued executions.
-- After 8 consecutive failures, we remove the next 4 queued executions.
-- After 9 consecutive failures, we remove the next 5 queued executions.
+When your cronjob fails 3 consecutive times, we will back off linearly.
+For example, with a failure threshold of 10:
+- After 3 consecutive failures, we remove the next queued execution.
+- After 4 consecutive failures, we remove the next 2 queued executions.
+- After 5 consecutive failures, we remove the next 3 queued executions.
+- ...
+- After 9 consecutive failures, we remove the next 7 queued executions.
 - After 10 consecutive failures, we disable your cronjob.
 
 The removed queued executions have no [`payload`](/reference/cron#cron_run) and are within:
@@ -26,7 +26,7 @@ The removed queued executions have no [`payload`](/reference/cron#cron_run) and 
   - 1 hour otherwise
 
 For example, your web server is down, and your cronjob every minute keeps failing.
-After 5 minutes - 5 consecutive failures, it will skip one minute, then 2 minutes, then 3 minutes, ..., then 4 minutes.
-It will be disabled after a continuous downtime of 26 minutes.
+After 3 minutes - 3 consecutive failures, it will skip one minute, then 2 minutes, then 3 minutes, ..., then 7 minutes.
+It will be disabled after a continuous downtime of 39 minutes.
 
 This way FastCron won't hitting your failing cronjobs repeatedly and overloading your server with unnecessary requests.
