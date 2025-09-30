@@ -71,10 +71,10 @@ Add a new cronjob.
 | httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines \r\n as delimiters.                |
 | userAgent        | string  | null             | User agent, default is `Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)`       |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
-| notifyEvery      | int     | 1                | When notify is true, send notification every `notifyEvery` fails.                                |
+| notifyEvery      | int     | 2                | When notify is true, send notification every `notifyEvery` fails. Min 1, max 5.                  |
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
-| failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 10                   |
+| failureThreshold | integer | 10               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 10.                  |
 | pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
