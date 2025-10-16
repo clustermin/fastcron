@@ -9,7 +9,7 @@ The following functions are for retrieving, and updating your account settings.
 
 All parameters are listed in the table. Required parameters are in **bold** with no default values.
 
-All `account_*` functions return [account data](data#account) like this:
+All `account_*` functions return [account data](/reference/data#account) like this:
 
 ```json
 {

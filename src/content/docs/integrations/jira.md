@@ -26,7 +26,7 @@ https://automation.atlassian.com/pro/hooks/SOMESECRETKEY
 Jira is so flexible that there are many ways to process the cron notifications.
 You can make it send notifications to your team, add a new issue, or comment on an existing issue.
 
-It's up to you to set up the action. The webhook data is the same with our [webhook payload](webhook):
+It's up to you to set up the action. The webhook data is the same with our [webhook payload](/integrations/webhook):
 
 ```json
 {

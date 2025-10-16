@@ -198,7 +198,7 @@ Get your cronjob execution logs.
 | **id**    | integer | Cronjob ID                                                                      |
 | keyword   | string  | Keyword to search in execution time, output, IP addresses, error messages, etc. |
 
-Returns an array of [cron execution results](data#cron-execution-result).
+Returns an array of [cron execution results](/reference/data#cron-execution-result).
 
 ## `cron_failures`
 
@@ -210,7 +210,7 @@ Get your cronjobs failed execution logs.
 | **id**    | integer | Cronjob ID                                                                      |
 | keyword   | string  | Keyword to search in execution time, output, IP addresses, error messages, etc. |
 
-Returns an array of [cron execution results](data#cron-execution-result).
+Returns an array of [cron execution results](/reference/data#cron-execution-result).
 
 ## `cron_next`
 

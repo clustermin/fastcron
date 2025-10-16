@@ -15,7 +15,7 @@ List all groups under your account.
 | ----- | ------ | -------------- |
 | token | string | Your API token |
 
-Return an array of [groups](data#group) like this:
+Return an array of [groups](/reference/data#group) like this:
 
 ```json
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
@@ -30,7 +30,7 @@ Get a group data
 | token | string  | Your API token |
 | id    | integer | Group ID       |
 
-Return the [group data](data#group) like this
+Return the [group data](/reference/data#group) like this
 
 ```json
 {"data":{"id":1,"name":"example"},"status":"success","code":0}
@@ -45,7 +45,7 @@ Search groups by exact name.
 | token | string | Your API token |
 | name  | string | Group name     |
 
-Return an array of [groups](data#group) like this:
+Return an array of [groups](/reference/data#group) like this:
 
 ```json
 {"data":[{"id":1,"name":"example"}],"status":"success","code":0}
@@ -120,4 +120,4 @@ List all cronjobs under a group.
 | token | string  | Your API token |
 | id    | integer | Group ID       |
 
-Return an array of [cronjobs](data#cron-job).
+Return an array of [cronjobs](/reference/data#cron-job).
