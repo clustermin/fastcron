@@ -62,7 +62,7 @@ Add a new cronjob.
 | filter           | string  | null             | [Filter](/blog/time-filter) scheduled execution times                                            |
 | delay            | integer | 0                | Random delay (in minutes) before running your cronjob. No delay by default.                      |
 | timezone         | string  | account timezone | Cronjob timezone                                                                                 |
-| timeout          | integer | 30               | Cron timeout - max time to wait for your URL to response.                                        |
+| timeout          | integer | 30               | Cron timeout - max time to wait for your URL to response. Min 15 seconds.                        |
 | instances        | integer | 0                | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
 | username         | string  | null             | Username for HTTP authentication                                                                 |
 | password         | string  | null             | Password for HTTP authentication                                                                 |
@@ -75,7 +75,7 @@ Add a new cronjob.
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
 | failureThreshold | integer | 20               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 100.                 |
-| pattern          | string  | null             | If the cron execution contains the string, mark it as failure                                    |
+| pattern          | string  | null             | If the cron execution contains the string, mark it as failure. Max 255 characters.            |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
 

@@ -8,6 +8,26 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 You can email me at support@fastcron.com to suggest a feature.
 
 
+## November 2025
+
+## Dedicated channel (Pro only)
+
+You can now add a dedicated channel at Utilities > Notification channels.
+When adding/updating a channel, select **Receive notifications from cron jobs with priority**: *None, select manually*.
+After that, you can (batch) update your cron jobs, in the section **Notifications and metric**, select the **Channel**.
+
+## Extract a metric (Pro only)
+
+If your cron job returns JSON response, FastCron can extract a metric from its response.
+When adding/updating your cron job, in the section **Notifications and metric**, enter a `JSON path` to **Extract metric** field.
+
+FastCron will extract the metric upon receiving cron job response.
+You can view the extracted metric on the **Logs** page.
+
+## October 2025
+
+You can now view the UTC time together with your local time on your cron job Logs page.
+
 ## September 2025
 
 You can now view the public status page at <a href="https://status.fastcron.com" target="_blank" rel="nofollow">status.fastcron.com</a>.
