@@ -13,7 +13,7 @@ You can email me at support@fastcron.com to suggest a feature.
 #### Dedicated channel
 
 You can now add a dedicated channel at Utilities > Notification channels.
-When adding/updating a channel, select **Receive notifications from cron jobs with priority**: *None, select manually*.
+When adding/updating a channel, select *Receive notifications from cron jobs with priority*: **None, select manually**.
 After that, you can (batch) update your cron jobs, in the section **Notifications and metric**, select the **Channel**.
 
 #### Extract a metric
