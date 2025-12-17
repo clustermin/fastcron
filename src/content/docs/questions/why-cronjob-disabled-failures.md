@@ -6,7 +6,7 @@ description: Your cronjob will be disabled after a failure threshold.
 Your cronjob will fail when your web server is down/unreachable, or it returns an HTTP status code other than 2xx (200 - 204).
 
 It will be disabled after a failure threshold.
-The default failure threshold is 10 consecutive failures in the free plan.
+The default failure threshold is 20 consecutive failures in the free plan.
 **Pro** users can update it up to 100 in the section **Failures, retry, and repeat** when adding/editing cronjobs.
 
 You will receive a [cron notification](/integrations) (via email, Slack, or webhook) when your cronjob was disabled because of failures.
