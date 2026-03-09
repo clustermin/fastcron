@@ -10,6 +10,8 @@ Here are our IP addresses:
 159.223.144.10
 143.244.166.206
 147.182.184.93
+45.76.15.62
+207.148.20.106
 ```
 
 Our IPv6 addresses:
@@ -17,11 +19,14 @@ Our IPv6 addresses:
 2604:a880:400:d0::33:f001
 2604:a880:400:d0::25cb:b001
 2604:a880:400:d0::18f1:f001
+2001:19f0:0000:36ab:5400:05ff:fefd:4ab0
 ```
 
 Our /64 CIDR (for adding to Cloudflare List):
 ```
 2604:a880:400:d0::/64
+2001:19f0:0:36ab::/64
+2001:19f0:0:36cb::/64
 ```
 
 You can fetch our IP list at:
