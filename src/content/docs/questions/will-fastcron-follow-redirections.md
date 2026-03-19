@@ -17,10 +17,11 @@ header('Location: /new/url.php?next=200');
 exit;
 ```
 
-FastCron will not follow parse the HTML or run JavaScript, so these won't work:
+FastCron will not parse HTML or run JavaScript, so these won't work:
 ```html
 <meta http-equiv="refresh" content="0;url=/new/url.html">
-
+```
+```html
 <script>
     window.location = '/new/url.html';
 </script>
