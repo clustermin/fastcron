@@ -7,6 +7,12 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## April 2026
+#### Server region
+You can choose a server region to process your cron jobs.
+Currently, only New York (old servers) and New Jersey are available.
+
+
 ## March 2026
 #### New servers
 FastCron has added 2 new servers with new IP addresses to process your cron jobs.
