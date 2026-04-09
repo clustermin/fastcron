@@ -33,8 +33,8 @@ Cron-job.org relies on donations.
 |                                                                    | Cron-job.org | **FastCron**  |
 | ------------------------------------------------------------------ | ------------ | ------------- |
 | Starting price                                                     | $1 / month   | $5 / month    |
-| Number of cronjobs                                                 | unlimited    | 10            |
-| Minimum cron interval                                              | 1 minute     | **5 seconds** |
+| Number of cronjobs                                                 | unlimited    | 15            |
+| Minimum cron interval                                              | 1 minute     | **10 seconds** |
 | Max cron history logs                                              | 25           | **1000**      |
 | Max cron timeout                                                   | 5 minutes    | **2 hours**   |
 | Max response size                                                  | 256 KB       | **100 MB**    |
