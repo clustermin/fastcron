@@ -75,9 +75,11 @@ Add a new cronjob.
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
 | failureThreshold | integer | 20               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 100.                 |
-| pattern          | string  | null             | If the cron execution contains the string, mark it as failure. Max 255 characters.            |
+| pattern          | string  | null             | If the cron execution contains the string, mark it as failure. Max 255 characters.               |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
+| run              | integer | null             | Run the created cron job immediately. Can use a Unix timestamp to schedule time.                 |
+| payload          | string  | null             | When `run` > 0, send the payload to run this time. See `cron_run`.                               |
 
 Returns the newly created cronjob.
 
@@ -109,11 +111,13 @@ https://app.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *
 
 Update an existing cronjob
 
-| Name      | Type    | Default       | Description                                   |
-| --------- | ------- | ------------- | --------------------------------------------- |
-| **token** | string  |               | Your API token                                |
-| **id**    | integer |               | Cronjob ID                                    |
-| any       | any     | current value | Any parameter listed in `cron_add` parameters |
+| Name      | Type    | Default       | Description                                                                      |
+| --------- | ------- | ------------- | -------------------------------------------------------------------------------- |
+| **token** | string  |               | Your API token                                                                   |
+| **id**    | integer |               | Cronjob ID                                                                       |
+| any       | any     | current value | Any parameter listed in `cron_add` parameters                                    |
+| run       | integer | null          | Run the updated cron job immediately. Can use a Unix timestamp to schedule time. |
+| payload   | string  | null          | When `run` > 0, send the payload to run this time. See `cron_run`.               |
 
 Similar to `cron_add`, except that it'll update a specific cronjob with provided ID.
 
@@ -257,15 +261,3 @@ Delete multiple cronjobs at once.
 | **id**    | array  | List of cronjob IDs |
 
 Returns an array of deleted cronjobs.
-
-## `cron_group_edit`
-
-Update multiple cronjobs in a group at once.
-
-| Name      | Type   | Default        | Description                                                  |
-| --------- | ------ | -------------- | ------------------------------------------------------------ |
-| **token** | string |                | Your API token                                               |
-| **id**    | int    |                | The group ID                                                 |
-| any       | null   | existing value | Any parameter listed in `cron_add` parameters except `token` |
-
-Returns an array of updated cronjob data structures.

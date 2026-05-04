@@ -7,6 +7,15 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## May 2026
+
+#### API function update
+When calling [`cron_add`](/reference/cron#cron_add) and [`cron_edit`](/reference/cron#cron_edit), you can add `run` and `payload` to run your created/updated cron jobs.
+This will save you a `cron_run` call.
+
+`cron_group_edit` is removed.
+
+
 ## April 2026
 
 #### New theme
