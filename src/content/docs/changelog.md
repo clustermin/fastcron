@@ -8,6 +8,17 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 You can email me at support@fastcron.com to suggest a feature.
 
 ## April 2026
+
+#### New theme
+FastCron now uses a fresh new theme from Tabler.io.
+There are some small changes here and there, like clicking on the cron job URL will open its Logs page instead of Edit page.
+If you encounter any issues with the new theme, please email as soon as possible.
+
+#### Stop disabling failed cron jobs
+In the Pro plan, cron jobs will not be disabled after 50 consecutive failures.
+They will be retried forever with linear back-off.
+In the free plan, cron jobs that fails more than 50 consecutive times will be disabled.
+
 #### Server region
 You can choose a server region to process your cron jobs.
 Currently, only New York (old servers) and New Jersey are available.
