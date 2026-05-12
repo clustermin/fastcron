@@ -13,12 +13,6 @@ export default defineConfig({
     disable404Route: true,
     favicon: '/images/logo.png',
     customCss: ['./src/styles/docs.css'],
-    logo: {
-      light: "./public/images/logo.png",
-      dark: "./public/images/rush-dark.png",
-      alt: "FastCron",
-      replacesTitle: false
-    },
     components: {
       SocialIcons: './src/components/DocsHeader.astro'
     },
