@@ -9,12 +9,19 @@ You can email me at support@fastcron.com to suggest a feature.
 
 ## May 2026
 
+#### API authentication
+You can authenticate your API requests by including the HTTP headers `Authorization: Bearer API-TOKEN`.
+Passing the API token in the GET query is deprecated.
+
+#### Dark mode
+FastCron will switch to dark mode automatically to match your device settings.
+You can also enable it manually by clicking the moon icon next to your profile avatar.
+
 #### API function update
 When calling [`cron_add`](/reference/cron#cron_add) and [`cron_edit`](/reference/cron#cron_edit), you can add `run` and `payload` to run your created/updated cron jobs.
 This will save you a `cron_run` call.
 
 `cron_group_edit` is removed.
-
 
 ## April 2026
 

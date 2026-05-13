@@ -6,7 +6,7 @@ description: "FastCron API Docs. Overview, request and response format."
 With an API Token, you can work with your cronjobs, groups, and account settings without logging in.
 
 The API token is a 32-character string generated for all FastCron users.
-You can visit your **Profile** page to copy your API key.
+You can visit your **Profile** page to copy your API token.
 
 ## API endpoint
 
@@ -24,7 +24,16 @@ https://app.fastcron.com/api/v1/cron_list
 
 ## Authentication and request format
 
-FastCron requires a `token` variable sent in POST body or GET parameters.
+You can authenticate by sending your API token in the headers or POST body.
+
+### HTTP headers
+You can use the headers `Authorization: Bearer` to authenticate your API requests.
+
+```sh "API-TOKEN"
+curl --request GET \
+    --url "https://app.fastcron.com/api/v1/account_get" \
+    --header "Authorization: Bearer API-TOKEN"
+```
 
 ### POST
 Send all data including the `token` to:
@@ -35,33 +44,19 @@ https://app.fastcron.com/api/v1/[function]
 
 The POST body must be either query string or JSON format:
 
-```
-token=******&id=1&name=weekly
-```
-
-```json
-{"token":"******","id":1,"name":"weekly"}
+```txt "API-TOKEN"
+token=API-TOKEN&id=1&name=weekly
 ```
 
-### GET variables
-
-```
-https://app.fastcron.com/api/v1/[function]?token=[token]&name=value
+```json "API-TOKEN"
+{"token":"API-TOKEN","id":1,"name":"weekly"}
 ```
 
-Example requests:
-
-```
-https://app.fastcron.com/api/v1/cron_list?token=******
-```
-
-```
-https://app.fastcron.com/api/v1/cron_edit?token=******&id=1&name=weekly
-```
+You can include your API token in the GET query string, but it's not recommended.
 
 ## Response format
 
-The response is in JSON format and includes these members:
+The response is in JSON format and includes these fields:
 
 | Name   | Description                                       |
 | ------- | ------------------------------------------------- |
