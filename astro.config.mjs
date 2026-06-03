@@ -8,6 +8,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: 'https://www.fastcron.com',
   trailingSlash: 'never',
+  build: {format: 'file'},
   integrations: [sitemap(), tailwind(), starlight({
     title: 'FastCron',
     disable404Route: true,
