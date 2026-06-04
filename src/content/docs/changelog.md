@@ -166,11 +166,6 @@ To do so, click on the Filter
 A cronjob can have a different priority than its group priority.
 Changing a group priority will only raise all its cronjobs to the same priority.
 
-#### Old API endpoint deprecated
-
-FastCron will stop proxying `https://www.fastcron.com/api/` to `https://app.fastcronjob.com/api/v1/`.
-Please update your endpoint URL in your config as soon as possible.
-
 ## October 2024
 
 #### Clean up
@@ -335,13 +330,10 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 
 - You can now change your referral code.
 - Help center have been moved to [Docs](/docs).
-- Blog have been moved to [/blog](/blog)
-- Account dashboard has been moved to https://www.fastcron.com
 - API endpoint is now `https://www.fastcron.com/app/v1/`
 - 3 new [IP addresses](/ip-addresses) have been added.
 - Custom HTTP headers are now available in the free plan.
 - Show last **25 execution results** for the free plan (from 10 results).
-- We will remove failed execution results after 1 year.
 - User avatars are now synced from your Google account.
 - You can now add your company/team name.
 - Contact email has been removed. Existing contacts have been converted to team members with role Viewer.

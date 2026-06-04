@@ -11,5 +11,5 @@ You can now change:
 
 ![account-settings](/images/account-settings.png)
 
-**For new users only**: FastCron will now automatically delete stopped cronjobs after 30 days.
+**For new users only**: FastCron will now automatically delete stopped cronjobs after 3 days.
 You can change it on the account settings page.

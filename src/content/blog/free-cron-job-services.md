@@ -21,7 +21,7 @@ Here are the best free cronjob services:
 With [FastCron](/), you can create up to 5 cronjobs running every 5 minutes.
 That's enough for your WordPress blog and some simple PHP websites.
 
-The timeout limit is 30 seconds, and you get to see the last 25 execution results.
+The timeout limit is 30 seconds, and you get to see the last 50 execution results.
 You'll receive email notifications when your cronjobs fail and succeed again.
 
 ## cron-job.org
@@ -63,13 +63,12 @@ Here are the comparison table for the top 3 free cronjob services:
 | ------------------------------ | ------------- | -------------- | ------------- |
 | Number of cronjobs             | **unlimited** | 5              | 200           |
 | Minimum cron interval          | **1 minute**  | 5 minutes      | 20 minutes    |
-| Max cron history logs          | **25**        | **25**         | 10            |
+| Max cron history logs          | 25            | **50**         | 10            |
 | Max cron timeout               | 30 seconds    | 30 seconds     | 5 seconds     |
 | Keep failure logs              | no            | **3**          | no            |
 | Max response size              | 64 KB         | **100 MB**     | **100 MB**    |
 | Max API calls per day          | 100           | **unlimited**  | **unlimited** |
 | Change HTTP method and headers | **yes**       | **yes**        | no            |
-| Runs cronjobs manually         | no            | **yes**        | **yes**       |
 | Track running cronjobs         | no            | **yes**        | **yes**       |
 | Requires monthly login         | **no**        | **no**         | yes           |
 | Email notifications            | **yes**       | **yes**        | no            |
