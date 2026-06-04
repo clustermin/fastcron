@@ -1,0 +1,17 @@
+---
+title: 'SetCronJob is now FastCron'
+description: 'New name, new logo, same old reliable cronjob service!'
+pubDate: 'Jul 12 2023'
+---
+
+I've renamed SetCronJob to **FastCron**. The new homepage is now https://www.fastcron.com/.
+
+The default user agent has been changed to\
+`Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)`
+
+Emails will be sent from **support@fastcron.com** and **alert@fastcron.com**
+
+The new API endpoint is now\
+`https://www.fastcron.com/api/v1/`.
+
+If you encounter any problem with this change, please let me know.
