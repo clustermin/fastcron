@@ -23,7 +23,7 @@ Follow these instructions to change the account owner:
 If they already registered an account at FastCron, ask them to delete their own account, or try [migrating the cronjobs](#migrate-the-cronjobs).
 - FastCron will send a confirmation link to the new owner.
 - The new owner can click on it and claim your account.
-- After that, they can [reset the password](https://app.fastcron.com/reset-password) to change the password.
+- After that, they can [reset the password](https://www.fastcron.com/reset-password) to change the password.
 
 And that's it.
 

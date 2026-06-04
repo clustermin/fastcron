@@ -13,7 +13,7 @@ To ensure that the instance is always active and ready to serve incoming traffic
 
 Here's how to create a free cronjob for **Render free instances** at FastCron:
 
-- [Create a free account](https://app.fastcron.com/signup)
+- [Create a free account](https://www.fastcron.com/signup)
 - Click the new **Cron Job** button
 - Enter your website URL e.g. `https://appy.onrender.com`
 - Select **When to call: Every 12 minutes**

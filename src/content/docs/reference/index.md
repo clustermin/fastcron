@@ -13,13 +13,13 @@ You can visit your **Profile** page to copy your API token.
 Send all API requests via HTTP to a URL with the format
 
 ```
-https://app.fastcron.com/api/v1/[function]
+https://www.fastcron.com/api/v1/[function]
 ```
 
 For example, to list your cronjobs, send your HTTP request to
 
 ```
-https://app.fastcron.com/api/v1/cron_list
+https://www.fastcron.com/api/v1/cron_list
 ```
 
 ## Authentication and request format
@@ -31,7 +31,7 @@ You can use the headers `Authorization: Bearer` to authenticate your API request
 
 ```sh "API-TOKEN"
 curl --request GET \
-    --url "https://app.fastcron.com/api/v1/account_get" \
+    --url "https://www.fastcron.com/api/v1/account_get" \
     --header "Authorization: Bearer API-TOKEN"
 ```
 
@@ -39,7 +39,7 @@ curl --request GET \
 Send all data including the `token` to:
 
 ```
-https://app.fastcron.com/api/v1/[function]
+https://www.fastcron.com/api/v1/[function]
 ```
 
 The POST body must be either query string or JSON format:
@@ -68,7 +68,7 @@ The response is in JSON format and includes these fields:
 ## Example request
 
 ```
-https://app.fastcron.com/api/v1/cron_list?token=******
+https://www.fastcron.com/api/v1/cron_list?token=******
 ```
 
 ### Success response

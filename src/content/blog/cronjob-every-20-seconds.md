@@ -24,4 +24,4 @@ You just need to create **one cronjob**, and you'll get:
 - A nice simple interface for you and your team.
 - and many more features.
 
-[Try it free for 7 days](https://app.fastcron.com/signup) now, no credit card required.
+[Start with a free account](https://www.fastcron.com/signup) now, no credit card required.

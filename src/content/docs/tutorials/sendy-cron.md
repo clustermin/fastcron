@@ -8,7 +8,7 @@ that lets you send bulk emails via Amazon Simple Email Service (SES).
 After installing Sendy on your server, you'll need to set up 2 cron jobs for scheduled emails and auto-responders.
 
 Follow this step-by-step to set up cronjobs for free:
-- [Log in to FastCron](https://app.fastcron.com/login),
+- [Log in to FastCron](https://www.fastcron.com/login),
 - Click the new **Cron job** button.
 - Enter this cronjob URL into the **URL to call** field (replace `example.com/sendy` with your Sendy URL)
 ```sh

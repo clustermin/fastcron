@@ -6,7 +6,7 @@ title: How to set up cronjob for EasyDiscuss
 Follow these steps to set up cronjob your Joomla component
 <a href="http://stackideas.com/easydiscuss?ref=fastcron.com" target="_blank" rel="nofollow">EasyDiscuss</a>:
 
-- [Log in to FastCron](https://app.fastcron.com/login).
+- [Log in to FastCron](https://www.fastcron.com/login).
 - Click the new Cron Job button.
 - Paste the cronjob URL (replace `https://example.com` with your Joomla site URL) to **URL to call**
 ```

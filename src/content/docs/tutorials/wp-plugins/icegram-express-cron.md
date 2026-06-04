@@ -10,7 +10,7 @@ follow the instructions below:
 - Log in to your WordPress dashboard
 - Visit Icegram Express > Settings > Email Sending, copy the **Cron URL**
 ![Cron URL from Icegram Express](/screenshots/wordpress/email-subscribers.png)
-- [Log in](https://app.fastcron.com/login) to your FastCron account
+- [Log in](https://www.fastcron.com/login) to your FastCron account
 - Click the new **Cron Job** button 
 - Paste the Cron URL into the URL to call
  ```

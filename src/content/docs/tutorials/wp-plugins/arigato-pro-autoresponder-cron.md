@@ -7,7 +7,7 @@ sidebar:
 Follow this step-by-step to set up cronjobs for 
 <a href="http://calendarscripts.info/bft-pro/?ref=fastcron.com" target="_blank" rel="nofollow">Arigato PRO Autoresponder</a>:
 
-- [Log in to FastCron](https://app.fastcron.com/login).
+- [Log in to FastCron](https://www.fastcron.com/login).
 - Click the new **Cron job** button.
 - Enter this cronjob URL into the **URL to call** field (replace `example.com/blog` with your WordPress URL)
 ```sh

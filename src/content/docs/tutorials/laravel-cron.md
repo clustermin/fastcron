@@ -77,4 +77,4 @@ However, I'd recommend you to use a [cronjob service](/) like FastCron that offe
 - A nice simple interface for you and your team.
 - and many more features.
 
-[Give it a try](https://app.fastcron.com/signup) now, it's free!
+[Give it a try](https://www.fastcron.com/signup) now, it's free!

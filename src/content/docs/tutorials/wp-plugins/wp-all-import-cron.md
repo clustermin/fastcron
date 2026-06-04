@@ -20,7 +20,7 @@ You need to set up 2 cronjobs: **trigger** and **processing** for each import.
 
 To set up the **trigger** cronjob:
 
-- [Log in to FastCron](https://app.fastcron.com/login).
+- [Log in to FastCron](https://www.fastcron.com/login).
 - Click the new Cron Job button
 - Enter the **trigger** URL into the **URL to call** field
 ```sh "SECRET_KEY" "IMPORT_ID"

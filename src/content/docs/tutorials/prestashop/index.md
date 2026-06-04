@@ -11,7 +11,7 @@ Follow this step-by-step to set up a cronjob for
 ```sh
 https://example.com/shop/admin/index.php?controller=AdminCronJobs&token=******
 ```
-- [Log in to FastCron](https://app.fastcron.com/login), click the new **Cron job** button.
+- [Log in to FastCron](https://www.fastcron.com/login), click the new **Cron job** button.
 - Enter the cronjob URL into **URL to call**.
 - Select **When to call: Every 5 minutes**, then **Save** and run your cronjob
 

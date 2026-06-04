@@ -12,10 +12,10 @@ You just need to install and activate it, FastCron will create a free cronjob ru
 
 ## Set cronjob on FastCron for free
 
-Alternatively, you can [register an account](https://app.fastcron.com/signup) at FastCron to run your WP Cron.
+Alternatively, you can [register an account](https://www.fastcron.com/signup) at FastCron to run your WP Cron.
 This way, you also receive cron notifications when your cronjob fails or your website is down.
 
-- [Log in](https://app.fastcron.com/login) to your FastCron account
+- [Log in](https://www.fastcron.com/login) to your FastCron account
 - Click the new **Cron Job** button 
 - Enter the URL to call
  ```

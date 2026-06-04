@@ -12,7 +12,7 @@ To set up cronjob for your Mailster plugin, follow these instructions:
 - Copy the Mailster cron URL, then click **Save Changes**.
 ![Mailster settings](/screenshots/wordpress/mailster.png)
 - Try visiting the cron URL with your browser to confirm it's okay.
-- [Log in to FastCron](https://app.fastcron.com/login).
+- [Log in to FastCron](https://www.fastcron.com/login).
 - Click the new Cron Job button
 - Enter the mailster URL into the **URL to call** field
 - Select **When to call: Every 5 minutes**

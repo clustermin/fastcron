@@ -8,7 +8,7 @@ Follow these steps to set up cronjob your BackWPup plugin:
 - Click **BackWPup** > **Jobs**, *Add new* or *Edit* an existing job.
 - Switch to the tab **Schedule**, select **Start job: with a link**, then copy the cronjob URL, then click **Save changes**.
 ![Start job with a link](/screenshots/wordpress/backwpup.png)
-- [Log in to FastCron](https://app.fastcron.com/login).
+- [Log in to FastCron](https://www.fastcron.com/login).
 - Click the new Cron Job button.
 - Paste the cronjob URL to **URL to call**
 ```

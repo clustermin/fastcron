@@ -7,7 +7,7 @@ you can follow the instructions below:
 
 - Visit your **WP Fastest Cache** settings page, and enable **Preload**:
 ![WP Fastest Cache preload](/screenshots/wordpress/wp-fastest-cache.png)
-- [Log in](https://app.fastcron.com/login) to your FastCron account
+- [Log in](https://www.fastcron.com/login) to your FastCron account
 - Click the new **Cron Job** button 
 - Enter the URL to call
  ```

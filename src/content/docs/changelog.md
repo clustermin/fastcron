@@ -336,8 +336,8 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 - You can now change your referral code.
 - Help center have been moved to [Docs](/docs).
 - Blog have been moved to [/blog](/blog)
-- Account dashboard has been moved to https://app.fastcron.com
-- API endpoint is now `https://app.fastcron.com/app/v1/`
+- Account dashboard has been moved to https://www.fastcron.com
+- API endpoint is now `https://www.fastcron.com/app/v1/`
 - 3 new [IP addresses](/ip-addresses) have been added.
 - Custom HTTP headers are now available in the free plan.
 - Show last **25 execution results** for the free plan (from 10 results).

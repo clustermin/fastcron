@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 import starlight from "@astrojs/starlight";
 
@@ -8,7 +7,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: 'https://www.fastcron.com',
   trailingSlash: 'never',
-  integrations: [sitemap(), tailwind(), starlight({
+  integrations: [tailwind(), starlight({
     title: 'FastCron',
     disable404Route: true,
     favicon: '/images/logo.png',

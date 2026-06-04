@@ -42,7 +42,7 @@ then schedule to run it at a specific time using
 [`cron_run`](/reference/cron#cron_run).
 
 ```bash "YOUR_API_TOKEN" "CRONJOB_ID"
-curl -X POST "https://app.fastcron.com/api/v1/cron_run" \
+curl -X POST "https://www.fastcron.com/api/v1/cron_run" \
     -H 'Content-Type: application/json' \
     -d '{
         "token": "YOUR_API_TOKEN",
@@ -55,7 +55,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_run" \
  You can also attach a `payload` to the execution time like this:
 
 ```bash "YOUR_API_TOKEN" "CRONJOB_ID"
-curl -X POST "https://app.fastcron.com/api/v1/cron_run" \
+curl -X POST "https://www.fastcron.com/api/v1/cron_run" \
     -H 'Content-Type: application/json' \
     -d '{
         "token": "YOUR_API_TOKEN",
@@ -70,7 +70,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_run" \
 <!-- ## Create one-time cronjobs using `cron_add`
 Create a one-time cronjob using `cron_add`
 ```bash "YOUR_API_TOKEN"
-curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
+curl -X POST "https://www.fastcron.com/api/v1/cron_add" \
     -H 'Content-Type: application/json' \
     -d '{
         "token":"YOUR_API_TOKEN",
@@ -82,7 +82,7 @@ curl -X POST "https://app.fastcron.com/api/v1/cron_add" \
 Create multiple one-time cronjobs using `cron_batch_add`
 
 ```bash "YOUR_API_TOKEN"
-curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
+curl -X POST "https://www.fastcron.com/api/v1/cron_batch_add" \
     -H 'Content-Type: application/json' \
     -d '{
         "token":"YOUR_API_TOKEN",

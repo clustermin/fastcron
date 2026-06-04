@@ -5,7 +5,7 @@ title: How to set up cronjobs for WPL Pro plugin
 
 Follow the step-by-step instruction below to set up cronjobs for the **WPL Pro plugin** with **MLS add-on**.
 
-First, [log in to FastCron](https://app.fastcron.com/login). Then, set up these 4 cronjobs:
+First, [log in to FastCron](https://www.fastcron.com/login). Then, set up these 4 cronjobs:
 
 ## Cronjob #1
 - Click the new Cron Job button

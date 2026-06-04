@@ -84,7 +84,7 @@ Add a new cronjob.
 Returns the newly created cronjob.
 
 ```
-https://app.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *&url=example.com/cron_php
+https://www.fastcron.com/api/v1/cron_add?token=******&expression=*/3 1,2,3 * * *&url=example.com/cron_php
 ```
 
 ```json
@@ -244,7 +244,7 @@ Add multiple cronjobs at once/
 This works only with requests in JSON format like this:
 
 ```sh
-curl -X POST "https://app.fastcron.com/api/v1/cron_batch_add" \
+curl -X POST "https://www.fastcron.com/api/v1/cron_batch_add" \
 -H 'Content-Type: application/json' \
 -d '{"token":"***", "data":[{"url":"https://example.com", "expression":"1 hour"},{"url":"https://example.com", "expression":"1 day"}]}'
 ```

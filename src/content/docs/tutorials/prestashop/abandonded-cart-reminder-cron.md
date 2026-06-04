@@ -13,7 +13,7 @@ you need to set up a cronjob to send reminder emails and emails of marketing cam
 Follow this step-by-step to set up a cronjob for free:
 - Get your **cronjob secure token** at the **Automation** tab
 ![Automation](/tutorials/prestashop/abandoned-cart-reminder/automation.webp)
-- [Log in to FastCron](https://app.fastcron.com/login), click the new **Cron job** button.
+- [Log in to FastCron](https://www.fastcron.com/login), click the new **Cron job** button.
 - Enter the cronjob URL into **URL to call** (replace `example.com/shop` with your PrestaShop URL, and `SECURE_TOKEN` with your secure token).
 ```sh "SECURE_TOKEN"
 https://example.com/shop/modules/ets_abandonedcart/cronjob.php?secure=SECURE_TOKEN
