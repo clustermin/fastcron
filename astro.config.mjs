@@ -8,7 +8,7 @@ export default defineConfig({
   trailingSlash: 'never',
   integrations: [starlight({
     title: 'FastCron',
-    favicon: '/images/logo.png',
+    favicon: '/favicon.svg',
     sidebar: [
       {
         label: 'Getting started',
