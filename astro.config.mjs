@@ -1,19 +1,14 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
-import tailwind from "@astrojs/tailwind";
 import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.fastcron.com',
   trailingSlash: 'never',
-  integrations: [tailwind(), starlight({
+  integrations: [starlight({
     title: 'FastCron',
     favicon: '/images/logo.png',
-    customCss: ['./src/styles/docs.css'],
-    components: {
-      SocialIcons: './src/components/DocsHeader.astro'
-    },
     sidebar: [
       {
         label: 'Getting started',
