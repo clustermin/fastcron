@@ -9,7 +9,6 @@ export default defineConfig({
   trailingSlash: 'never',
   integrations: [tailwind(), starlight({
     title: 'FastCron',
-    disable404Route: true,
     favicon: '/images/logo.png',
     customCss: ['./src/styles/docs.css'],
     components: {
