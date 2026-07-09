@@ -91,9 +91,10 @@ or in JSON format like this:
 }
 ```
 
-For JSON payload, FastCron automatically adds HTTP header
+For JSON payload, if you don't add your own `Content-Type` header,
+FastCron will automatically adds
 `Content-Type: application/json`
-to the HTTP request, so you don't need to.
+to the **HTTP headers** for you. 
 
 ## Other questions
 - [How to transfer my account?](/questions/how-to-transfer-account)

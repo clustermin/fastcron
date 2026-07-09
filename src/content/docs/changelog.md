@@ -7,6 +7,20 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## July 2026
+#### Content-Type header
+If you add your own HTTP header `Content-Type`, FastCron will not add `Content-Type` again.
+See [What HTTP methods are supported](/docs/faq#what-http-methods-are-supported).
+
+#### Retry failed connections
+When FastCron couldn't connect to your server, it will automatically retry once.
+You can now see two attempts on the Logs page, with `#1` shows the first attempt result, and `#2` shows the second attempt result.
+
+## June 2026
+#### Last runs
+FastCron will show the last 10 execution statuses (success: green, failure: red, warning: yellow) on the cron job dashboard.
+You can now see which cron jobs are having issues at a glance.
+
 ## May 2026
 
 #### API authentication
