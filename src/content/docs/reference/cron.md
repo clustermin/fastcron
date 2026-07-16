@@ -74,7 +74,6 @@ Add a new cronjob.
 | notifyEvery      | int     | 2                | When notify is true, send notification every `notifyEvery` fails. Min 1, max 100.                |
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
-| failureThreshold | integer | 20               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 100.                 |
 | keyword          | string  | null             | Text to to search for in the output. Max 100 characters.                                         |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
