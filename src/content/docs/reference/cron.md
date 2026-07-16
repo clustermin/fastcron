@@ -75,7 +75,7 @@ Add a new cronjob.
 | notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
 | notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
 | failureThreshold | integer | 20               | Number of consecutive failures allowed before disabling cronjob. Min 1, max 100.                 |
-| pattern          | string  | null             | If the cron execution contains the string, mark it as failure. Max 255 characters.               |
+| keyword          | string  | null             | Text to to search for in the output. Max 100 characters.                                         |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |
 | run              | integer | null             | Run the created cron job immediately. Can use a Unix timestamp to schedule time.                 |

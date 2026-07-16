@@ -29,7 +29,7 @@ If you still need to create/run one-time cronjobs, follow the instructions below
 - Click **Save** changes.
 
 And that's it. 
-You can hover/click on the time pattern field e.g. **Feb 14, 2030, 7:30** in the example above, and it'll show the next execution time so you can confirm the time settings are correct.
+You can click on the cron job name to show the Logs page, and confirm that the next run time is correct.
 
 :::note[Clean up stopped one-time cronjobs]
 FastCron will automatically delete stopped one-time cronjobs **3 days** after their last executions.

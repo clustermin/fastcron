@@ -30,7 +30,7 @@ Due to several limitations of Unix crontab, many software teams are using a [web
 
 FastCron is a simple, fast, and free cronjob service for professional website developers. It offers several features:
 
-- **Cron expression**: FastCron supports both standard cron expressions like `*/5 * * * *` and simple patterns like `5 minutes`. Also, check out the [time filter](/blog/time-filter) to match both the day of the week and the day of the month.
+- **Cron expression**: FastCron supports both standard cron expressions like `*/5 * * * *` and simple expressions like `5 minutes`. Also, check out the [time filter](/blog/time-filter) to match both the day of the week and the day of the month.
 - **Custom timezone** for your cronjobs. FastCron also calculates **daylight saving time** (DST) to ensure that your cronjob executes on time.
 - **Cronjob management**: you can disable, enable, and run cronjob easily with just one click.
 - **Queued executions**: know when your cronjob will execute.
