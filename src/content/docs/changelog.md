@@ -64,7 +64,7 @@ Please ask your hosting provider to add our IP addresses to their firewall's whi
 #### Never disable failing cron jobs
 FastCron will not [disable your failing cron jobs](/questions/why-cronjob-disabled-failures/) when you set the failure threshold to zero.
 You can change it when adding/editing your cron jobs, in the section **Failure, retry, and repeat**, set **Disabled after: 0**.
-
+no
 
 ## November 2025
 
