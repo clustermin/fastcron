@@ -15,13 +15,13 @@ Both FastCron and EasyCron have a free plan.
 |                                  | EasyCron   | **FastCron**   |
 | -------------------------------- | ---------- | -------------- |
 | Requires monthly login           | yes        | **no**         |
-| Minimum cron interval            | 20 minutes | **5 minutes**  |
+| Minimum cron interval            | 20 minutes | **3 minutes**  |
 | Max number of daily cronjobs     | 200        | 5              |
 | Max number of 20-minute cronjobs | 2          | **5**          |
 | Max number of 10-minute cronjobs | 0          | **5**          |
 | Max number of 5-minute cronjobs  | 0          | **5**          |
-| Max cron history logs            | 10         | **25**         |
-| Max cron timeout                 | 5 seconds  | **30 seconds** |
+| Max cron history logs            | 10         | **50**         |
+| Max request timeout              | 5 seconds  | **30 seconds** |
 | Keep failure logs                | no         | **3**          |
 | Email notifications              | no         | **yes**        |
 | Change HTTP method and headers   | no         | **yes**        |
@@ -36,13 +36,13 @@ EasyCron is a **free and cheap** cronjob service.
 
 |                                  | EasyCron     | **FastCron**  |
 | -------------------------------- | ------------ | ------------- |
-| Starting price                   | $2 / month   | $5 / month    |
+| Starting price                   | $2 / month   | $6 / month    |
 | Minimum cron interval            | 1 minute     | **10 seconds**|
 | Max number of daily cronjobs [1] | 8,000        | 15            |
 | Max number of 1-minute cronjobs  | 5            | **15**        |
 | Max number of 30-second cronjobs | 0            | **15**        |
 | Max cron history logs            | 200          | **1000**      |
-| Max cron timeout                 | 12 hours     | 2 hours       |
+| Max request timeout              | 12 hours     | 2 hours       |
 | Keep failure logs                | 20           | 20            |
 | Team members                     | from $120/yr | **unlimited** |
 

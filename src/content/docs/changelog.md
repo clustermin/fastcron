@@ -321,31 +321,17 @@ We will automatically disable your channel after 5 consecutive failures.
 #### Removed daily execution limits
 
 The base cronjob interval is 1 minute.
-You can create cronjobs to run up to every 5 seconds, but they will count as 12 cronjobs.
-You can create up to 1,440x one-time cronjobs.
-
-
-#### Removed old servers
-
-3 old servers are scheduled to removed:
-- **scj-app01** removed on June 11, 2024
-- **scj-app02** removed on June 18, 2024
-- **scj-app03** removed on June 25, 2024
-- **scj-app04** removed on July 2, 2024
-
-Please ensure that we can reach your cronjob URLs with the new IP addresses by whitelisting our IP addresses.
+You can create cronjobs to run up to every 10 seconds, but they will count as 6 cronjobs.
 
 #### Updated `cron_run`
 
 You can now run your cronjob at a specific time using [`cron_run`](/reference/cron#cron_run) with `time` parameter.
-
 
 ## May 2024
 
 - You can now change your referral code.
 - Help center have been moved to [Docs](/docs).
 - API endpoint is now `https://www.fastcron.com/app/v1/`
-- 3 new [IP addresses](/ip-addresses) have been added.
 - Custom HTTP headers are now available in the free plan.
 - Show last **25 execution results** for the free plan (from 10 results).
 - User avatars are now synced from your Google account.

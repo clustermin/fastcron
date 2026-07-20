@@ -15,8 +15,8 @@ Both FastCron and Cron-job.org have a free plan.
 |                                                                    | Cron-job.org | **FastCron**   |
 | ------------------------------------------------------------------ | ------------ | -------------- |
 | Number of cronjobs                                                 | unlimited    | 5              |
-| Minimum cron interval                                              | 1 minute     | 5 minutes      |
-| Max cron history logs                                              | 25           | 25             |
+| Minimum cron interval                                              | 1 minute     | 3 minutes      |
+| Max cron history logs                                              | 25           | 50             |
 | Max response size                                                  | 64 KB        | **100 MB**     |
 | Max API calls per day                                              | 100          | **unlimited**  |
 | Track running cronjobs                                             | no           | **yes**        |
@@ -32,11 +32,11 @@ Cron-job.org relies on donations.
 
 |                                                                    | Cron-job.org | **FastCron**  |
 | ------------------------------------------------------------------ | ------------ | ------------- |
-| Starting price                                                     | $1 / month   | $5 / month    |
+| Starting price                                                     | $1 / month   | $6 / month    |
 | Number of cronjobs                                                 | unlimited    | 15            |
 | Minimum cron interval                                              | 1 minute     | **10 seconds** |
 | Max cron history logs                                              | 25           | **1000**      |
-| Max cron timeout                                                   | 5 minutes    | **2 hours**   |
+| Max request timeout                                                | 5 minutes    | **2 hours**   |
 | Max response size                                                  | 256 KB       | **100 MB**    |
 | Max API calls per day                                              | 5,000        | **unlimited** |
 | Track running cronjobs                                             | no           | **yes**       |
