@@ -136,11 +136,6 @@ FastCron will back off failing cronjobs linearly. Learn more about [cronjob fail
 
 ## January 2025
 
-#### Allow/disallow a HTTP status codes
-For HTTP status code 3xx or higher, you can allow or disallow them on a specific cronjob.
-To do so, view cronjob Logs, then click on result with the HTTP status code, then click *Ignore HTTP status code 404*.
-To undo, click *Disallow HTTP status code 404*.
-
 #### Cron logs bar charts
 The cron logs chart of execution times is now shown by default.
 You can click on a bar to scroll down and view the corresponding execution result.
@@ -293,14 +288,6 @@ You can view the *SSL cert expiry dates* on the **Hosts** page.
 
 #### Unlimited team members
 You can now add unlimited team members to your account, even in the free plan!
-
-#### Ignore HTTP status is removed
-Your cronjob URLs should return HTTP status code 2xx.
-Otherwise, they will be marked as failed and disabled after a number of consecutive failures.
-
-Previously, you can choose to ignore all HTTP status codes (3xx, 4xx, 5xx).
-The option has been removed.
-You can choose to ignore one HTTP status code at a time on the cron logs page or in a failure notification email.
 
 #### Cronjob statistics and monthly report
 FastCron has started collecting cronjob statistics (total runs/failures, average execution times, total 4xx/5xx responses) since July 15.

@@ -13,5 +13,3 @@ There are some ways to resolve the issue:
 - Decrease the server-side script's execution time, e.g. by limiting the number of items processed per execution.
 
 - Make the server-side script continue to execute even when the web server stops waiting for it, e.g. enable PHP's `ignore_user_abort`.
-
-If you don't want to treat 504 Gateway Timeout as a failure, you can ignore HTTP status codes.

@@ -4,7 +4,7 @@ sidebar:
     label: Keywords / Variables
 ---
 
-Your web server may cache your script output, rendering online cronjob ineffective.
+Your web server may cache your script output, making online cron job ineffective.
 You should add `__timestamp__` to your cronjob URL to bypass website cache.
 
 For example, you set up a cronjob with the URL to call
