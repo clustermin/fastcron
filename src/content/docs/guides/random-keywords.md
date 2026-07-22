@@ -32,7 +32,8 @@ FastCron supports 3 keywords:
 - `__timestamp_ms__` will be replaced with the scheduled execution time (Unix timestamp in milliseconds)
 - `__cronjob__` will be replaced with the cronjob ID
 
-You can also add those keywords to your [`postData`](/reference/cron#cron_add) or [`payload`](/reference/cron#cron_run) when using HTTP method POST, PUT, or PATCH.
+You can also add those keywords to your [`postData`](/reference/cron#cron_add)
+or [`payload`](/reference/cron#cron_run) when using HTTP method POST, PUT, or PATCH.
 
 ## Bring your own variables
 

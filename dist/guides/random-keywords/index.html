@@ -48,7 +48,8 @@ You should add <code dir="auto">__timestamp__</code> to your cronjob URL to bypa
 <li><code dir="auto">__timestamp_ms__</code> will be replaced with the scheduled execution time (Unix timestamp in milliseconds)</li>
 <li><code dir="auto">__cronjob__</code> will be replaced with the cronjob ID</li>
 </ul>
-<p>You can also add those keywords to your <a href="/reference/cron#cron_add"><code dir="auto">postData</code></a> or <a href="/reference/cron#cron_run"><code dir="auto">payload</code></a> when using HTTP method POST, PUT, or PATCH.</p>
+<p>You can also add those keywords to your <a href="/reference/cron#cron_add"><code dir="auto">postData</code></a>
+or <a href="/reference/cron#cron_run"><code dir="auto">payload</code></a> when using HTTP method POST, PUT, or PATCH.</p>
 <h2 id="bring-your-own-variables">Bring your own variables</h2>
 <p>You can head to the <strong>Variables</strong> page, and add your own keywords/variables.
 For example, if you add a variable named <code dir="auto">token</code> with the value <code dir="auto">SECRET</code>, you can use <code dir="auto">__token__</code> in all your cronjobs, POST data, and payload.</p>

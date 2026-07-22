@@ -210,8 +210,7 @@ To enable it, click **Edit** cronjob. In the section **Notifications**, enter th
 
 You can now add variables on the **Environment variables** page.
 
-Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value
-when the cronjob priority is **the same or higher** than the variable priority.
+Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will be replaced with the variable value.
 
 It's useful for secret key/token, API/authorization token, or configuration values.
 
@@ -226,7 +225,7 @@ All team members can choose to start/stop receiving cron notifications from the 
 
 #### Priority level
 
-You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, variables, and team members.
+You can now set [priority level](/blog/priority-level) for your cronjobs, groups, channels, and team members.
 
 #### Free WordPress plugin
 
@@ -328,7 +327,7 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 
 ## April 2024
 
-- You can repeat your cronjob when/until its output matches a word.
+- You can repeat your cronjob when its output contains a keyword.
 
 ## December 2023
 
