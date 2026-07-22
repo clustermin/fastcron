@@ -15,7 +15,7 @@ Both FastCron and Cron-job.org have a free plan.
 |                                                                    | Cron-job.org | **FastCron**   |
 | ------------------------------------------------------------------ | ------------ | -------------- |
 | Number of cronjobs                                                 | unlimited    | 5              |
-| Minimum cron interval                                              | 1 minute     | 3 minutes      |
+| Minimum cron interval                                              | 1 minute     | 5 minutes      |
 | Max cron history logs                                              | 25           | 50             |
 | Max response size                                                  | 64 KB        | **100 MB**     |
 | Max API calls per day                                              | 100          | **unlimited**  |
