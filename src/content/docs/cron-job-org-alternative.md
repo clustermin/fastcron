@@ -49,7 +49,7 @@ To keep the table short, these premium features are available only at FastCron:
 - [Max instances](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions
 - Mark cronjob as failed if its output (not) contains a word
 - Retry failed cronjobs
-- [Repeat cronjobs](/blog/repeat-cronjob) when its output contains a keyword
+- [Repeat cron jobs](/blog/repeat-cronjob) when output contains a keyword
 - Integrations with [Slack, Discord, Telegram, etc](/integrations)
 - **Team management** with roles
 - Send email notifications to other team members when cron fails.

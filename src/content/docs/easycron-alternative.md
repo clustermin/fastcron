@@ -57,7 +57,7 @@ These handy features are available only at FastCron:
 - [Max instances](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions
 - Retry failed cronjobs
 - Integrations with [Discord, Teams, Zenduty, etc](/integrations)
-- [Repeat cronjobs](/blog/repeat-cronjob) when its output contains a keyword
+- [Repeat cron jobs](/blog/repeat-cronjob) when output contains a keyword
 
 ## The best EasyCron alternative
 

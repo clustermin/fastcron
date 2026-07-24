@@ -326,8 +326,7 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 
 ## April 2024
 
-- You can repeat your cronjob when its output contains a keyword.
+- You can repeat your cron job when its output contains a keyword.
 
 ## December 2023
-
 - You can prevent overlapping or allow up to 5 overlapping executions by adjusting the [Max instances](/blog/max-instances) settings.
