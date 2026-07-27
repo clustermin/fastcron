@@ -48,10 +48,8 @@ To keep the table short, these premium features are available only at FastCron:
 - [Time filter](/blog/time-filter): filter the scheduled execution time
 - [Max instances](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions
 - Mark cronjob as failed if its output (not) contains a word
-- Retry failed cronjobs
-- [Repeat cron jobs](/blog/repeat-cronjob) when output contains a keyword
 - Integrations with [Slack, Discord, Telegram, etc](/integrations)
-- **Team management** with roles
+- Team management with roles
 - Send email notifications to other team members when cron fails.
 
 Some features (e.g. status pages and badges) are only available at Cron-job.org.

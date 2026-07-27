@@ -71,12 +71,12 @@ Cron jobs in the premium plans won't be disabled.
 
 You can now add a dedicated channel at Utilities > Notification channels.
 When adding/updating a channel, select *Receive notifications from cron jobs with priority*: **None, select manually**.
-After that, you can (batch) update your cron jobs, in the section **Notifications and metric**, select the **Channel**.
+After that, you can (batch) update your cron jobs, in the section **Notifications**, select the **Channel**.
 
 #### Extract a metric
 
 If your cron job returns JSON response, FastCron can extract a metric from its response.
-When adding/updating your cron job, in the section **Notifications and metric**, enter a `JSON path` to **Extract metric** field.
+When adding/updating your cron job, in the section **Notifications**, enter a `JSON path` to **Extract metric** field.
 
 FastCron will extract the metric upon receiving cron job response.
 You can view the extracted metric on the **Logs** page.
@@ -322,11 +322,6 @@ You can now run your cronjob at a specific time using [`cron_run`](/reference/cr
 - User avatars are now synced from your Google account.
 - You can now add your company/team name.
 - Contact email has been removed. Existing contacts have been converted to team members with role Viewer.
-- Auto-deleting stopped/failed cronjobs on the group level has been removed. Please use the settings on the account level.
-
-## April 2024
-
-- You can repeat your cron job when its output contains a keyword.
 
 ## December 2023
 - You can prevent overlapping or allow up to 5 overlapping executions by adjusting the [Max instances](/blog/max-instances) settings.

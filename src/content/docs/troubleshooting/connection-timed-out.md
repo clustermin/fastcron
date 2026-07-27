@@ -12,7 +12,7 @@ meant that we couldn't connect to your server in 15 seconds.
 
 The cause may be a network glitch, your server is down/unreachable/overloaded, your server temporarily blocked our connections.
 
-If your cron jobs run less than 2880 times a day (every 30 seconds), FastCron shall automatically retry your cronjob once.
+If your cron jobs run less than 1440 times a day (every minute), FastCron shall automatically retry your cronjob once.
 
 If the problem is persistent, please double-check your website and see if it's still online or not.
 - If it's down, please contact your hosting provider ASAP and ask them to check and fix it for you.

@@ -35,7 +35,7 @@
 <div class="expressive-code"><link rel="stylesheet" href="/_astro/ec.d6kn2.css"><script type="module" src="/_astro/ec.3zb7u.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Connection timeout after 15002 ms (28)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">SSL connection timeout (28)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Failed to connect to www.example.com port 443 after 15000 ms: Timeout was reached (28)</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="Connection timeout after 15002 ms (28)SSL connection timeout (28)Failed to connect to www.example.com port 443 after 15000 ms: Timeout was reached (28)"><div></div></button></div></figure></div>
 <p>meant that we couldn’t connect to your server in 15 seconds.</p>
 <p>The cause may be a network glitch, your server is down/unreachable/overloaded, your server temporarily blocked our connections.</p>
-<p>If your cron jobs run less than 2880 times a day (every 30 seconds), FastCron shall automatically retry your cronjob once.</p>
+<p>If your cron jobs run less than 1440 times a day (every minute), FastCron shall automatically retry your cronjob once.</p>
 <p>If the problem is persistent, please double-check your website and see if it’s still online or not.</p>
 <ul>
 <li>If it’s down, please contact your hosting provider ASAP and ask them to check and fix it for you.</li>

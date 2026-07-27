@@ -26,6 +26,6 @@ https://NAME.webhook.office.com/STUFF/GO_HERE
 FastCron enables notifications for your cronjobs by default.
 
 To check it, edit cronjobs, in the section **Notifications**,
-ensure the **Notify me: when cronjob fails**, and **when cronjob succeeds after failed** are checked.
+ensure the box **Notify me: when cronjob fails** is checked.
 
 FastCron will send you a message when a cronjob in your account fails, and when it succeeds again.

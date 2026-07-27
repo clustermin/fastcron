@@ -37,8 +37,6 @@ FastCron is a simple, fast, and free cronjob service for professional website de
 - **Cron logs**: see the full history of cronjob executions, including starting time, total execution time, HTTP status, and output.
 - Email/Slack/webhook **notifications** when cronjob fails and succeeds.
 - **Team access**: allows your team member to create, run, and manage their own cronjobs.
-- **Retry** failed cronjob executions.
-- [Repeat cron jobs](/blog/repeat-cronjob) when output contains a keyword
 - [**Max instances**](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions.
 - [**API access**](/reference): create, run, and delete your cronjob programmatically.
 

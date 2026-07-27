@@ -23,7 +23,6 @@ Each cronjob contains these members:
 | status      | integer | Status code, 0 means "active"                                                                    |
 | name        | string  | Name of cronjob                                                                                  |
 | notify      | bool    | Notify when cronjob fails                                                                        |
-| notifyEvery | int     | Number of consecutive failures between each notification                                         |
 | priority    | integer | Priority: normal (0), high (1), higher (2)                                                       |
 
 ## Cron execution result
