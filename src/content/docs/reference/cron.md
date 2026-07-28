@@ -71,8 +71,6 @@ Add a new cronjob.
 | httpHeaders      | string  | null             | Plain HTTP headers to send to your cronjob URL. Use new lines \r\n as delimiters.                |
 | userAgent        | string  | null             | User agent, default is `Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)`       |
 | notify           | bool    | true             | Enable notification on failure.                                                                  |
-| notifyMatch      | string  | null             | Notify you when your cron job output contains a word/string                                      |
-| notifyTime       | int     | null             | Notify you when your cron job takes more time to complete                                        |
 | keyword          | string  | null             | Text to to search for in the output. Max 100 characters.                                         |
 | group            | integer | null             | Group ID                                                                                         |
 | name             | string  | null             | Name of cronjob                                                                                  |

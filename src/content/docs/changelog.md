@@ -198,11 +198,6 @@ The POST data must be
 FastCron will remove free accounts with no active cronjobs and no activity after 180 days.
 Due to the high rate of invalid email addresses and bounced messages, FastCron **won’t send** any notifications before removal.
 
-#### Notify when output contains a word
-
-You can receive cron notifications (from emails and all other channels) when your cronjob output does/doesn't contain a word.
-To enable it, click **Edit** cronjob. In the section **Notifications**, enter the desired word into **Notify if contains**.
-
 ## September 2024
 
 #### Variables
@@ -213,9 +208,7 @@ Use `__variable_name__` in the cronjob URL, POST data, or payload, and it will b
 
 It's useful for secret key/token, API/authorization token, or configuration values.
 
-Use it when:
-- you don't want to share secrets with your team members.
-- you want to change it once and apply to all cronjobs.
+Use it when you want to change it once and apply to all cronjobs.
 
 #### Team members
 

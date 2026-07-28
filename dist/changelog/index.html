@@ -166,19 +166,12 @@ The POST data must be</p>
 <h4 id="remove-inactive-account">Remove inactive account</h4>
 <p>FastCron will remove free accounts with no active cronjobs and no activity after 180 days.
 Due to the high rate of invalid email addresses and bounced messages, FastCron <strong>won’t send</strong> any notifications before removal.</p>
-<h4 id="notify-when-output-contains-a-word">Notify when output contains a word</h4>
-<p>You can receive cron notifications (from emails and all other channels) when your cronjob output does/doesn’t contain a word.
-To enable it, click <strong>Edit</strong> cronjob. In the section <strong>Notifications</strong>, enter the desired word into <strong>Notify if contains</strong>.</p>
 <h2 id="september-2024">September 2024</h2>
 <h4 id="variables">Variables</h4>
 <p>You can now add variables on the <strong>Environment variables</strong> page.</p>
 <p>Use <code dir="auto">__variable_name__</code> in the cronjob URL, POST data, or payload, and it will be replaced with the variable value.</p>
 <p>It’s useful for secret key/token, API/authorization token, or configuration values.</p>
-<p>Use it when:</p>
-<ul>
-<li>you don’t want to share secrets with your team members.</li>
-<li>you want to change it once and apply to all cronjobs.</li>
-</ul>
+<p>Use it when you want to change it once and apply to all cronjobs.</p>
 <h4 id="team-members">Team members</h4>
 <p>Members and Viewers now can see other team members.
 All team members can choose to start/stop receiving cron notifications from the team account on the Members page.</p>

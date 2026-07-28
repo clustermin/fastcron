@@ -40,9 +40,7 @@ or [`payload`](/reference/cron#cron_run) when using HTTP method POST, PUT, or PA
 You can head to the **Variables** page, and add your own keywords/variables.
 For example, if you add a variable named `token` with the value `SECRET`, you can use `__token__` in all your cronjobs, POST data, and payload.
 
-Use it when:
-- you don't want to share secrets with your team members.
-- you want to change it once and apply it to all cronjobs.
+Use it when you want to change it once and apply it to all cronjobs.
 
 ## Auto update cronjob URLs
 
