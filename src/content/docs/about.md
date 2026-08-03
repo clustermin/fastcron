@@ -10,19 +10,7 @@ The service was founded in 2009 with the original name **SetCronJob**. In 2023, 
 ## Who runs this
 
 It's me. I'm **Thuan**, a _webmaster_ (full stack website developer) from Vietnam.
-You can email me at support@fastcron.com.
-
-Sometimes I'm <a href="https://x.com/thuan_dev" target="_blank" rel="nofollow">on X/Twitter</a>.
-
-## How it's doing
-
-The service is profitable, at least enough for a solo developer.
-
-Here are a few metrics about the service (updated manually, last updated: Sep 05, 2024).
-
-- **Total users**: 8,030
-- **Total cronjobs**: 244,000
-- **Executions per day**: 12,000,000
+You can email me at support@fastcron.com
 
 ## The infrastructure
 

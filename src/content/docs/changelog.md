@@ -73,14 +73,6 @@ You can now add a dedicated channel at Utilities > Notification channels.
 When adding/updating a channel, select *Receive notifications from cron jobs with priority*: **None, select manually**.
 After that, you can (batch) update your cron jobs, in the section **Notifications**, select the **Channel**.
 
-#### Extract a metric
-
-If your cron job returns JSON response, FastCron can extract a metric from its response.
-When adding/updating your cron job, in the section **Notifications**, enter a `JSON path` to **Extract metric** field.
-
-FastCron will extract the metric upon receiving cron job response.
-You can view the extracted metric on the **Logs** page.
-
 ## October 2025
 
 You can now view the UTC time together with your local time on your cron job Logs page.
