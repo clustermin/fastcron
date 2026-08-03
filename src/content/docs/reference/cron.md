@@ -59,7 +59,6 @@ Add a new cronjob.
 | **token**        | string  |                  | Your API token                                                                                   |
 | **url**          | string  |                  | URL to call                                                                                      |
 | expression       | string  | 15 minutes       | Time expression, may be either crontab syntax or time interval in English                        |
-| filter           | string  | null             | [Filter](/blog/time-filter) scheduled execution times                                            |
 | delay            | integer | 0                | Random delay (in minutes) before running your cronjob. No delay by default.                      |
 | timezone         | string  | account timezone | Cronjob timezone                                                                                 |
 | timeout          | integer | 30               | Request timeout - max time to wait for your URL to response. Min 5 seconds.                     |

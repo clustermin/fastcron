@@ -43,9 +43,8 @@ There are multiple ways to set the values for each field:
 Your cronjob will run when the current time matches **ALL** the fields of the cron expression.
 For example, cronjob with the expression `30 7 * 10 Mon` will run in October, every Monday at 07:30.
 
-If you select specific value(s) for both the `day` and `weekday` fields, it will run when the current time matches **EITHER** values.
+If you select specific values for both the `day` and `weekday` fields, it will run when the current time matches **EITHER** values.
 For example, `30 7 15 10 Mon` will run **in October, at 07:30 every Monday** AND **at 07:30 Oct 15**.
-You may want to use the cron expression `30 7 * 10 Mon` with the [time filter](/blog/time-filter) `day == 15` to run only Monday, Oct 15.
 
 If you'd like to run a cronjob at a specific time, see [one-time cronjobs](/guides/one-time-cronjobs).
 

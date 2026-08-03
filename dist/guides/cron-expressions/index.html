@@ -94,9 +94,8 @@
 </ul>
 <p>Your cronjob will run when the current time matches <strong>ALL</strong> the fields of the cron expression.
 For example, cronjob with the expression <code dir="auto">30 7 * 10 Mon</code> will run in October, every Monday at 07:30.</p>
-<p>If you select specific value(s) for both the <code dir="auto">day</code> and <code dir="auto">weekday</code> fields, it will run when the current time matches <strong>EITHER</strong> values.
-For example, <code dir="auto">30 7 15 10 Mon</code> will run <strong>in October, at 07:30 every Monday</strong> AND <strong>at 07:30 Oct 15</strong>.
-You may want to use the cron expression <code dir="auto">30 7 * 10 Mon</code> with the <a href="/blog/time-filter">time filter</a> <code dir="auto">day == 15</code> to run only Monday, Oct 15.</p>
+<p>If you select specific values for both the <code dir="auto">day</code> and <code dir="auto">weekday</code> fields, it will run when the current time matches <strong>EITHER</strong> values.
+For example, <code dir="auto">30 7 15 10 Mon</code> will run <strong>in October, at 07:30 every Monday</strong> AND <strong>at 07:30 Oct 15</strong>.</p>
 <p>If you’d like to run a cronjob at a specific time, see <a href="/guides/one-time-cronjobs">one-time cronjobs</a>.</p>
 <p>Due to the limitation of the time values, some cron expressions are impossible (time never matches),
 some time intervals e.g. <em>every 48 minutes</em> are not available,

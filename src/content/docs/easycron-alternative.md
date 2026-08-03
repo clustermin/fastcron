@@ -53,7 +53,6 @@ So, 15 cronjobs at FastCron is equal to 21,600 EPD at EasyCron.
 These handy features are available only at FastCron:
 
 - Simple cron expression like `5 minutes` or `June 04, 2025 8:15 AM`
-- [Time filter](/blog/time-filter): filter the scheduled execution time
 - [Max instances](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions
 - Integrations with [Discord, Teams, Zenduty, etc](/integrations)
 

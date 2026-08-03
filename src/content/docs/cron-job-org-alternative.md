@@ -45,7 +45,6 @@ Cron-job.org relies on donations.
 To keep the table short, these premium features are available only at FastCron:
 
 - Simple [cron expression](/guides/cron-expressions) like `5 minutes` or `June 04, 2025 8:15 AM`
-- [Time filter](/blog/time-filter): filter the scheduled execution time
 - [Max instances](/blog/max-instances): prevent overlapping or allow up to 5 overlapping executions
 - Mark cronjob as failed if its output (not) contains a word
 - Integrations with [Slack, Discord, Telegram, etc](/integrations)
