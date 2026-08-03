@@ -21,7 +21,7 @@ Both FastCron and EasyCron have a free plan.
 | Max number of 10-minute cronjobs | 0          | **5**          |
 | Max number of 5-minute cronjobs  | 0          | **5**          |
 | Max cron history logs            | 10         | **50**         |
-| Max request timeout              | 5 seconds  | **30 seconds** |
+| Max request timeout              | 5 seconds  | **15 seconds** |
 | Keep failure logs                | no         | **3**          |
 | Email notifications              | no         | **yes**        |
 | Change HTTP method and headers   | no         | **yes**        |
