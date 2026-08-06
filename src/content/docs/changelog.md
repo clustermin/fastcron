@@ -7,6 +7,29 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## August 2026
+
+#### Issues
+When your cron job fails more than a certain number of consecutive failures, an issue will be created.
+FastCron will track the issue starting time, total duration, and the cause of the error.
+The ongoing issues will be displayed on the Cron Jobs page (start page), and on each cron job's Logs page.
+
+When your cron job succeeds 2 consecutive times, the issue will be closed.
+When you disable the cron job, the ongoing issue will be closed too.
+
+#### Check for a keyword in the output
+
+FastCron will check your cron job output for a keyword (e.g., `success`)
+when you enter it into the *Output must contain* field in the **HTTP settings** section.
+If the keyword is not in your cron job output, the cron job execution will be marked as failed.
+
+#### Success HTTP status
+
+You can now add success HTTP status to your cron jobs.
+By default, FastCron only accepts HTTP status 2xx (2`00 OK`, `201 Created`, `202 Accepted`, `204 No Content`, etc...),
+`504 Gateway Timeout`, and `524 A Timeout Occurred`.
+If you expect another HTTP status code, you can add it to the **Success HTTP status** list in the **HTTP settings** section.
+
 ## July 2026
 #### Content-Type header
 If you add your own HTTP header `Content-Type`, FastCron will not add `Content-Type` again.
