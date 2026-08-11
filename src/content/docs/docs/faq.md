@@ -55,7 +55,7 @@ https://example.com/backup.php
 Yes, we don't check your SSL certificates.
 
 ### Can I run cronjobs for password-protected websites?
-Yes, if your website accepts HTTP Basic Authentication, just add username and password in the section **HTTP request**.
+Yes, if your website accepts HTTP Basic Authentication, just add username and password in the section **HTTP settings**.
 
 You can also add a username and password to your cronjob URL like this:
 ```

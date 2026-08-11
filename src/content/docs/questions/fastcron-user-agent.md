@@ -8,7 +8,7 @@ When sending HTTP requests to your cronjob URLs, FastCron uses the default user 
 Mozilla/5.0 (compatible; FastCron/1.0; https://www.fastcron.com/)
 ```
 
-You can change the user agent when adding/editing cronjobs, on the section **HTTP request**, 
+You can change the user agent when adding/editing cronjobs, on the section **HTTP settings**, 
 enter your desired user agent.
 
 ![User agent](/screenshots/user-agent.png)

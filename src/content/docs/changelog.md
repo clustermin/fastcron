@@ -94,7 +94,7 @@ Cron jobs in the premium plans won't be disabled.
 
 You can now add a dedicated channel at Utilities > Notification channels.
 When adding/updating a channel, select *Receive notifications from cron jobs with priority*: **None, select manually**.
-After that, you can (batch) update your cron jobs, in the section **Notifications**, select the **Channel**.
+After that, you can (batch) update your cron jobs, in the section **Cron settings**, select the **Channel**.
 
 ## October 2025
 
@@ -118,11 +118,6 @@ No more stale IP addresses when your hostname updates.
 Cronjobs that are inactive for 3 years will be deleted.
 
 ## July 2025
-
-#### Notify slow cron jobs
-You can now receive cron notifications when your cron job takes more than `n` seconds to complete.
-To update your cron jobs, click Edit, in the section Notifications, change the value of **Notify if runs over**.
-Enter a value other than 0 to enable it.
 
 #### Telegram cron notifications
 You can now send `/stop` to FastCronBot to stop receiving cron notifications.
