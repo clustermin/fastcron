@@ -37,7 +37,6 @@ export default defineConfig({
           { label: 'Data structure', link: '/reference/data' },
           { label: 'cron_*', link: '/reference/cron' },
           { label: 'group_*', link: '/reference/group' },
-          { label: 'account_*', link: '/reference/account' }
         ]
       },
       {

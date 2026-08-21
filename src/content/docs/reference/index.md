@@ -31,7 +31,7 @@ You can use the headers `Authorization: Bearer` to authenticate your API request
 
 ```sh "API-TOKEN"
 curl --request GET \
-    --url "https://www.fastcron.com/api/v1/account_get" \
+    --url "https://www.fastcron.com/api/v1/cron_list" \
     --header "Authorization: Bearer API-TOKEN"
 ```
 
