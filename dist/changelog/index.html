@@ -115,12 +115,10 @@ No more stale IP addresses when your hostname updates.</p>
 <h4 id="cronjob-statistic-with-timezone">Cronjob statistic with timezone</h4>
 <p>Cronjob stats will be calculated based on its own timezone rather than FastCron’s server timezone (UTC).</p>
 <h2 id="june-2025">June 2025</h2>
-<h4 id="opsgenie-integration">Opsgenie integration</h4>
-<p>You can now receive an alert in your Opsgenie account when your cronjob fails.</p>
 <h4 id="slackmattermost-integration">Slack/Mattermost integration</h4>
 <p>You can now also use your Mattermost webhook URL instead of Slack’s.</p>
 <h4 id="account-expiration">Account expiration</h4>
-<p>Your account will be downgraded to the free plan if applicable (less than 5 cronjobs).
+<p>Your account will be downgraded to the free plan if applicable (less than 10 cronjobs).
 Otherwise it will just expire and all cronjobs will be disabled.</p>
 <h2 id="may-2025">May 2025</h2>
 <h4 id="back-off-failing-cronjobs">Back off failing cronjobs</h4>
@@ -183,10 +181,6 @@ All team members can choose to start/stop receiving cron notifications from the 
 <p>You can now install and activate our official <a href="https://wordpress.org/plugins/fastcron/" target="_blank" rel="nofollow">WordPress plugin here</a>.
 It will create a <strong>free cronjob</strong> running every 5 minutes to your <code dir="auto">wp-cron.php</code>.
 Completely free, no registration required, just activate and done.</p>
-<h4 id="jira-integration">Jira integration</h4>
-<p>FastCron now supports <a href="/integrations/jira">Jira integration</a>.
-FastCron will trigger your automation rule with incoming webhook trigger.
-You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.</p>
 <h4 id="search-in-cron_logs-and-cron_failures">Search in <code dir="auto">cron_logs</code> and <code dir="auto">cron_failures</code></h4>
 <p>You can now add <code dir="auto">keyword</code> to <a href="/reference/cron#cron_logs"><code dir="auto">cron_logs</code></a> and <a href="/reference/cron#cron_failures"><code dir="auto">cron_failures</code></a> function
 to search in logs output, error message, and execution time (Unix timestamp).</p>
@@ -225,7 +219,7 @@ You can view the <em>SSL cert expiry dates</em> on the <strong>Hosts</strong> pa
 You can choose to receive monthly reports on your profile page.</p>
 <h2 id="june-2024">June 2024</h2>
 <h4 id="notification-channels">Notification channels</h4>
-<p>You can now add account-level notification channels including Slack, <strong>Zenduty</strong>, <strong>Discord</strong>, <strong>Teams</strong>, and webhook (JSON payload).
+<p>You can now add account-level notification channels including Slack, <strong>Discord</strong>, <strong>Teams</strong>, and webhook (JSON payload).
 Once added, all failure/success notifications will be sent to your channel(s).</p>
 <p>You can disable or delete a channel in case you don’t want to receive further notifications.</p>
 <p>FastCron will show the last error message when failing to send notifications to your channel.

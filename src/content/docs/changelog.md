@@ -127,14 +127,11 @@ Cronjob stats will be calculated based on its own timezone rather than FastCron'
 
 ## June 2025
 
-#### Opsgenie integration
-You can now receive an alert in your Opsgenie account when your cronjob fails.
-
 #### Slack/Mattermost integration
 You can now also use your Mattermost webhook URL instead of Slack's. 
 
 #### Account expiration
-Your account will be downgraded to the free plan if applicable (less than 5 cronjobs).
+Your account will be downgraded to the free plan if applicable (less than 10 cronjobs).
 Otherwise it will just expire and all cronjobs will be disabled.
 
 ## May 2025
@@ -228,12 +225,6 @@ You can now install and activate our official <a href="https://wordpress.org/plu
 It will create a **free cronjob** running every 5 minutes to your `wp-cron.php`.
 Completely free, no registration required, just activate and done.
 
-#### Jira integration
-
-FastCron now supports [Jira integration](/integrations/jira).
-FastCron will trigger your automation rule with incoming webhook trigger.
-You can then add an action to process the notifications: send emails to team, create a new issue, or comment on an existing issue.
-
 #### Search in `cron_logs` and `cron_failures`
 
 You can now add `keyword` to [`cron_logs`](/reference/cron#cron_logs) and [`cron_failures`](/reference/cron#cron_failures) function
@@ -291,7 +282,7 @@ You can choose to receive monthly reports on your profile page.
 
 #### Notification channels
 
-You can now add account-level notification channels including Slack, **Zenduty**, **Discord**, **Teams**, and webhook (JSON payload).
+You can now add account-level notification channels including Slack, **Discord**, **Teams**, and webhook (JSON payload).
 Once added, all failure/success notifications will be sent to your channel(s).
 
 You can disable or delete a channel in case you don't want to receive further notifications.

@@ -58,7 +58,7 @@ You can include your API token in the GET query string, but it's not recommended
 
 The response is in JSON format and includes these fields:
 
-| Name   | Description                                       |
+| Name    | Description                                       |
 | ------- | ------------------------------------------------- |
 | status  | Either success or error.                          |
 | code    | The error code, 0 means ok/success.               |
