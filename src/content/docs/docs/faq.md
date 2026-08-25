@@ -20,7 +20,7 @@ This is not reversible. FastCron will delete your account and all related data p
 
 
 ### What happens when my account expires?
-Premium accounts will be downgraded to the free plan. If you have more cronjobs than the free plan limit, some cronjobs will be disabled.
+Premium accounts will be downgraded to the free plan. If you have more cron jobs than the free plan limit, some cron jobs will be disabled.
 
 Free accounts don't expire.
 

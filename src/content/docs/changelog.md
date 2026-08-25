@@ -195,7 +195,7 @@ The POST data must be
 
 #### Remove inactive account
 
-FastCron will remove free accounts with no active cronjobs and no activity after 180 days.
+FastCron will remove free accounts with no active cron jobs and no activity after 180 days.
 Due to the high rate of invalid email addresses and bounced messages, FastCron **won’t send** any notifications before removal.
 
 ## September 2024
