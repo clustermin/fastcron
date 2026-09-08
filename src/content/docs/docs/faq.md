@@ -20,16 +20,21 @@ This is not reversible. FastCron will delete your account and all related data p
 
 
 ### What happens when my account expires?
-Premium accounts will be downgraded to the free plan. If you have more cron jobs than the free plan limit, some cron jobs will be disabled.
+Your account will be downgraded to the free plan when it expires.
+If you have more cron jobs than the free plan limit, some cron jobs will be disabled.
+If your cron jobs runs more than every 5 minutes, they will be updated to run every 5 minutes.
 
-Free accounts don't expire.
-
-## Billing and payments
-### Is the service free?
-Yes, FastCron has a free plan with limited features. Please check the [Pricing](/pricing) for plan comparisons.
+### Do you have a free plan?
+Yes, FastCron has a free plan with limited features.
+Please check the [Pricing](/pricing) for plan comparisons.
 
 ### Do I need to renew my free plan?
-No, you don't need to renew the free plan. Enjoy!
+You must log in at least once every 90 days to keep your free account active.
+
+You will receive an email when you haven't logged in for 90 days.
+30 days after the email, your cron jobs will be disabled.
+
+## Billing and payments
 
 ### How to add my company VAT number?
 When making a payment via Paddle, select the **Country** and click **Continue**,

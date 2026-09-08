@@ -7,23 +7,23 @@ description: API data structures - cronjob, group, account.
 
 Each cronjob contains these members:
 
-| Name        | Type    | Description                                                                                      |
-| ----------- | ------- | ------------------------------------------------------------------------------------------------ |
-| id          | integer | Cron job ID                                                                                      |
-| group       | integer | Group ID, nullable                                                                               |
-| expression  | string  | Cron expression (crontab syntax e.g. `0 12 * * 1-5` or expression e.g. `1 day`)                  |
-| timezone    | string  | Time zone                                                                                        |
-| timeout     | int     | The timeout limit. Max time that FastCron will wait for your script output.                      |
-| instances   | integer | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
-| url         | string  | URL to call                                                                                      |
-| httpMethod  | string  | The HTTP Method to send HTTP requests to your URL.                                               |
-| httpHeaders | string  | Plain HTTP headers to send to your cronjob URL.                                                  |
-| postData    | string  | The data to POST to your URL, either query format or JSON                                        |
-| fail        | integer | Number of current consecutive failures                                                           |
-| status      | integer | Status code, 0 means "active"                                                                    |
-| name        | string  | Name of cronjob                                                                                  |
-| notify      | bool    | Notify when cronjob fails                                                                        |
-| priority    | integer | Priority: normal (0), high (1), higher (2)                                                       |
+| Name        | Type     | Description                                                                                      |
+| ----------- | -------- | ------------------------------------------------------------------------------------------------ |
+| id          | integer  | Cron job ID                                                                                      |
+| group       | ?integer | Group ID                                                                                         |
+| expression  | string   | Cron expression (crontab syntax e.g. `0 12 * * 1-5` or expression e.g. `1 day`)                  |
+| timezone    | string   | Time zone                                                                                        |
+| timeout     | int      | The timeout limit. Max time that FastCron will wait for your script output.                      |
+| instances   | integer  | Max overlapping cronjob executions: 0: unlimited, 1: single, 2 - 5: 2 - 5 overlapping executions |
+| url         | string   | URL to call                                                                                      |
+| httpMethod  | string   | The HTTP Method to send HTTP requests to your URL.                                               |
+| httpHeaders | string   | Plain HTTP headers to send to your cronjob URL.                                                  |
+| postData    | string   | The data to POST to your URL, either query format or JSON                                        |
+| fail        | integer  | Number of current consecutive failures                                                           |
+| status      | integer  | Status code, 0 means "active"                                                                    |
+| name        | string   | Name of cronjob                                                                                  |
+| notify      | bool     | Notify when cronjob fails                                                                        |
+| priority    | integer  | Priority: normal (0), high (1), higher (2)                                                       |
 
 ## Cron execution result
 
@@ -55,16 +55,3 @@ Each group contains these members:
 | name     | string  | Name                                       |
 | jobCount | integer | Total number of cronjobs                   |
 | priority | integer | Priority: normal (0), high (1), higher (2) |
-
-## Account
-
-Your account contains these members:
-
-| Name       | Type    | Description                         |
-| ---------- | ------- | ----------------------------------- |
-| id         | integer | Account ID                          |
-| name       | string  | Account name                        |
-| timezone   | string  | Default timezone                    |
-| plan       | string  | Plan name e.g. Pro                  |
-| cron       | integer | Max cronjobs e.g. 40                |
-| expiryDate | string  | Account expiry date e.g. 2023-12-31 |

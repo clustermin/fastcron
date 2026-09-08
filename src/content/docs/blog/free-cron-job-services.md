@@ -24,6 +24,8 @@ That's enough for your WordPress blog and some simple PHP websites.
 The timeout limit is 15 seconds, and you get to see the last 50 execution results.
 You'll receive email notifications when your cronjobs fail and succeed again.
 
+You must log in at least once every 90 days to keep your free account active.
+
 ## cron-job.org
 
 [cron-job.org](/cron-job-org-alternative) is the most generous free cronjob service.
@@ -43,7 +45,7 @@ with a minimum interval of 20 minutes. It's kinda okay for a low traffic blog.
 The timeout limit is only 5 seconds. After that, they will stop waiting for your script to complete.
 No email notifications when cronjob fails.
 
-By the way, they require you to log in to your free account once a month.
+They require you to log in and renew your free account once a month.
 
 ## Other web cron services
 
@@ -61,7 +63,7 @@ Here are the comparison table for the top 3 free cronjob services:
 
 |                                | Cron-job.org  | FastCron       | EasyCron      |
 | ------------------------------ | ------------- | -------------- | ------------- |
-| Number of cronjobs             | **unlimited** | 5              | 200           |
+| Number of cronjobs             | **unlimited** | 10             | 200           |
 | Minimum cron interval          | **1 minute**  | 5 minutes      | 20 minutes    |
 | Max cron history logs          | 25            | **50**         | 10            |
 | Max cron timeout               | 30 seconds    | 15 seconds     | 5 seconds     |

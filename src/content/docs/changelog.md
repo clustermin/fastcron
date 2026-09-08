@@ -7,6 +7,15 @@ You can receive monthly product updates from FastCron by subscribing on the **Pr
 
 You can email me at support@fastcron.com to suggest a feature.
 
+## September 2026
+
+#### Free account activity requirement
+
+You have to keep your free account active by logging in at least once every 90 days.
+
+You will receive an email when you haven't logged in for 90 days.
+30 days after the email, your cron jobs will be disabled.
+
 ## August 2026
 
 #### Issues
