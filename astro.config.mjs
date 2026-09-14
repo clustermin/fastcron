@@ -14,9 +14,7 @@ export default defineConfig({
         label: 'Getting started',
         items: [
           { label: 'Welcome', link: '/docs' },
-          { label: 'IP addresses', link: '/ip-addresses' },
           { label: 'FAQ', link: '/docs/faq' },
-          { label: 'Changelog', link: '/changelog' },
           { label: 'Tutorials', link: '/tutorials' },
           { label: 'Notification channels', link: '/integrations' }
         ]
@@ -37,14 +35,6 @@ export default defineConfig({
           { label: 'Data structure', link: '/reference/data' },
           { label: 'cron_*', link: '/reference/cron' },
           { label: 'group_*', link: '/reference/group' },
-        ]
-      },
-      {
-        label: 'Compare to',
-        items: [
-          { label: 'Unix crontab', link: '/crontab-alternative' },
-          { label: 'cron-job.org', link: '/cron-job-org-alternative' },
-          { label: 'EasyCron', link: '/easycron-alternative' }
         ]
       }
     ],
