@@ -23,7 +23,6 @@ export default defineConfig({
       },
       {
         label: 'Troubleshooting',
-        collapsed: true,
         autogenerate: { directory: 'troubleshooting' }
       }
     ],
