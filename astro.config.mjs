@@ -25,15 +25,6 @@ export default defineConfig({
         label: 'Troubleshooting',
         collapsed: true,
         autogenerate: { directory: 'troubleshooting' }
-      },
-      {
-        label: 'FastCron API',
-        items: [
-          { label: 'Introduction', link: '/reference' },
-          { label: 'Data structure', link: '/reference/data' },
-          { label: 'cron_*', link: '/reference/cron' },
-          { label: 'group_*', link: '/reference/group' },
-        ]
       }
     ],
   }, mdx())]
