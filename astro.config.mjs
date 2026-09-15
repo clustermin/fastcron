@@ -13,8 +13,6 @@ export default defineConfig({
       {
         label: 'Getting started',
         items: [
-          { label: 'Welcome', link: '/docs' },
-          { label: 'FAQ', link: '/docs/faq' },
           { label: 'Tutorials', link: '/tutorials' },
           { label: 'Notification channels', link: '/integrations' }
         ]
