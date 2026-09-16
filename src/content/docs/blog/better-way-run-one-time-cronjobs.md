@@ -39,6 +39,3 @@ and use `cron_run` to schedule your cronjob along with the payload (`{"item": 12
 
 Some use cases may not require one-time cronjobs at all.
 Check the updated [guide to run one-time cronjobs](/guides/one-time-cronjobs).
-
-**Note**: In **3 months** (**November 18, 2024**), a one-time cronjob will count as one regular cronjob.
-Please update your script to use `cron_run` instead of `cron_add` before that day.
